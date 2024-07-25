@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"openrect" : [ 34.0, 77.0, 1298.0, 617.0 ],
+		"openrect" : [ 34.0, 77.0, 1371.53628945350647, 1058.959356904029846 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -31,7 +31,7 @@
 		"boxanimatetime" : 200,
 		"enablehscroll" : 1,
 		"enablevscroll" : 1,
-		"devicewidth" : 1298.0,
+		"devicewidth" : 1371.53628945350647,
 		"description" : "",
 		"digest" : "",
 		"tags" : "",
@@ -39,6 +39,249 @@
 		"subpatcher_template" : "",
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
+				"box" : 				{
+					"id" : "obj-294",
+					"maxclass" : "spectroscope~",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 1194.187236924450417, 204.746443718671344, 327.0, 124.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 794.273642092551199, 895.208165270426889, 260.0, 102.0 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"automatic" : 1,
+					"id" : "obj-291",
+					"maxclass" : "scope~",
+					"numinlets" : 2,
+					"numoutlets" : 0,
+					"patching_rect" : [ 1194.187236924450417, 74.814440865392498, 326.52744432290433, 124.252013027667545 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 326.617302000130621, 895.208165270426889, 259.656340092420578, 102.038624571823675 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"angle" : 270.0,
+					"bgcolor" : [ 0.2, 0.2, 0.2, 0.0 ],
+					"border" : 3,
+					"bordercolor" : [ 0.192156862745098, 0.329411764705882, 0.505882352941176, 1.0 ],
+					"horizontal_direction" : 1,
+					"id" : "obj-56",
+					"maxclass" : "panel",
+					"mode" : 0,
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 79.274727084123924, 204.746443718671344, 128.0, 128.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 771.883247921168049, 949.543008846381781, 15.456007949589548, 15.518041960027745 ],
+					"proportion" : 0.5,
+					"rounded" : 0,
+					"vertical_direction" : 2
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-267",
+					"ignoreclick" : 1,
+					"maxclass" : "button",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "bang" ],
+					"parameter_enable" : 0,
+					"patching_rect" : [ 140.406801214893221, 477.718537384805359, 24.0, 24.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 588.273642092551199, 895.208165270426889, 46.163081377744675, 46.163081377744675 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-585",
+					"ignoreclick" : 1,
+					"maxclass" : "textbutton",
+					"numinlets" : 1,
+					"numoutlets" : 3,
+					"outlettype" : [ "", "", "int" ],
+					"parameter_enable" : 0,
+					"patching_rect" : [ 60.154165616710543, 435.796216542062666, 52.990360756715518, 20.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 636.072470217551199, 895.208165270426889, 50.0, 21.798828125 ],
+					"text" : "Voices",
+					"texton" : "Voices"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"blinktime" : 50,
+					"id" : "obj-584",
+					"maxclass" : "textbutton",
+					"mode" : 1,
+					"numinlets" : 1,
+					"numoutlets" : 3,
+					"outlettype" : [ "", "", "int" ],
+					"parameter_enable" : 0,
+					"patching_rect" : [ 321.581128162425784, 482.139355356034912, 77.193398031394509, 20.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 688.072470217551199, 919.006993395426889, 104.201171875, 22.0 ],
+					"text" : "Retrigger",
+					"texton" : "Retrigger"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"blinktime" : 50,
+					"id" : "obj-583",
+					"maxclass" : "textbutton",
+					"mode" : 1,
+					"numinlets" : 1,
+					"numoutlets" : 3,
+					"outlettype" : [ "", "", "int" ],
+					"parameter_enable" : 0,
+					"patching_rect" : [ 234.673713006059302, 482.139355356034912, 77.193398031394509, 20.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 688.072470217551199, 895.208165270426889, 104.201171875, 21.798828125 ],
+					"text" : "Legato",
+					"texton" : "Legato"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"active1" : [ 0.352941176470588, 0.607843137254902, 0.929411764705882, 1.0 ],
+					"bubblesize" : 14,
+					"id" : "obj-163",
+					"maxclass" : "preset",
+					"numinlets" : 1,
+					"numoutlets" : 4,
+					"outlettype" : [ "preset", "int", "preset", "int" ],
+					"patching_rect" : [ 43.63530735401514, 136.006672084331058, 206.933059844886429, 25.216386616230011 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 588.273642092551199, 946.256993335822699, 204.0, 24.591185629367828 ],
+					"preset_data" : [ 						{
+							"number" : 1,
+							"data" : [ 4, "obj-43", "kslider", "chord", 5, "obj-46", "number", "int", 0, 5, "obj-29", "number", "int", 320, 5, "obj-35", "number", "int", 665, 5, "obj-38", "flonum", "float", 0.71657806634903, 5, "obj-41", "number", "int", 472, 5, "obj-13", "umenu", "int", 0, 6, "obj-123", "number~", "list", 0.0, 0.0, 5, "obj-124", "dial", "float", 8.0, 5, "obj-128", "dial", "float", 12.0, 6, "obj-129", "number~", "list", 0.0, 0.0, 6, "obj-130", "number~", "list", -0.1, 0.0, 5, "obj-131", "dial", "float", 900.0, 5, "obj-316", "number", "int", 1000, 5, "obj-60", "number", "int", 1000, 4, "obj-58", "function", "clear", 8, "obj-58", "function", "add_with_curve", 0.0, 1.0, 0, 0.0, 8, "obj-58", "function", "add_with_curve", 1000.0, 1.0, 0, 0.0, 5, "obj-58", "function", "domain", 1000.0, 6, "obj-58", "function", "range", 0.0, 1.0, 5, "obj-58", "function", "mode", 1, 5, "obj-73", "led", "int", 1, 5, "obj-149", "number", "int", 5, 9, "obj-84", "multislider", "list", 0.0, 0.0, 0.0, 0.0, 0.0, 9, "obj-96", "multislider", "list", 0.0, 0.0, 0.0, 0.0, 0.0, 6, "obj-127", "number~", "list", 1.0, 0.0, 5, "obj-62", "umenu", "int", 0, 6, "obj-16", "number~", "list", 1.5, 0.0, 6, "obj-15", "number~", "list", 1.0, 0.0, 6, "obj-221", "number~", "list", 1.0, 0.0, 6, "obj-222", "number~", "list", 0.0, 0.0, 6, "obj-231", "number~", "list", 1.0, 0.0, 6, "obj-232", "number~", "list", 0.0, 0.0, 5, "obj-331", "umenu", "int", 0, 6, "obj-323", "number~", "list", 1.0, 0.0, 6, "obj-322", "number~", "list", 0.0, 0.0, 6, "obj-337", "number~", "list", 2.0, 0.0, 9, "obj-346", "multislider", "list", 0.0, 0.0, 0.0, 0.0, 0.0, 6, "obj-365", "number~", "list", 0.2, 0.0, 5, "obj-21", "number", "int", 5, 5, "obj-416", "number", "int", 5, 4, "obj-457", "function", "clear", 8, "obj-457", "function", "add_with_curve", 0.0, 1.0, 0, 0.0, 8, "obj-457", "function", "add_with_curve", 999.999999999999773, 1.0, 0, 0.0, 5, "obj-457", "function", "domain", 1000.0, 6, "obj-457", "function", "range", 0.0, 1.0, 5, "obj-457", "function", "mode", 1, 5, "obj-198", "umenu", "int", 0, 6, "obj-188", "number~", "list", -2.0, 0.0, 5, "obj-187", "dial", "float", 6.0, 5, "obj-186", "dial", "float", 12.0, 6, "obj-185", "number~", "list", 0.0, 0.0, 6, "obj-184", "number~", "list", 0.1, 0.0, 5, "obj-182", "dial", "float", 1100.0, 5, "obj-174", "number", "int", 1000, 4, "obj-172", "function", "clear", 8, "obj-172", "function", "add_with_curve", 0.0, 1.0, 0, 0.0, 8, "obj-172", "function", "add_with_curve", 1000.0, 1.0, 0, 0.0, 5, "obj-172", "function", "domain", 1000.0, 6, "obj-172", "function", "range", 0.0, 1.0, 5, "obj-172", "function", "mode", 1, 5, "obj-165", "led", "int", 1, 9, "obj-164", "multislider", "list", 0.0, 0.0, 0.0, 0.0, 0.0, 6, "obj-159", "number~", "list", 1.0, 0.0, 6, "obj-152", "number~", "list", 1.0, 0.0, 6, "obj-151", "number~", "list", 0.0, 0.0, 5, "obj-126", "number", "int", 5, 5, "obj-327", "umenu", "int", 0, 6, "obj-311", "number~", "list", -1.0, 0.0, 5, "obj-310", "dial", "float", 7.0, 5, "obj-292", "dial", "float", 12.0, 6, "obj-290", "number~", "list", 0.0, 0.0, 6, "obj-288", "number~", "list", 0.0, 0.0, 5, "obj-287", "dial", "float", 1000.0, 5, "obj-274", "number", "int", 1000, 4, "obj-272", "function", "clear", 8, "obj-272", "function", "add_with_curve", 0.0, 1.0, 0, 0.0, 8, "obj-272", "function", "add_with_curve", 1000.0, 1.0, 0, 0.0, 5, "obj-272", "function", "domain", 1000.0, 6, "obj-272", "function", "range", 0.0, 1.0, 5, "obj-272", "function", "mode", 1, 5, "obj-265", "led", "int", 1, 9, "obj-264", "multislider", "list", 0.0, 0.0, 0.0, 0.0, 0.0, 6, "obj-261", "number~", "list", 3.0, 0.0, 6, "obj-259", "number~", "list", 1.0, 0.0, 6, "obj-258", "number~", "list", 0.0, 0.0, 5, "obj-255", "number", "int", 5, 5, "obj-426", "umenu", "int", 0, 6, "obj-408", "number~", "list", 2.0, 0.0, 5, "obj-407", "dial", "float", 10.0, 5, "obj-406", "dial", "float", 12.0, 6, "obj-405", "number~", "list", 0.0, 0.0, 6, "obj-404", "number~", "list", 0.0, 0.0, 5, "obj-403", "dial", "float", 1000.0, 5, "obj-395", "number", "int", 1000, 4, "obj-393", "function", "clear", 8, "obj-393", "function", "add_with_curve", 0.0, 1.0, 0, 0.0, 8, "obj-393", "function", "add_with_curve", 1000.0, 1.0, 0, 0.0, 5, "obj-393", "function", "domain", 1000.0, 6, "obj-393", "function", "range", 0.0, 1.0, 5, "obj-393", "function", "mode", 1, 5, "obj-387", "led", "int", 1, 9, "obj-386", "multislider", "list", 0.0, 0.0, 0.0, 0.0, 0.0, 6, "obj-383", "number~", "list", 1.0, 0.0, 6, "obj-381", "number~", "list", 1.0, 0.0, 6, "obj-380", "number~", "list", 0.0, 0.0, 5, "obj-376", "number", "int", 5, 5, "obj-498", "number", "int", 1000, 4, "obj-496", "function", "clear", 8, "obj-496", "function", "add_with_curve", 0.0, 1.0, 0, 0.0, 8, "obj-496", "function", "add_with_curve", 1000.0, 1.0, 0, 0.0, 5, "obj-496", "function", "domain", 1000.0, 6, "obj-496", "function", "range", 1.0, 5.0, 5, "obj-496", "function", "mode", 1, 5, "obj-505", "number", "int", 5, 5, "obj-471", "umenu", "int", 0, 6, "obj-468", "number~", "list", 1.0, 0.0, 6, "obj-467", "number~", "list", 1.0, 0.0, 6, "obj-451", "number~", "list", 1.0, 0.0, 6, "obj-450", "number~", "list", 0.0, 0.0, 5, "obj-448", "number", "int", 1000, 4, "obj-446", "function", "clear", 8, "obj-446", "function", "add_with_curve", 0.0, 1.0, 0, 0.0, 8, "obj-446", "function", "add_with_curve", 1000.0, 1.0, 0, 0.0, 5, "obj-446", "function", "domain", 1000.0, 6, "obj-446", "function", "range", 1.0, 5.0, 5, "obj-446", "function", "mode", 1, 5, "obj-242", "number", "int", 5, 5, "obj-78", "dial", "float", 200.0, 5, "obj-92", "dial", "float", 2000.0, 5, "obj-106", "dial", "float", 1000.0, 5, "obj-109", "dial", "float", 1500.0, 5, "obj-110", "dial", "float", 1000.0, 5, "obj-111", "dial", "float", 1000.0, 5, "obj-121", "dial", "float", 1000.0, 5, "obj-122", "dial", "float", 1000.0, 5, "obj-157", "slider", "float", 319.0, 5, "obj-202", "slider", "float", 664.0, 5, "obj-203", "slider", "float", 471.0, 5, "obj-204", "slider", "float", 716.57806396484375, 5, "obj-133", "dial", "float", 3000.0, 5, "obj-139", "dial", "float", 1000.0, 5, "obj-333", "textbutton", "mode", 1, 5, "obj-333", "textbutton", "int", 0, 5, "obj-334", "textbutton", "mode", 1, 5, "obj-334", "textbutton", "int", 0, 5, "obj-522", "textbutton", "mode", 1, 5, "obj-522", "textbutton", "int", 0, 5, "obj-525", "textbutton", "mode", 1, 5, "obj-525", "textbutton", "int", 0, 5, "obj-534", "textbutton", "mode", 1, 5, "obj-534", "textbutton", "int", 0, 5, "obj-535", "textbutton", "mode", 1, 5, "obj-535", "textbutton", "int", 0, 5, "obj-541", "textbutton", "mode", 1, 5, "obj-541", "textbutton", "int", 0, 5, "obj-542", "textbutton", "mode", 1, 5, "obj-542", "textbutton", "int", 0, 5, "obj-554", "textbutton", "mode", 1, 5, "obj-554", "textbutton", "int", 0, 5, "obj-555", "led", "int", 1, 5, "obj-558", "led", "int", 1, 5, "obj-564", "textbutton", "mode", 1, 5, "obj-564", "textbutton", "int", 0, 5, "obj-565", "led", "int", 1, 5, "obj-568", "textbutton", "mode", 1, 5, "obj-568", "textbutton", "int", 0, 5, "obj-581", "textbutton", "mode", 1, 5, "obj-581", "textbutton", "int", 0, 5, "obj-20", "textbutton", "mode", 1, 5, "obj-20", "textbutton", "int", 0, 5, "obj-48", "textbutton", "mode", 1, 5, "obj-48", "textbutton", "int", 0, 5, "obj-74", "textbutton", "mode", 1, 5, "obj-74", "textbutton", "int", 0, 5, "obj-99", "textbutton", "mode", 1, 5, "obj-99", "textbutton", "int", 0, 5, "obj-134", "textbutton", "mode", 1, 5, "obj-134", "textbutton", "int", 0, 5, "obj-189", "textbutton", "mode", 1, 5, "obj-189", "textbutton", "int", 0 ]
+						}
+, 						{
+							"number" : 2,
+							"data" : [ 4, "obj-43", "kslider", "chord", 5, "obj-46", "number", "int", 0, 5, "obj-29", "number", "int", 121, 5, "obj-35", "number", "int", 463, 5, "obj-38", "flonum", "float", 0.746275067329407, 5, "obj-41", "number", "int", 267, 5, "obj-13", "umenu", "int", 5, 6, "obj-123", "number~", "list", 0.0, 0.0, 5, "obj-124", "dial", "float", 8.0, 5, "obj-128", "dial", "float", 12.0, 6, "obj-129", "number~", "list", 0.0, 0.0, 6, "obj-130", "number~", "list", 0.0, 0.0, 5, "obj-131", "dial", "float", 1000.0, 5, "obj-316", "number", "int", 1000, 5, "obj-60", "number", "int", 1000, 4, "obj-58", "function", "clear", 8, "obj-58", "function", "add_with_curve", 0.0, 1.0, 0, 0.0, 8, "obj-58", "function", "add_with_curve", 1000.0, 1.0, 0, 0.0, 5, "obj-58", "function", "domain", 1000.0, 6, "obj-58", "function", "range", 0.0, 1.0, 5, "obj-58", "function", "mode", 1, 5, "obj-73", "led", "int", 1, 5, "obj-149", "number", "int", 5, 9, "obj-84", "multislider", "list", 0.0, 0.0, 0.0, 0.0, 0.0, 9, "obj-96", "multislider", "list", 1.0, 0.517331123352051, 0.302565515041351, 0.618397235870361, 0.229417011141777, 6, "obj-127", "number~", "list", 1.0, 0.0, 5, "obj-62", "umenu", "int", 0, 6, "obj-16", "number~", "list", 0.5, 0.0, 6, "obj-15", "number~", "list", 1.0, 0.0, 6, "obj-221", "number~", "list", 1.0, 0.0, 6, "obj-222", "number~", "list", 5.0, 0.0, 6, "obj-231", "number~", "list", 1.0, 0.0, 6, "obj-232", "number~", "list", 0.0, 0.0, 5, "obj-331", "umenu", "int", 0, 6, "obj-323", "number~", "list", 0.0, 0.0, 6, "obj-322", "number~", "list", 0.0, 0.0, 6, "obj-337", "number~", "list", 10.0, 0.0, 9, "obj-346", "multislider", "list", 0.0, 0.0, 0.0, 0.0, 0.0, 6, "obj-365", "number~", "list", 1.0, 0.0, 5, "obj-21", "number", "int", 5, 5, "obj-416", "number", "int", 5, 4, "obj-457", "function", "clear", 8, "obj-457", "function", "add_with_curve", 0.0, 1.0, 0, 0.0, 8, "obj-457", "function", "add_with_curve", 999.999999999999773, 1.0, 0, 0.0, 5, "obj-457", "function", "domain", 1000.0, 6, "obj-457", "function", "range", 0.0, 1.0, 5, "obj-457", "function", "mode", 1, 5, "obj-198", "umenu", "int", 5, 6, "obj-188", "number~", "list", -1.0, 0.0, 5, "obj-187", "dial", "float", 7.0, 5, "obj-186", "dial", "float", 12.0, 6, "obj-185", "number~", "list", 0.0, 0.0, 6, "obj-184", "number~", "list", 0.0, 0.0, 5, "obj-182", "dial", "float", 1000.0, 5, "obj-174", "number", "int", 1000, 4, "obj-172", "function", "clear", 8, "obj-172", "function", "add_with_curve", 0.0, 1.0, 0, 0.0, 8, "obj-172", "function", "add_with_curve", 1000.0, 1.0, 0, 0.0, 5, "obj-172", "function", "domain", 1000.0, 6, "obj-172", "function", "range", 0.0, 1.0, 5, "obj-172", "function", "mode", 1, 5, "obj-165", "led", "int", 1, 9, "obj-164", "multislider", "list", 1.0, 0.517331123352051, 0.302565515041351, 0.82968533039093, 0.229417011141777, 6, "obj-159", "number~", "list", 1.0, 0.0, 6, "obj-152", "number~", "list", 1.0, 0.0, 6, "obj-151", "number~", "list", 5.0, 0.0, 5, "obj-126", "number", "int", 5, 5, "obj-327", "umenu", "int", 5, 6, "obj-311", "number~", "list", 2.0, 0.0, 5, "obj-310", "dial", "float", 10.0, 5, "obj-292", "dial", "float", 12.0, 6, "obj-290", "number~", "list", 0.0, 0.0, 6, "obj-288", "number~", "list", 0.0, 0.0, 5, "obj-287", "dial", "float", 1000.0, 5, "obj-274", "number", "int", 1000, 4, "obj-272", "function", "clear", 8, "obj-272", "function", "add_with_curve", 0.0, 1.0, 0, 0.0, 8, "obj-272", "function", "add_with_curve", 1000.0, 1.0, 0, 0.0, 5, "obj-272", "function", "domain", 1000.0, 6, "obj-272", "function", "range", 0.0, 1.0, 5, "obj-272", "function", "mode", 1, 5, "obj-265", "led", "int", 1, 9, "obj-264", "multislider", "list", 1.0, 0.517331123352051, 0.766286432743073, 0.618397235870361, 0.229417011141777, 6, "obj-261", "number~", "list", 1.0, 0.0, 6, "obj-259", "number~", "list", 1.0, 0.0, 6, "obj-258", "number~", "list", 5.0, 0.0, 5, "obj-255", "number", "int", 5, 5, "obj-426", "umenu", "int", 5, 6, "obj-408", "number~", "list", -1.0, 0.0, 5, "obj-407", "dial", "float", 7.0, 5, "obj-406", "dial", "float", 12.0, 6, "obj-405", "number~", "list", 0.0, 0.0, 6, "obj-404", "number~", "list", 0.0, 0.0, 5, "obj-403", "dial", "float", 1000.0, 5, "obj-395", "number", "int", 1000, 4, "obj-393", "function", "clear", 8, "obj-393", "function", "add_with_curve", 0.0, 1.0, 0, 0.0, 8, "obj-393", "function", "add_with_curve", 1000.0, 1.0, 0, 0.0, 5, "obj-393", "function", "domain", 1000.0, 6, "obj-393", "function", "range", 0.0, 1.0, 5, "obj-393", "function", "mode", 1, 5, "obj-387", "led", "int", 1, 9, "obj-386", "multislider", "list", 1.0, 0.517331123352051, 0.302565515041351, 0.618397235870361, 0.806259453296661, 6, "obj-383", "number~", "list", 2.5, 0.0, 6, "obj-381", "number~", "list", 1.0, 0.0, 6, "obj-380", "number~", "list", 5.0, 0.0, 5, "obj-376", "number", "int", 5, 5, "obj-498", "number", "int", 1000, 4, "obj-496", "function", "clear", 8, "obj-496", "function", "add_with_curve", 0.0, 1.0, 0, 0.0, 8, "obj-496", "function", "add_with_curve", 1000.0, 1.0, 0, 0.0, 5, "obj-496", "function", "domain", 1000.0, 6, "obj-496", "function", "range", 1.0, 5.0, 5, "obj-496", "function", "mode", 1, 5, "obj-505", "number", "int", 5, 5, "obj-471", "umenu", "int", 1, 6, "obj-468", "number~", "list", 0.5, 0.0, 6, "obj-467", "number~", "list", 1.0, 0.0, 6, "obj-451", "number~", "list", 1.0, 0.0, 6, "obj-450", "number~", "list", 1.0, 0.0, 5, "obj-448", "number", "int", 1000, 4, "obj-446", "function", "clear", 8, "obj-446", "function", "add_with_curve", 0.0, 1.0, 0, 0.0, 8, "obj-446", "function", "add_with_curve", 1000.0, 1.0, 0, 0.0, 5, "obj-446", "function", "domain", 1000.0, 6, "obj-446", "function", "range", 1.0, 5.0, 5, "obj-446", "function", "mode", 1, 5, "obj-242", "number", "int", 5, 5, "obj-78", "dial", "float", 1000.0, 5, "obj-92", "dial", "float", 10000.0, 5, "obj-106", "dial", "float", 500.0, 5, "obj-109", "dial", "float", 500.0, 5, "obj-110", "dial", "float", 1000.0, 5, "obj-111", "dial", "float", 1000.0, 5, "obj-121", "dial", "float", 1000.0, 5, "obj-122", "dial", "float", 1000.0, 5, "obj-157", "slider", "float", 120.0, 5, "obj-202", "slider", "float", 462.0, 5, "obj-203", "slider", "float", 266.0, 5, "obj-204", "slider", "float", 746.27508544921875, 5, "obj-133", "dial", "float", 1000.0, 5, "obj-139", "dial", "float", 2500.0, 5, "obj-333", "textbutton", "mode", 1, 5, "obj-333", "textbutton", "int", 0, 5, "obj-334", "textbutton", "mode", 1, 5, "obj-334", "textbutton", "int", 0, 5, "obj-522", "textbutton", "mode", 1, 5, "obj-522", "textbutton", "int", 0, 5, "obj-525", "textbutton", "mode", 1, 5, "obj-525", "textbutton", "int", 0, 5, "obj-534", "textbutton", "mode", 1, 5, "obj-534", "textbutton", "int", 0, 5, "obj-535", "textbutton", "mode", 1, 5, "obj-535", "textbutton", "int", 0, 5, "obj-541", "textbutton", "mode", 1, 5, "obj-541", "textbutton", "int", 0, 5, "obj-542", "textbutton", "mode", 1, 5, "obj-542", "textbutton", "int", 0, 5, "obj-554", "textbutton", "mode", 1, 5, "obj-554", "textbutton", "int", 0, 5, "obj-555", "led", "int", 1, 5, "obj-558", "led", "int", 1, 5, "obj-564", "textbutton", "mode", 1, 5, "obj-564", "textbutton", "int", 0, 5, "obj-565", "led", "int", 0, 5, "obj-568", "textbutton", "mode", 1, 5, "obj-568", "textbutton", "int", 0, 5, "obj-581", "textbutton", "mode", 1, 5, "obj-581", "textbutton", "int", 0, 5, "obj-20", "textbutton", "mode", 1, 5, "obj-20", "textbutton", "int", 0, 5, "obj-48", "textbutton", "mode", 1, 5, "obj-48", "textbutton", "int", 0, 5, "obj-74", "textbutton", "mode", 1, 5, "obj-74", "textbutton", "int", 0, 5, "obj-99", "textbutton", "mode", 1, 5, "obj-99", "textbutton", "int", 0, 5, "obj-134", "textbutton", "mode", 1, 5, "obj-134", "textbutton", "int", 0, 5, "obj-189", "textbutton", "mode", 1, 5, "obj-189", "textbutton", "int", 0 ]
+						}
+, 						{
+							"number" : 3,
+							"data" : [ 4, "obj-43", "kslider", "chord", 5, "obj-46", "number", "int", 0, 5, "obj-29", "number", "int", 189, 5, "obj-35", "number", "int", 135, 5, "obj-38", "flonum", "float", 0.757505178451538, 5, "obj-41", "number", "int", 821, 5, "obj-13", "umenu", "int", 2, 6, "obj-123", "number~", "list", 0.0, 0.0, 5, "obj-124", "dial", "float", 8.0, 5, "obj-128", "dial", "float", 12.0, 6, "obj-129", "number~", "list", 0.0, 0.0, 6, "obj-130", "number~", "list", -0.05, 0.0, 5, "obj-131", "dial", "float", 950.0, 5, "obj-316", "number", "int", 1000, 5, "obj-60", "number", "int", 1000, 4, "obj-58", "function", "clear", 8, "obj-58", "function", "add_with_curve", 0.0, 1.0, 0, 0.0, 8, "obj-58", "function", "add_with_curve", 1000.0, 1.0, 0, 0.0, 5, "obj-58", "function", "domain", 1000.0, 6, "obj-58", "function", "range", 0.0, 1.0, 5, "obj-58", "function", "mode", 1, 5, "obj-73", "led", "int", 1, 5, "obj-149", "number", "int", 5, 9, "obj-84", "multislider", "list", 0.0, 0.0, 0.0, 0.0, 0.0, 9, "obj-96", "multislider", "list", 0.0, 0.0, 0.0, 0.0, 0.0, 6, "obj-127", "number~", "list", 2.0, 0.0, 5, "obj-62", "umenu", "int", 0, 6, "obj-16", "number~", "list", 2.5, 0.0, 6, "obj-15", "number~", "list", 1.0, 0.0, 6, "obj-221", "number~", "list", 1.0, 0.0, 6, "obj-222", "number~", "list", 2.0, 0.0, 6, "obj-231", "number~", "list", 1.0, 0.0, 6, "obj-232", "number~", "list", 0.0, 0.0, 5, "obj-331", "umenu", "int", 0, 6, "obj-323", "number~", "list", 0.0, 0.0, 6, "obj-322", "number~", "list", 0.0, 0.0, 6, "obj-337", "number~", "list", 10.0, 0.0, 9, "obj-346", "multislider", "list", 0.0, 0.0, 0.0, 0.0, 0.0, 6, "obj-365", "number~", "list", 1.0, 0.0, 5, "obj-21", "number", "int", 5, 5, "obj-416", "number", "int", 5, 4, "obj-457", "function", "clear", 8, "obj-457", "function", "add_with_curve", 0.0, 1.0, 0, 0.0, 8, "obj-457", "function", "add_with_curve", 999.999999999999773, 1.0, 0, 0.0, 5, "obj-457", "function", "domain", 1000.0, 6, "obj-457", "function", "range", 0.0, 1.0, 5, "obj-457", "function", "mode", 1, 5, "obj-198", "umenu", "int", 2, 6, "obj-188", "number~", "list", 0.0, 0.0, 5, "obj-187", "dial", "float", 8.0, 5, "obj-186", "dial", "float", 12.0, 6, "obj-185", "number~", "list", 0.0, 0.0, 6, "obj-184", "number~", "list", 0.05, 0.0, 5, "obj-182", "dial", "float", 1050.0, 5, "obj-174", "number", "int", 1000, 4, "obj-172", "function", "clear", 8, "obj-172", "function", "add_with_curve", 0.0, 1.0, 0, 0.0, 8, "obj-172", "function", "add_with_curve", 1000.0, 1.0, 0, 0.0, 5, "obj-172", "function", "domain", 1000.0, 6, "obj-172", "function", "range", 0.0, 1.0, 5, "obj-172", "function", "mode", 1, 5, "obj-165", "led", "int", 1, 9, "obj-164", "multislider", "list", 0.0, 0.0, 0.0, 0.0, 0.0, 6, "obj-159", "number~", "list", 2.0, 0.0, 6, "obj-152", "number~", "list", 1.0, 0.0, 6, "obj-151", "number~", "list", 2.0, 0.0, 5, "obj-126", "number", "int", 5, 5, "obj-327", "umenu", "int", 0, 6, "obj-311", "number~", "list", -1.0, 0.0, 5, "obj-310", "dial", "float", 7.0, 5, "obj-292", "dial", "float", 12.0, 6, "obj-290", "number~", "list", 0.0, 0.0, 6, "obj-288", "number~", "list", 0.0, 0.0, 5, "obj-287", "dial", "float", 1000.0, 5, "obj-274", "number", "int", 1000, 4, "obj-272", "function", "clear", 8, "obj-272", "function", "add_with_curve", 0.0, 1.0, 0, 0.0, 8, "obj-272", "function", "add_with_curve", 1000.0, 1.0, 0, 0.0, 5, "obj-272", "function", "domain", 1000.0, 6, "obj-272", "function", "range", 0.0, 1.0, 5, "obj-272", "function", "mode", 1, 5, "obj-265", "led", "int", 1, 9, "obj-264", "multislider", "list", 0.0, 0.0, 0.0, 0.0, 0.0, 6, "obj-261", "number~", "list", 1.0, 0.0, 6, "obj-259", "number~", "list", 1.0, 0.0, 6, "obj-258", "number~", "list", 0.0, 0.0, 5, "obj-255", "number", "int", 5, 5, "obj-426", "umenu", "int", 0, 6, "obj-408", "number~", "list", -1.0, 0.0, 5, "obj-407", "dial", "float", 7.0, 5, "obj-406", "dial", "float", 12.0, 6, "obj-405", "number~", "list", 0.0, 0.0, 6, "obj-404", "number~", "list", 0.0, 0.0, 5, "obj-403", "dial", "float", 1000.0, 5, "obj-395", "number", "int", 1000, 4, "obj-393", "function", "clear", 8, "obj-393", "function", "add_with_curve", 0.0, 1.0, 0, 0.0, 8, "obj-393", "function", "add_with_curve", 1000.0, 1.0, 0, 0.0, 5, "obj-393", "function", "domain", 1000.0, 6, "obj-393", "function", "range", 0.0, 1.0, 5, "obj-393", "function", "mode", 1, 5, "obj-387", "led", "int", 1, 9, "obj-386", "multislider", "list", 0.0, 0.0, 0.0, 0.0, 0.0, 6, "obj-383", "number~", "list", 1.0, 0.0, 6, "obj-381", "number~", "list", 1.0, 0.0, 6, "obj-380", "number~", "list", 0.0, 0.0, 5, "obj-376", "number", "int", 5, 5, "obj-498", "number", "int", 1000, 4, "obj-496", "function", "clear", 8, "obj-496", "function", "add_with_curve", 0.0, 2.01730564761746, 0, 0.0, 8, "obj-496", "function", "add_with_curve", 1000.0, 2.01730564761746, 0, 0.0, 5, "obj-496", "function", "domain", 1000.0, 6, "obj-496", "function", "range", 1.0, 5.0, 5, "obj-496", "function", "mode", 1, 5, "obj-505", "number", "int", 5, 5, "obj-471", "umenu", "int", 0, 6, "obj-468", "number~", "list", 1.0, 0.0, 6, "obj-467", "number~", "list", 1.0, 0.0, 6, "obj-451", "number~", "list", 1.0, 0.0, 6, "obj-450", "number~", "list", 0.0, 0.0, 5, "obj-448", "number", "int", 1000, 4, "obj-446", "function", "clear", 8, "obj-446", "function", "add_with_curve", 0.0, 2.008916030618962, 0, 0.0, 8, "obj-446", "function", "add_with_curve", 1000.0, 2.008916030618962, 0, 0.0, 5, "obj-446", "function", "domain", 1000.0, 6, "obj-446", "function", "range", 1.0, 5.0, 5, "obj-446", "function", "mode", 1, 5, "obj-242", "number", "int", 5, 5, "obj-78", "dial", "float", 1000.0, 5, "obj-92", "dial", "float", 10000.0, 5, "obj-106", "dial", "float", 1000.0, 5, "obj-109", "dial", "float", 2500.0, 5, "obj-110", "dial", "float", 1000.0, 5, "obj-111", "dial", "float", 1000.0, 5, "obj-121", "dial", "float", 2000.0, 5, "obj-122", "dial", "float", 2000.0, 5, "obj-157", "slider", "float", 188.0, 5, "obj-202", "slider", "float", 134.0, 5, "obj-203", "slider", "float", 820.0, 5, "obj-204", "slider", "float", 757.50518798828125, 5, "obj-133", "dial", "float", 1000.0, 5, "obj-139", "dial", "float", 1000.0, 5, "obj-333", "textbutton", "mode", 1, 5, "obj-333", "textbutton", "int", 0, 5, "obj-334", "textbutton", "mode", 1, 5, "obj-334", "textbutton", "int", 0, 5, "obj-522", "textbutton", "mode", 1, 5, "obj-522", "textbutton", "int", 0, 5, "obj-525", "textbutton", "mode", 1, 5, "obj-525", "textbutton", "int", 0, 5, "obj-534", "textbutton", "mode", 1, 5, "obj-534", "textbutton", "int", 0, 5, "obj-535", "textbutton", "mode", 1, 5, "obj-535", "textbutton", "int", 0, 5, "obj-541", "textbutton", "mode", 1, 5, "obj-541", "textbutton", "int", 0, 5, "obj-542", "textbutton", "mode", 1, 5, "obj-542", "textbutton", "int", 0, 5, "obj-554", "textbutton", "mode", 1, 5, "obj-554", "textbutton", "int", 0, 5, "obj-555", "led", "int", 1, 5, "obj-558", "led", "int", 1, 5, "obj-564", "textbutton", "mode", 1, 5, "obj-564", "textbutton", "int", 0, 5, "obj-565", "led", "int", 0, 5, "obj-568", "textbutton", "mode", 1, 5, "obj-568", "textbutton", "int", 0, 5, "obj-581", "textbutton", "mode", 1, 5, "obj-581", "textbutton", "int", 0, 5, "obj-20", "textbutton", "mode", 1, 5, "obj-20", "textbutton", "int", 0, 5, "obj-48", "textbutton", "mode", 1, 5, "obj-48", "textbutton", "int", 0, 5, "obj-74", "textbutton", "mode", 1, 5, "obj-74", "textbutton", "int", 0, 5, "obj-99", "textbutton", "mode", 1, 5, "obj-99", "textbutton", "int", 0, 5, "obj-134", "textbutton", "mode", 1, 5, "obj-134", "textbutton", "int", 0, 5, "obj-189", "textbutton", "mode", 1, 5, "obj-189", "textbutton", "int", 0 ]
+						}
+, 						{
+							"number" : 4,
+							"data" : [ 4, "obj-43", "kslider", "chord", 5, "obj-46", "number", "int", 0, 5, "obj-29", "number", "int", 74, 5, "obj-35", "number", "int", 991, 5, "obj-38", "flonum", "float", 0.871873080730438, 5, "obj-41", "number", "int", 325, 5, "obj-13", "umenu", "int", 1, 6, "obj-123", "number~", "list", 0.0, 0.0, 5, "obj-124", "dial", "float", 8.0, 5, "obj-128", "dial", "float", 12.0, 6, "obj-129", "number~", "list", 0.0, 0.0, 6, "obj-130", "number~", "list", 0.0, 0.0, 5, "obj-131", "dial", "float", 1000.0, 5, "obj-316", "number", "int", 1000, 5, "obj-60", "number", "int", 1000, 4, "obj-58", "function", "clear", 8, "obj-58", "function", "add_with_curve", 0.0, 1.0, 0, 0.0, 8, "obj-58", "function", "add_with_curve", 1000.0, 1.0, 0, 0.0, 5, "obj-58", "function", "domain", 1000.0, 6, "obj-58", "function", "range", 0.0, 1.0, 5, "obj-58", "function", "mode", 1, 5, "obj-73", "led", "int", 1, 5, "obj-149", "number", "int", 5, 9, "obj-84", "multislider", "list", 0.0, 0.0, 0.0, 0.0, 0.0, 9, "obj-96", "multislider", "list", 0.0, 0.0, 0.0, 0.0, 0.0, 6, "obj-127", "number~", "list", 1.0, 0.0, 5, "obj-62", "umenu", "int", 0, 6, "obj-16", "number~", "list", 5.5, 0.0, 6, "obj-15", "number~", "list", 1.0, 0.0, 6, "obj-221", "number~", "list", 1.0, 0.0, 6, "obj-222", "number~", "list", 1.0, 0.0, 6, "obj-231", "number~", "list", 1.0, 0.0, 6, "obj-232", "number~", "list", 0.0, 0.0, 5, "obj-331", "umenu", "int", 0, 6, "obj-323", "number~", "list", 0.0, 0.0, 6, "obj-322", "number~", "list", 0.0, 0.0, 6, "obj-337", "number~", "list", 10.0, 0.0, 9, "obj-346", "multislider", "list", 0.0, 0.0, 0.0, 0.0, 0.0, 6, "obj-365", "number~", "list", 1.0, 0.0, 5, "obj-21", "number", "int", 5, 5, "obj-416", "number", "int", 5, 4, "obj-457", "function", "clear", 8, "obj-457", "function", "add_with_curve", 0.0, 1.0, 0, 0.0, 8, "obj-457", "function", "add_with_curve", 999.999999999999773, 1.0, 0, 0.0, 5, "obj-457", "function", "domain", 1000.0, 6, "obj-457", "function", "range", 0.0, 1.0, 5, "obj-457", "function", "mode", 1, 5, "obj-198", "umenu", "int", 1, 6, "obj-188", "number~", "list", -1.0, 0.0, 5, "obj-187", "dial", "float", 7.0, 5, "obj-186", "dial", "float", 12.0, 6, "obj-185", "number~", "list", 0.0, 0.0, 6, "obj-184", "number~", "list", 0.0, 0.0, 5, "obj-182", "dial", "float", 1000.0, 5, "obj-174", "number", "int", 1000, 4, "obj-172", "function", "clear", 8, "obj-172", "function", "add_with_curve", 0.0, 1.0, 0, 0.0, 8, "obj-172", "function", "add_with_curve", 1000.0, 1.0, 0, 0.0, 5, "obj-172", "function", "domain", 1000.0, 6, "obj-172", "function", "range", 0.0, 1.0, 5, "obj-172", "function", "mode", 1, 5, "obj-165", "led", "int", 1, 9, "obj-164", "multislider", "list", 0.0, 0.0, 0.0, 0.0, 0.0, 6, "obj-159", "number~", "list", 1.0, 0.0, 6, "obj-152", "number~", "list", 1.0, 0.0, 6, "obj-151", "number~", "list", 1.0, 0.0, 5, "obj-126", "number", "int", 5, 5, "obj-327", "umenu", "int", 5, 6, "obj-311", "number~", "list", 1.0, 0.0, 5, "obj-310", "dial", "float", 9.0, 5, "obj-292", "dial", "float", 12.0, 6, "obj-290", "number~", "list", 0.0, 0.0, 6, "obj-288", "number~", "list", 0.0, 0.0, 5, "obj-287", "dial", "float", 1000.0, 5, "obj-274", "number", "int", 1000, 4, "obj-272", "function", "clear", 8, "obj-272", "function", "add_with_curve", 0.0, 1.0, 0, 0.0, 8, "obj-272", "function", "add_with_curve", 1000.0, 1.0, 0, 0.0, 5, "obj-272", "function", "domain", 1000.0, 6, "obj-272", "function", "range", 0.0, 1.0, 5, "obj-272", "function", "mode", 1, 5, "obj-265", "led", "int", 1, 9, "obj-264", "multislider", "list", 1.0, 0.75123131275177, 0.445498824119568, 0.152505174279213, 0.0, 6, "obj-261", "number~", "list", 1.0, 0.0, 6, "obj-259", "number~", "list", 1.0, 0.0, 6, "obj-258", "number~", "list", 5.0, 0.0, 5, "obj-255", "number", "int", 5, 5, "obj-426", "umenu", "int", 5, 6, "obj-408", "number~", "list", -2.0, 0.0, 5, "obj-407", "dial", "float", 6.0, 5, "obj-406", "dial", "float", 12.0, 6, "obj-405", "number~", "list", 0.0, 0.0, 6, "obj-404", "number~", "list", 0.0, 0.0, 5, "obj-403", "dial", "float", 1000.0, 5, "obj-395", "number", "int", 1000, 4, "obj-393", "function", "clear", 8, "obj-393", "function", "add_with_curve", 0.0, 1.0, 0, 0.0, 8, "obj-393", "function", "add_with_curve", 1000.0, 1.0, 0, 0.0, 5, "obj-393", "function", "domain", 1000.0, 6, "obj-393", "function", "range", 0.0, 1.0, 5, "obj-393", "function", "mode", 1, 5, "obj-387", "led", "int", 1, 9, "obj-386", "multislider", "list", 1.0, 0.358662307262421, 0.0, 0.320445746183395, 0.320445746183395, 6, "obj-383", "number~", "list", 1.0, 0.0, 6, "obj-381", "number~", "list", 1.0, 0.0, 6, "obj-380", "number~", "list", 5.0, 0.0, 5, "obj-376", "number", "int", 5, 5, "obj-498", "number", "int", 1000, 4, "obj-496", "function", "clear", 8, "obj-496", "function", "add_with_curve", 0.0, 1.0, 0, 0.0, 8, "obj-496", "function", "add_with_curve", 1000.0, 4.870129490493445, 0, -0.5, 5, "obj-496", "function", "domain", 1000.0, 6, "obj-496", "function", "range", 1.0, 5.0, 5, "obj-496", "function", "mode", 1, 5, "obj-505", "number", "int", 5, 5, "obj-471", "umenu", "int", 0, 6, "obj-468", "number~", "list", 4.0, 0.0, 6, "obj-467", "number~", "list", 1.0, 0.0, 6, "obj-451", "number~", "list", 1.0, 0.0, 6, "obj-450", "number~", "list", 0.0, 0.0, 5, "obj-448", "number", "int", 1000, 4, "obj-446", "function", "clear", 8, "obj-446", "function", "add_with_curve", 0.0, 1.0, 0, 0.0, 8, "obj-446", "function", "add_with_curve", 1000.0, 5.0, 0, -0.55, 5, "obj-446", "function", "domain", 1000.0, 6, "obj-446", "function", "range", 1.0, 5.0, 5, "obj-446", "function", "mode", 1, 5, "obj-242", "number", "int", 5, 5, "obj-78", "dial", "float", 1000.0, 5, "obj-92", "dial", "float", 10000.0, 5, "obj-106", "dial", "float", 4000.0, 5, "obj-109", "dial", "float", 5500.0, 5, "obj-110", "dial", "float", 1000.0, 5, "obj-111", "dial", "float", 1000.0, 5, "obj-121", "dial", "float", 1000.0, 5, "obj-122", "dial", "float", 1000.0, 5, "obj-157", "slider", "float", 73.0, 5, "obj-202", "slider", "float", 990.0, 5, "obj-203", "slider", "float", 324.0, 5, "obj-204", "slider", "float", 871.87310791015625, 5, "obj-133", "dial", "float", 1000.0, 5, "obj-139", "dial", "float", 1000.0, 5, "obj-333", "textbutton", "mode", 1, 5, "obj-333", "textbutton", "int", 0, 5, "obj-334", "textbutton", "mode", 1, 5, "obj-334", "textbutton", "int", 0, 5, "obj-522", "textbutton", "mode", 1, 5, "obj-522", "textbutton", "int", 0, 5, "obj-525", "textbutton", "mode", 1, 5, "obj-525", "textbutton", "int", 0, 5, "obj-534", "textbutton", "mode", 1, 5, "obj-534", "textbutton", "int", 0, 5, "obj-535", "textbutton", "mode", 1, 5, "obj-535", "textbutton", "int", 0, 5, "obj-541", "textbutton", "mode", 1, 5, "obj-541", "textbutton", "int", 0, 5, "obj-542", "textbutton", "mode", 1, 5, "obj-542", "textbutton", "int", 0, 5, "obj-554", "textbutton", "mode", 1, 5, "obj-554", "textbutton", "int", 0, 5, "obj-555", "led", "int", 1, 5, "obj-558", "led", "int", 1, 5, "obj-564", "textbutton", "mode", 1, 5, "obj-564", "textbutton", "int", 0, 5, "obj-565", "led", "int", 0, 5, "obj-568", "textbutton", "mode", 1, 5, "obj-568", "textbutton", "int", 0, 5, "obj-581", "textbutton", "mode", 1, 5, "obj-581", "textbutton", "int", 0, 5, "obj-20", "textbutton", "mode", 1, 5, "obj-20", "textbutton", "int", 0, 5, "obj-48", "textbutton", "mode", 1, 5, "obj-48", "textbutton", "int", 0, 5, "obj-74", "textbutton", "mode", 1, 5, "obj-74", "textbutton", "int", 0, 5, "obj-99", "textbutton", "mode", 1, 5, "obj-99", "textbutton", "int", 0, 5, "obj-134", "textbutton", "mode", 1, 5, "obj-134", "textbutton", "int", 0, 5, "obj-189", "textbutton", "mode", 1, 5, "obj-189", "textbutton", "int", 0 ]
+						}
+, 						{
+							"number" : 5,
+							"data" : [ 4, "obj-43", "kslider", "chord", 5, "obj-46", "number", "int", 0, 5, "obj-29", "number", "int", 191, 5, "obj-35", "number", "int", 273, 5, "obj-38", "flonum", "float", 0.851160228252411, 5, "obj-41", "number", "int", 1221, 5, "obj-13", "umenu", "int", 5, 6, "obj-123", "number~", "list", 0.0, 0.0, 5, "obj-124", "dial", "float", 8.0, 5, "obj-128", "dial", "float", 12.0, 6, "obj-129", "number~", "list", 0.0, 0.0, 6, "obj-130", "number~", "list", -0.3, 0.0, 5, "obj-131", "dial", "float", 700.0, 5, "obj-316", "number", "int", 1000, 5, "obj-60", "number", "int", 1000, 4, "obj-58", "function", "clear", 8, "obj-58", "function", "add_with_curve", 0.0, 1.0, 0, 0.0, 8, "obj-58", "function", "add_with_curve", 1000.0, 1.0, 0, 0.0, 5, "obj-58", "function", "domain", 1000.0, 6, "obj-58", "function", "range", 0.0, 1.0, 5, "obj-58", "function", "mode", 1, 5, "obj-73", "led", "int", 1, 5, "obj-149", "number", "int", 5, 9, "obj-84", "multislider", "list", 1.0, 0.773689150810242, 0.504308938980103, 0.414515554904938, 0.1579629778862, 9, "obj-96", "multislider", "list", 1.0, 0.773689150810242, 0.504308938980103, 0.414515554904938, 0.1579629778862, 6, "obj-127", "number~", "list", 1.0, 0.0, 5, "obj-62", "umenu", "int", 0, 6, "obj-16", "number~", "list", 4.5, 0.0, 6, "obj-15", "number~", "list", 1.0, 0.0, 6, "obj-221", "number~", "list", 1.0, 0.0, 6, "obj-222", "number~", "list", 5.0, 0.0, 6, "obj-231", "number~", "list", 1.0, 0.0, 6, "obj-232", "number~", "list", 0.0, 0.0, 5, "obj-331", "umenu", "int", 4, 6, "obj-323", "number~", "list", 1.0, 0.0, 6, "obj-322", "number~", "list", 4.0, 0.0, 6, "obj-337", "number~", "list", 10.0, 0.0, 9, "obj-346", "multislider", "list", 0.0, 0.0, 0.0, 0.0, 0.0, 6, "obj-365", "number~", "list", 0.3, 0.0, 5, "obj-21", "number", "int", 5, 5, "obj-416", "number", "int", 5, 4, "obj-457", "function", "clear", 8, "obj-457", "function", "add_with_curve", 0.0, 1.0, 0, 0.0, 8, "obj-457", "function", "add_with_curve", 999.999999999999773, 1.0, 0, 0.0, 5, "obj-457", "function", "domain", 1000.0, 6, "obj-457", "function", "range", 0.0, 1.0, 5, "obj-457", "function", "mode", 1, 5, "obj-198", "umenu", "int", 5, 6, "obj-188", "number~", "list", -2.0, 0.0, 5, "obj-187", "dial", "float", 6.0, 5, "obj-186", "dial", "float", 12.0, 6, "obj-185", "number~", "list", 0.0, 0.0, 6, "obj-184", "number~", "list", 0.3, 0.0, 5, "obj-182", "dial", "float", 1300.0, 5, "obj-174", "number", "int", 1000, 4, "obj-172", "function", "clear", 8, "obj-172", "function", "add_with_curve", 0.0, 1.0, 0, 0.0, 8, "obj-172", "function", "add_with_curve", 1000.0, 1.0, 0, 0.0, 5, "obj-172", "function", "domain", 1000.0, 6, "obj-172", "function", "range", 0.0, 1.0, 5, "obj-172", "function", "mode", 1, 5, "obj-165", "led", "int", 1, 9, "obj-164", "multislider", "list", 1.0, 0.773689150810242, 0.504308938980103, 0.414515554904938, 0.1579629778862, 6, "obj-159", "number~", "list", 1.0, 0.0, 6, "obj-152", "number~", "list", 1.0, 0.0, 6, "obj-151", "number~", "list", 5.0, 0.0, 5, "obj-126", "number", "int", 5, 5, "obj-327", "umenu", "int", 5, 6, "obj-311", "number~", "list", -3.0, 0.0, 5, "obj-310", "dial", "float", 5.0, 5, "obj-292", "dial", "float", 12.0, 6, "obj-290", "number~", "list", 0.0, 0.0, 6, "obj-288", "number~", "list", 0.0, 0.0, 5, "obj-287", "dial", "float", 1000.0, 5, "obj-274", "number", "int", 1000, 4, "obj-272", "function", "clear", 8, "obj-272", "function", "add_with_curve", 0.0, 0.0, 0, 0.0, 8, "obj-272", "function", "add_with_curve", 1000.0, 1.0, 0, -0.4, 5, "obj-272", "function", "domain", 1000.0, 6, "obj-272", "function", "range", 0.0, 1.0, 5, "obj-272", "function", "mode", 1, 5, "obj-265", "led", "int", 1, 9, "obj-264", "multislider", "list", 1.0, 0.773689150810242, 0.504308938980103, 0.414515554904938, 0.1579629778862, 6, "obj-261", "number~", "list", 6.0, 0.0, 6, "obj-259", "number~", "list", 1.0, 0.0, 6, "obj-258", "number~", "list", 5.0, 0.0, 5, "obj-255", "number", "int", 5, 5, "obj-426", "umenu", "int", 5, 6, "obj-408", "number~", "list", 2.0, 0.0, 5, "obj-407", "dial", "float", 10.0, 5, "obj-406", "dial", "float", 12.0, 6, "obj-405", "number~", "list", 0.0, 0.0, 6, "obj-404", "number~", "list", 0.0, 0.0, 5, "obj-403", "dial", "float", 1000.0, 5, "obj-395", "number", "int", 1000, 4, "obj-393", "function", "clear", 8, "obj-393", "function", "add_with_curve", 0.0, 0.0, 0, 0.0, 8, "obj-393", "function", "add_with_curve", 1000.0, 1.0, 0, 0.2, 5, "obj-393", "function", "domain", 1000.0, 6, "obj-393", "function", "range", 0.0, 1.0, 5, "obj-393", "function", "mode", 1, 5, "obj-387", "led", "int", 1, 9, "obj-386", "multislider", "list", 1.0, 0.773689150810242, 0.504308938980103, 0.414515554904938, 0.1579629778862, 6, "obj-383", "number~", "list", 1.0, 0.0, 6, "obj-381", "number~", "list", 1.0, 0.0, 6, "obj-380", "number~", "list", 5.0, 0.0, 5, "obj-376", "number", "int", 5, 5, "obj-498", "number", "int", 2000, 4, "obj-496", "function", "clear", 8, "obj-496", "function", "add_with_curve", 0.0, 1.0, 0, 0.0, 8, "obj-496", "function", "add_with_curve", 1008.120537328889327, 5.0, 0, -0.3, 8, "obj-496", "function", "add_with_curve", 2000.0, 1.0, 0, 0.3, 5, "obj-496", "function", "domain", 2000.0, 6, "obj-496", "function", "range", 1.0, 5.0, 5, "obj-496", "function", "mode", 1, 5, "obj-505", "number", "int", 5, 5, "obj-471", "umenu", "int", 0, 6, "obj-468", "number~", "list", 1.0, 0.0, 6, "obj-467", "number~", "list", 1.0, 0.0, 6, "obj-451", "number~", "list", 1.0, 0.0, 6, "obj-450", "number~", "list", 0.0, 0.0, 5, "obj-448", "number", "int", 500, 4, "obj-446", "function", "clear", 8, "obj-446", "function", "add_with_curve", 0.0, 1.0, 0, 0.0, 8, "obj-446", "function", "add_with_curve", 500.0, 5.0, 0, 0.0, 5, "obj-446", "function", "domain", 500.0, 6, "obj-446", "function", "range", 1.0, 5.0, 5, "obj-446", "function", "mode", 1, 5, "obj-242", "number", "int", 5, 5, "obj-78", "dial", "float", 300.0, 5, "obj-92", "dial", "float", 10000.0, 5, "obj-106", "dial", "float", 1000.0, 5, "obj-109", "dial", "float", 4500.0, 5, "obj-110", "dial", "float", 1000.0, 5, "obj-111", "dial", "float", 1000.0, 5, "obj-121", "dial", "float", 1000.0, 5, "obj-122", "dial", "float", 1000.0, 5, "obj-157", "slider", "float", 190.0, 5, "obj-202", "slider", "float", 272.0, 5, "obj-203", "slider", "float", 1220.0, 5, "obj-204", "slider", "float", 851.16021728515625, 5, "obj-133", "dial", "float", 6000.0, 5, "obj-139", "dial", "float", 1000.0, 5, "obj-333", "textbutton", "mode", 1, 5, "obj-333", "textbutton", "int", 0, 5, "obj-334", "textbutton", "mode", 1, 5, "obj-334", "textbutton", "int", 1, 5, "obj-522", "textbutton", "mode", 1, 5, "obj-522", "textbutton", "int", 0, 5, "obj-525", "textbutton", "mode", 1, 5, "obj-525", "textbutton", "int", 1, 5, "obj-534", "textbutton", "mode", 1, 5, "obj-534", "textbutton", "int", 1, 5, "obj-535", "textbutton", "mode", 1, 5, "obj-535", "textbutton", "int", 0, 5, "obj-541", "textbutton", "mode", 1, 5, "obj-541", "textbutton", "int", 0, 5, "obj-542", "textbutton", "mode", 1, 5, "obj-542", "textbutton", "int", 1, 5, "obj-554", "textbutton", "mode", 1, 5, "obj-554", "textbutton", "int", 0, 5, "obj-555", "led", "int", 1, 5, "obj-558", "led", "int", 1, 5, "obj-564", "textbutton", "mode", 1, 5, "obj-564", "textbutton", "int", 0, 5, "obj-565", "led", "int", 1, 5, "obj-568", "textbutton", "mode", 1, 5, "obj-568", "textbutton", "int", 0, 5, "obj-581", "textbutton", "mode", 1, 5, "obj-581", "textbutton", "int", 0, 5, "obj-20", "textbutton", "mode", 1, 5, "obj-20", "textbutton", "int", 0, 5, "obj-48", "textbutton", "mode", 1, 5, "obj-48", "textbutton", "int", 0, 5, "obj-74", "textbutton", "mode", 1, 5, "obj-74", "textbutton", "int", 0, 5, "obj-99", "textbutton", "mode", 1, 5, "obj-99", "textbutton", "int", 0, 5, "obj-134", "textbutton", "mode", 1, 5, "obj-134", "textbutton", "int", 1, 5, "obj-189", "textbutton", "mode", 1, 5, "obj-189", "textbutton", "int", 0 ]
+						}
+, 						{
+							"number" : 6,
+							"data" : [ 4, "obj-43", "kslider", "chord", 5, "obj-46", "number", "int", 0, 5, "obj-29", "number", "int", 207, 5, "obj-35", "number", "int", 708, 5, "obj-38", "flonum", "float", 0.837288200855255, 5, "obj-41", "number", "int", 502, 5, "obj-13", "umenu", "int", 4, 6, "obj-123", "number~", "list", -2.0, 0.0, 5, "obj-124", "dial", "float", 6.0, 5, "obj-128", "dial", "float", 12.0, 6, "obj-129", "number~", "list", 0.0, 0.0, 6, "obj-130", "number~", "list", 0.0, 0.0, 5, "obj-131", "dial", "float", 1000.0, 5, "obj-316", "number", "int", 1000, 5, "obj-60", "number", "int", 1000, 4, "obj-58", "function", "clear", 8, "obj-58", "function", "add_with_curve", 0.0, 1.0, 0, 0.0, 8, "obj-58", "function", "add_with_curve", 1000.0, 1.0, 0, 0.0, 5, "obj-58", "function", "domain", 1000.0, 6, "obj-58", "function", "range", 0.0, 1.0, 5, "obj-58", "function", "mode", 1, 5, "obj-73", "led", "int", 1, 5, "obj-149", "number", "int", 5, 9, "obj-84", "multislider", "list", 0.0, 0.0, 0.0, 0.0, 0.0, 9, "obj-96", "multislider", "list", 0.0, 0.0, 0.0, 0.0, 0.0, 6, "obj-127", "number~", "list", 1.0, 0.0, 5, "obj-62", "umenu", "int", 0, 6, "obj-16", "number~", "list", 6.0, 0.0, 6, "obj-15", "number~", "list", 1.0, 0.0, 6, "obj-221", "number~", "list", 1.0, 0.0, 6, "obj-222", "number~", "list", 4.0, 0.0, 6, "obj-231", "number~", "list", 1.0, 0.0, 6, "obj-232", "number~", "list", 0.0, 0.0, 5, "obj-331", "umenu", "int", 0, 6, "obj-323", "number~", "list", 0.0, 0.0, 6, "obj-322", "number~", "list", 0.0, 0.0, 6, "obj-337", "number~", "list", 10.0, 0.0, 9, "obj-346", "multislider", "list", 0.0, 0.0, 0.0, 0.0, 0.0, 6, "obj-365", "number~", "list", 1.0, 0.0, 5, "obj-21", "number", "int", 5, 5, "obj-416", "number", "int", 5, 4, "obj-457", "function", "clear", 8, "obj-457", "function", "add_with_curve", 0.0, 1.0, 0, 0.0, 8, "obj-457", "function", "add_with_curve", 999.999999999999773, 1.0, 0, 0.0, 5, "obj-457", "function", "domain", 1000.0, 6, "obj-457", "function", "range", 0.0, 1.0, 5, "obj-457", "function", "mode", 1, 5, "obj-198", "umenu", "int", 4, 6, "obj-188", "number~", "list", 2.0, 0.0, 5, "obj-187", "dial", "float", 10.0, 5, "obj-186", "dial", "float", 12.0, 6, "obj-185", "number~", "list", 0.0, 0.0, 6, "obj-184", "number~", "list", 0.0, 0.0, 5, "obj-182", "dial", "float", 1000.0, 5, "obj-174", "number", "int", 1000, 4, "obj-172", "function", "clear", 8, "obj-172", "function", "add_with_curve", 0.0, 1.0, 0, 0.0, 8, "obj-172", "function", "add_with_curve", 1000.0, 1.0, 0, 0.0, 5, "obj-172", "function", "domain", 1000.0, 6, "obj-172", "function", "range", 0.0, 1.0, 5, "obj-172", "function", "mode", 1, 5, "obj-165", "led", "int", 1, 9, "obj-164", "multislider", "list", 0.0, 0.0, 0.0, 0.0, 0.0, 6, "obj-159", "number~", "list", 1.0, 0.0, 6, "obj-152", "number~", "list", 1.0, 0.0, 6, "obj-151", "number~", "list", 4.0, 0.0, 5, "obj-126", "number", "int", 5, 5, "obj-327", "umenu", "int", 0, 6, "obj-311", "number~", "list", 0.0, 0.0, 5, "obj-310", "dial", "float", 8.0, 5, "obj-292", "dial", "float", 12.0, 6, "obj-290", "number~", "list", 0.0, 0.0, 6, "obj-288", "number~", "list", 0.0, 0.0, 5, "obj-287", "dial", "float", 1000.0, 5, "obj-274", "number", "int", 1000, 4, "obj-272", "function", "clear", 8, "obj-272", "function", "add_with_curve", 0.0, 1.0, 0, 0.0, 8, "obj-272", "function", "add_with_curve", 1000.0, 1.0, 0, 0.0, 5, "obj-272", "function", "domain", 1000.0, 6, "obj-272", "function", "range", 0.0, 1.0, 5, "obj-272", "function", "mode", 1, 5, "obj-265", "led", "int", 1, 9, "obj-264", "multislider", "list", 0.0, 0.0, 0.0, 0.0, 0.0, 6, "obj-261", "number~", "list", 1.0, 0.0, 6, "obj-259", "number~", "list", 1.0, 0.0, 6, "obj-258", "number~", "list", 0.0, 0.0, 5, "obj-255", "number", "int", 5, 5, "obj-426", "umenu", "int", 0, 6, "obj-408", "number~", "list", 0.0, 0.0, 5, "obj-407", "dial", "float", 8.0, 5, "obj-406", "dial", "float", 12.0, 6, "obj-405", "number~", "list", 0.0, 0.0, 6, "obj-404", "number~", "list", 0.0, 0.0, 5, "obj-403", "dial", "float", 1000.0, 5, "obj-395", "number", "int", 1000, 4, "obj-393", "function", "clear", 8, "obj-393", "function", "add_with_curve", 0.0, 1.0, 0, 0.0, 8, "obj-393", "function", "add_with_curve", 1000.0, 1.0, 0, 0.0, 5, "obj-393", "function", "domain", 1000.0, 6, "obj-393", "function", "range", 0.0, 1.0, 5, "obj-393", "function", "mode", 1, 5, "obj-387", "led", "int", 1, 9, "obj-386", "multislider", "list", 0.0, 0.0, 0.0, 0.0, 0.0, 6, "obj-383", "number~", "list", 1.0, 0.0, 6, "obj-381", "number~", "list", 1.0, 0.0, 6, "obj-380", "number~", "list", 0.0, 0.0, 5, "obj-376", "number", "int", 5, 5, "obj-498", "number", "int", 1000, 4, "obj-496", "function", "clear", 8, "obj-496", "function", "add_with_curve", 0.0, 1.0, 0, 0.0, 8, "obj-496", "function", "add_with_curve", 1000.0, 1.0, 0, 0.0, 5, "obj-496", "function", "domain", 1000.0, 6, "obj-496", "function", "range", 1.0, 5.0, 5, "obj-496", "function", "mode", 1, 5, "obj-505", "number", "int", 5, 5, "obj-471", "umenu", "int", 0, 6, "obj-468", "number~", "list", 0.5, 0.0, 6, "obj-467", "number~", "list", 1.0, 0.0, 6, "obj-451", "number~", "list", 1.0, 0.0, 6, "obj-450", "number~", "list", 0.0, 0.0, 5, "obj-448", "number", "int", 1000, 4, "obj-446", "function", "clear", 8, "obj-446", "function", "add_with_curve", 0.0, 5.0, 0, 0.0, 8, "obj-446", "function", "add_with_curve", 1000.0, 5.0, 0, 0.0, 5, "obj-446", "function", "domain", 1000.0, 6, "obj-446", "function", "range", 1.0, 5.0, 5, "obj-446", "function", "mode", 1, 5, "obj-242", "number", "int", 5, 5, "obj-78", "dial", "float", 1000.0, 5, "obj-92", "dial", "float", 10000.0, 5, "obj-106", "dial", "float", 500.0, 5, "obj-109", "dial", "float", 6000.0, 5, "obj-110", "dial", "float", 1000.0, 5, "obj-111", "dial", "float", 1000.0, 5, "obj-121", "dial", "float", 1000.0, 5, "obj-122", "dial", "float", 1000.0, 5, "obj-157", "slider", "float", 206.0, 5, "obj-202", "slider", "float", 707.0, 5, "obj-203", "slider", "float", 501.0, 5, "obj-204", "slider", "float", 837.2882080078125, 5, "obj-133", "dial", "float", 1000.0, 5, "obj-139", "dial", "float", 1000.0, 5, "obj-333", "textbutton", "mode", 1, 5, "obj-333", "textbutton", "int", 0, 5, "obj-334", "textbutton", "mode", 1, 5, "obj-334", "textbutton", "int", 0, 5, "obj-522", "textbutton", "mode", 1, 5, "obj-522", "textbutton", "int", 0, 5, "obj-525", "textbutton", "mode", 1, 5, "obj-525", "textbutton", "int", 0, 5, "obj-534", "textbutton", "mode", 1, 5, "obj-534", "textbutton", "int", 0, 5, "obj-535", "textbutton", "mode", 1, 5, "obj-535", "textbutton", "int", 0, 5, "obj-541", "textbutton", "mode", 1, 5, "obj-541", "textbutton", "int", 0, 5, "obj-542", "textbutton", "mode", 1, 5, "obj-542", "textbutton", "int", 0, 5, "obj-554", "textbutton", "mode", 1, 5, "obj-554", "textbutton", "int", 0, 5, "obj-555", "led", "int", 1, 5, "obj-558", "led", "int", 1, 5, "obj-564", "textbutton", "mode", 1, 5, "obj-564", "textbutton", "int", 0, 5, "obj-565", "led", "int", 0, 5, "obj-568", "textbutton", "mode", 1, 5, "obj-568", "textbutton", "int", 1, 5, "obj-581", "textbutton", "mode", 1, 5, "obj-581", "textbutton", "int", 0, 5, "obj-20", "textbutton", "mode", 1, 5, "obj-20", "textbutton", "int", 0, 5, "obj-48", "textbutton", "mode", 1, 5, "obj-48", "textbutton", "int", 0, 5, "obj-74", "textbutton", "mode", 1, 5, "obj-74", "textbutton", "int", 0, 5, "obj-99", "textbutton", "mode", 1, 5, "obj-99", "textbutton", "int", 0, 5, "obj-134", "textbutton", "mode", 1, 5, "obj-134", "textbutton", "int", 0, 5, "obj-189", "textbutton", "mode", 1, 5, "obj-189", "textbutton", "int", 0 ]
+						}
+, 						{
+							"number" : 7,
+							"data" : [ 4, "obj-43", "kslider", "chord", 5, "obj-46", "number", "int", 0, 5, "obj-29", "number", "int", 207, 5, "obj-35", "number", "int", 708, 5, "obj-38", "flonum", "float", 0.837288200855255, 5, "obj-41", "number", "int", 502, 5, "obj-13", "umenu", "int", 5, 6, "obj-123", "number~", "list", -2.0, 0.0, 5, "obj-124", "dial", "float", 6.0, 5, "obj-128", "dial", "float", 12.0, 6, "obj-129", "number~", "list", 0.0, 0.0, 6, "obj-130", "number~", "list", 0.0, 0.0, 5, "obj-131", "dial", "float", 1000.0, 5, "obj-316", "number", "int", 1000, 5, "obj-60", "number", "int", 1000, 4, "obj-58", "function", "clear", 8, "obj-58", "function", "add_with_curve", 0.0, 1.0, 0, 0.0, 8, "obj-58", "function", "add_with_curve", 1000.0, 1.0, 0, 0.0, 5, "obj-58", "function", "domain", 1000.0, 6, "obj-58", "function", "range", 0.0, 1.0, 5, "obj-58", "function", "mode", 1, 5, "obj-73", "led", "int", 1, 5, "obj-149", "number", "int", 10, 14, "obj-84", "multislider", "list", 0.397777527570724, 0.092730298638344, 0.255422174930573, 0.377441048622131, 0.133403271436691, 0.174076229333878, 0.255422174930573, 0.235085681080818, 0.194412708282471, 0.275758653879166, 14, "obj-96", "multislider", "list", 0.397777527570724, 0.092730298638344, 0.255422174930573, 0.377441048622131, 0.133403271436691, 0.174076229333878, 0.255422174930573, 0.235085681080818, 0.194412708282471, 0.275758653879166, 6, "obj-127", "number~", "list", 1.0, 0.0, 5, "obj-62", "umenu", "int", 0, 6, "obj-16", "number~", "list", 2.5, 0.0, 6, "obj-15", "number~", "list", 1.0, 0.0, 6, "obj-221", "number~", "list", 1.0, 0.0, 6, "obj-222", "number~", "list", 5.0, 0.0, 6, "obj-231", "number~", "list", 1.0, 0.0, 6, "obj-232", "number~", "list", 0.0, 0.0, 5, "obj-331", "umenu", "int", 0, 6, "obj-323", "number~", "list", 0.0, 0.0, 6, "obj-322", "number~", "list", 0.0, 0.0, 6, "obj-337", "number~", "list", 10.0, 0.0, 14, "obj-346", "multislider", "list", 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 6, "obj-365", "number~", "list", 1.0, 0.0, 5, "obj-21", "number", "int", 10, 5, "obj-416", "number", "int", 10, 4, "obj-457", "function", "clear", 8, "obj-457", "function", "add_with_curve", 0.0, 1.0, 0, 0.0, 8, "obj-457", "function", "add_with_curve", 999.999999999999773, 1.0, 0, 0.0, 5, "obj-457", "function", "domain", 1000.0, 6, "obj-457", "function", "range", 0.0, 1.0, 5, "obj-457", "function", "mode", 1, 5, "obj-198", "umenu", "int", 5, 6, "obj-188", "number~", "list", 2.0, 0.0, 5, "obj-187", "dial", "float", 10.0, 5, "obj-186", "dial", "float", 12.0, 6, "obj-185", "number~", "list", 0.0, 0.0, 6, "obj-184", "number~", "list", 0.0, 0.0, 5, "obj-182", "dial", "float", 1000.0, 5, "obj-174", "number", "int", 1000, 4, "obj-172", "function", "clear", 8, "obj-172", "function", "add_with_curve", 0.0, 1.0, 0, 0.0, 8, "obj-172", "function", "add_with_curve", 1000.0, 1.0, 0, 0.0, 5, "obj-172", "function", "domain", 1000.0, 6, "obj-172", "function", "range", 0.0, 1.0, 5, "obj-172", "function", "mode", 1, 5, "obj-165", "led", "int", 1, 14, "obj-164", "multislider", "list", 0.397777527570724, 0.092730298638344, 0.255422174930573, 0.377441048622131, 0.133403271436691, 0.174076229333878, 0.255422174930573, 0.235085681080818, 0.194412708282471, 0.275758653879166, 6, "obj-159", "number~", "list", 1.0, 0.0, 6, "obj-152", "number~", "list", 1.0, 0.0, 6, "obj-151", "number~", "list", 5.0, 0.0, 5, "obj-126", "number", "int", 10, 5, "obj-327", "umenu", "int", 5, 6, "obj-311", "number~", "list", 1.0, 0.0, 5, "obj-310", "dial", "float", 9.0, 5, "obj-292", "dial", "float", 12.0, 6, "obj-290", "number~", "list", 0.0, 0.0, 6, "obj-288", "number~", "list", -0.05, 0.0, 5, "obj-287", "dial", "float", 950.0, 5, "obj-274", "number", "int", 1000, 4, "obj-272", "function", "clear", 8, "obj-272", "function", "add_with_curve", 0.0, 1.0, 0, 0.0, 8, "obj-272", "function", "add_with_curve", 1000.0, 1.0, 0, 0.0, 5, "obj-272", "function", "domain", 1000.0, 6, "obj-272", "function", "range", 0.0, 1.0, 5, "obj-272", "function", "mode", 1, 5, "obj-265", "led", "int", 1, 14, "obj-264", "multislider", "list", 0.397777527570724, 0.092730298638344, 0.255422174930573, 0.377441048622131, 0.133403271436691, 0.174076229333878, 0.255422174930573, 0.235085681080818, 0.194412708282471, 0.275758653879166, 6, "obj-261", "number~", "list", 1.0, 0.0, 6, "obj-259", "number~", "list", 1.0, 0.0, 6, "obj-258", "number~", "list", 5.0, 0.0, 5, "obj-255", "number", "int", 10, 5, "obj-426", "umenu", "int", 5, 6, "obj-408", "number~", "list", 1.0, 0.0, 5, "obj-407", "dial", "float", 9.0, 5, "obj-406", "dial", "float", 12.0, 6, "obj-405", "number~", "list", 0.0, 0.0, 6, "obj-404", "number~", "list", 0.05, 0.0, 5, "obj-403", "dial", "float", 1050.0, 5, "obj-395", "number", "int", 1000, 4, "obj-393", "function", "clear", 8, "obj-393", "function", "add_with_curve", 0.0, 1.0, 0, 0.0, 8, "obj-393", "function", "add_with_curve", 1000.0, 1.0, 0, 0.0, 5, "obj-393", "function", "domain", 1000.0, 6, "obj-393", "function", "range", 0.0, 1.0, 5, "obj-393", "function", "mode", 1, 5, "obj-387", "led", "int", 1, 14, "obj-386", "multislider", "list", 0.397777527570724, 0.092730298638344, 0.255422174930573, 0.377441048622131, 0.133403271436691, 0.174076229333878, 0.255422174930573, 0.235085681080818, 0.194412708282471, 0.275758653879166, 6, "obj-383", "number~", "list", 1.0, 0.0, 6, "obj-381", "number~", "list", 1.0, 0.0, 6, "obj-380", "number~", "list", 5.0, 0.0, 5, "obj-376", "number", "int", 10, 5, "obj-498", "number", "int", 1000, 4, "obj-496", "function", "clear", 8, "obj-496", "function", "add_with_curve", 0.0, 1.0, 0, 0.0, 8, "obj-496", "function", "add_with_curve", 1000.0, 1.0, 0, 0.0, 5, "obj-496", "function", "domain", 1000.0, 6, "obj-496", "function", "range", 1.0, 2.0, 5, "obj-496", "function", "mode", 1, 5, "obj-505", "number", "int", 2, 5, "obj-471", "umenu", "int", 1, 6, "obj-468", "number~", "list", 0.5, 0.0, 6, "obj-467", "number~", "list", 1.0, 0.0, 6, "obj-451", "number~", "list", 1.0, 0.0, 6, "obj-450", "number~", "list", 1.0, 0.0, 5, "obj-448", "number", "int", 1000, 4, "obj-446", "function", "clear", 8, "obj-446", "function", "add_with_curve", 0.0, 2.0, 0, 0.0, 8, "obj-446", "function", "add_with_curve", 1000.0, 2.0, 0, 0.0, 5, "obj-446", "function", "domain", 1000.0, 6, "obj-446", "function", "range", 1.0, 2.0, 5, "obj-446", "function", "mode", 1, 5, "obj-242", "number", "int", 2, 5, "obj-78", "dial", "float", 1000.0, 5, "obj-92", "dial", "float", 10000.0, 5, "obj-106", "dial", "float", 500.0, 5, "obj-109", "dial", "float", 2500.0, 5, "obj-110", "dial", "float", 1000.0, 5, "obj-111", "dial", "float", 1000.0, 5, "obj-121", "dial", "float", 1000.0, 5, "obj-122", "dial", "float", 1000.0, 5, "obj-157", "slider", "float", 206.0, 5, "obj-202", "slider", "float", 707.0, 5, "obj-203", "slider", "float", 501.0, 5, "obj-204", "slider", "float", 837.2882080078125, 5, "obj-133", "dial", "float", 1000.0, 5, "obj-139", "dial", "float", 1000.0, 5, "obj-333", "textbutton", "mode", 1, 5, "obj-333", "textbutton", "int", 0, 5, "obj-334", "textbutton", "mode", 1, 5, "obj-334", "textbutton", "int", 1, 5, "obj-522", "textbutton", "mode", 1, 5, "obj-522", "textbutton", "int", 0, 5, "obj-525", "textbutton", "mode", 1, 5, "obj-525", "textbutton", "int", 1, 5, "obj-534", "textbutton", "mode", 1, 5, "obj-534", "textbutton", "int", 1, 5, "obj-535", "textbutton", "mode", 1, 5, "obj-535", "textbutton", "int", 0, 5, "obj-541", "textbutton", "mode", 1, 5, "obj-541", "textbutton", "int", 0, 5, "obj-542", "textbutton", "mode", 1, 5, "obj-542", "textbutton", "int", 1, 5, "obj-554", "textbutton", "mode", 1, 5, "obj-554", "textbutton", "int", 0, 5, "obj-555", "led", "int", 1, 5, "obj-558", "led", "int", 1, 5, "obj-564", "textbutton", "mode", 1, 5, "obj-564", "textbutton", "int", 0, 5, "obj-565", "led", "int", 0, 5, "obj-568", "textbutton", "mode", 1, 5, "obj-568", "textbutton", "int", 0, 5, "obj-581", "textbutton", "mode", 1, 5, "obj-581", "textbutton", "int", 0, 5, "obj-20", "textbutton", "mode", 1, 5, "obj-20", "textbutton", "int", 0, 5, "obj-48", "textbutton", "mode", 1, 5, "obj-48", "textbutton", "int", 0, 5, "obj-74", "textbutton", "mode", 1, 5, "obj-74", "textbutton", "int", 0, 5, "obj-99", "textbutton", "mode", 1, 5, "obj-99", "textbutton", "int", 0, 5, "obj-134", "textbutton", "mode", 1, 5, "obj-134", "textbutton", "int", 0, 5, "obj-189", "textbutton", "mode", 1, 5, "obj-189", "textbutton", "int", 0 ]
+						}
+, 						{
+							"number" : 8,
+							"data" : [ 4, "obj-43", "kslider", "chord", 5, "obj-46", "number", "int", 0, 5, "obj-29", "number", "int", 1, 5, "obj-35", "number", "int", 1, 5, "obj-38", "flonum", "float", 1.0, 5, "obj-41", "number", "int", 871, 5, "obj-13", "umenu", "int", 1, 6, "obj-123", "number~", "list", -2.0, 0.0, 5, "obj-124", "dial", "float", 6.0, 5, "obj-128", "dial", "float", 12.0, 6, "obj-129", "number~", "list", 0.0, 0.0, 6, "obj-130", "number~", "list", 0.0, 0.0, 5, "obj-131", "dial", "float", 1000.0, 5, "obj-316", "number", "int", 500, 5, "obj-60", "number", "int", 500, 4, "obj-58", "function", "clear", 8, "obj-58", "function", "add_with_curve", 0.0, 1.0, 0, 0.0, 8, "obj-58", "function", "add_with_curve", 500.0, 0.0, 0, 0.0, 5, "obj-58", "function", "domain", 500.0, 6, "obj-58", "function", "range", 0.0, 1.0, 5, "obj-58", "function", "mode", 1, 5, "obj-73", "led", "int", 1, 5, "obj-149", "number", "int", 5, 9, "obj-84", "multislider", "list", 0.0, 0.0, 0.0, 0.0, 0.0, 9, "obj-96", "multislider", "list", 0.0, 0.0, 0.0, 0.0, 0.0, 6, "obj-127", "number~", "list", 1.0, 0.0, 5, "obj-62", "umenu", "int", 0, 6, "obj-16", "number~", "list", 0.5, 0.0, 6, "obj-15", "number~", "list", 1.0, 0.0, 6, "obj-221", "number~", "list", 1.0, 0.0, 6, "obj-222", "number~", "list", 1.0, 0.0, 6, "obj-231", "number~", "list", 1.0, 0.0, 6, "obj-232", "number~", "list", 0.0, 0.0, 5, "obj-331", "umenu", "int", 0, 6, "obj-323", "number~", "list", 0.0, 0.0, 6, "obj-322", "number~", "list", 0.0, 0.0, 6, "obj-337", "number~", "list", 10.0, 0.0, 9, "obj-346", "multislider", "list", 0.0, 0.0, 0.0, 0.0, 0.0, 6, "obj-365", "number~", "list", 1.0, 0.0, 5, "obj-21", "number", "int", 5, 5, "obj-416", "number", "int", 5, 4, "obj-457", "function", "clear", 8, "obj-457", "function", "add_with_curve", 0.0, 1.0, 0, 0.0, 8, "obj-457", "function", "add_with_curve", 500.0, 0.0, 0, 0.0, 5, "obj-457", "function", "domain", 500.0, 6, "obj-457", "function", "range", 0.0, 1.0, 5, "obj-457", "function", "mode", 1, 5, "obj-198", "umenu", "int", 2, 6, "obj-188", "number~", "list", 1.0, 0.0, 5, "obj-187", "dial", "float", 9.0, 5, "obj-186", "dial", "float", 12.0, 6, "obj-185", "number~", "list", 0.0, 0.0, 6, "obj-184", "number~", "list", 0.0, 0.0, 5, "obj-182", "dial", "float", 1000.0, 5, "obj-174", "number", "int", 250, 4, "obj-172", "function", "clear", 8, "obj-172", "function", "add_with_curve", 0.0, 1.0, 0, 0.0, 8, "obj-172", "function", "add_with_curve", 250.0, 0.0, 0, 0.0, 5, "obj-172", "function", "domain", 250.0, 6, "obj-172", "function", "range", 0.0, 1.0, 5, "obj-172", "function", "mode", 1, 5, "obj-165", "led", "int", 1, 9, "obj-164", "multislider", "list", 0.0, 0.0, 0.0, 0.0, 0.0, 6, "obj-159", "number~", "list", 1.0, 0.0, 6, "obj-152", "number~", "list", 1.0, 0.0, 6, "obj-151", "number~", "list", 2.0, 0.0, 5, "obj-126", "number", "int", 5, 5, "obj-327", "umenu", "int", 0, 6, "obj-311", "number~", "list", -1.0, 0.0, 5, "obj-310", "dial", "float", 7.0, 5, "obj-292", "dial", "float", 12.0, 6, "obj-290", "number~", "list", 0.0, 0.0, 6, "obj-288", "number~", "list", -0.1, 0.0, 5, "obj-287", "dial", "float", 900.0, 5, "obj-274", "number", "int", 500, 4, "obj-272", "function", "clear", 8, "obj-272", "function", "add_with_curve", 0.0, 1.0, 0, 0.0, 8, "obj-272", "function", "add_with_curve", 500.0, 1.0, 0, 0.0, 5, "obj-272", "function", "domain", 500.0, 6, "obj-272", "function", "range", 0.0, 1.0, 5, "obj-272", "function", "mode", 1, 5, "obj-265", "led", "int", 1, 9, "obj-264", "multislider", "list", 0.0, 0.0, 0.0, 0.0, 0.0, 6, "obj-261", "number~", "list", 1.0, 0.0, 6, "obj-259", "number~", "list", 1.0, 0.0, 6, "obj-258", "number~", "list", 0.0, 0.0, 5, "obj-255", "number", "int", 5, 5, "obj-426", "umenu", "int", 0, 6, "obj-408", "number~", "list", 0.0, 0.0, 5, "obj-407", "dial", "float", 8.0, 5, "obj-406", "dial", "float", 12.0, 6, "obj-405", "number~", "list", 0.0, 0.0, 6, "obj-404", "number~", "list", 0.1, 0.0, 5, "obj-403", "dial", "float", 1100.0, 5, "obj-395", "number", "int", 500, 4, "obj-393", "function", "clear", 8, "obj-393", "function", "add_with_curve", 0.0, 1.0, 0, 0.0, 8, "obj-393", "function", "add_with_curve", 500.0, 1.0, 0, 0.0, 5, "obj-393", "function", "domain", 500.0, 6, "obj-393", "function", "range", 0.0, 1.0, 5, "obj-393", "function", "mode", 1, 5, "obj-387", "led", "int", 1, 9, "obj-386", "multislider", "list", 0.0, 0.0, 0.0, 0.0, 0.0, 6, "obj-383", "number~", "list", 1.0, 0.0, 6, "obj-381", "number~", "list", 1.0, 0.0, 6, "obj-380", "number~", "list", 0.0, 0.0, 5, "obj-376", "number", "int", 5, 5, "obj-498", "number", "int", 500, 4, "obj-496", "function", "clear", 8, "obj-496", "function", "add_with_curve", 0.0, 1.0, 0, 0.0, 8, "obj-496", "function", "add_with_curve", 500.0, 10.0, 0, 0.0, 5, "obj-496", "function", "domain", 500.0, 6, "obj-496", "function", "range", 1.0, 10.0, 5, "obj-496", "function", "mode", 1, 5, "obj-505", "number", "int", 10, 5, "obj-471", "umenu", "int", 0, 6, "obj-468", "number~", "list", 4.0, 0.0, 6, "obj-467", "number~", "list", 1.0, 0.0, 6, "obj-451", "number~", "list", 1.0, 0.0, 6, "obj-450", "number~", "list", 0.0, 0.0, 5, "obj-448", "number", "int", 250, 4, "obj-446", "function", "clear", 8, "obj-446", "function", "add_with_curve", 0.0, 10.0, 0, 0.0, 8, "obj-446", "function", "add_with_curve", 250.0, 1.0, 0, 0.0, 5, "obj-446", "function", "domain", 250.0, 6, "obj-446", "function", "range", 1.0, 10.0, 5, "obj-446", "function", "mode", 1, 5, "obj-242", "number", "int", 10, 5, "obj-78", "dial", "float", 1000.0, 5, "obj-92", "dial", "float", 10000.0, 5, "obj-106", "dial", "float", 4000.0, 5, "obj-109", "dial", "float", 500.0, 5, "obj-110", "dial", "float", 1000.0, 5, "obj-111", "dial", "float", 1000.0, 5, "obj-121", "dial", "float", 1000.0, 5, "obj-122", "dial", "float", 1000.0, 5, "obj-157", "slider", "float", 0.0, 5, "obj-202", "slider", "float", 0.0, 5, "obj-203", "slider", "float", 870.0, 5, "obj-204", "slider", "float", 1000.0, 5, "obj-133", "dial", "float", 1000.0, 5, "obj-139", "dial", "float", 1000.0, 5, "obj-333", "textbutton", "mode", 1, 5, "obj-333", "textbutton", "int", 1, 5, "obj-334", "textbutton", "mode", 1, 5, "obj-334", "textbutton", "int", 0, 5, "obj-522", "textbutton", "mode", 1, 5, "obj-522", "textbutton", "int", 1, 5, "obj-525", "textbutton", "mode", 1, 5, "obj-525", "textbutton", "int", 0, 5, "obj-534", "textbutton", "mode", 1, 5, "obj-534", "textbutton", "int", 0, 5, "obj-535", "textbutton", "mode", 1, 5, "obj-535", "textbutton", "int", 0, 5, "obj-541", "textbutton", "mode", 1, 5, "obj-541", "textbutton", "int", 0, 5, "obj-542", "textbutton", "mode", 1, 5, "obj-542", "textbutton", "int", 1, 5, "obj-554", "textbutton", "mode", 1, 5, "obj-554", "textbutton", "int", 0, 5, "obj-555", "led", "int", 1, 5, "obj-558", "led", "int", 1, 5, "obj-564", "textbutton", "mode", 1, 5, "obj-564", "textbutton", "int", 0, 5, "obj-565", "led", "int", 0, 5, "obj-568", "textbutton", "mode", 1, 5, "obj-568", "textbutton", "int", 1, 5, "obj-581", "textbutton", "mode", 1, 5, "obj-581", "textbutton", "int", 1, 5, "obj-20", "textbutton", "mode", 1, 5, "obj-20", "textbutton", "int", 1, 5, "obj-48", "textbutton", "mode", 1, 5, "obj-48", "textbutton", "int", 1, 5, "obj-74", "textbutton", "mode", 1, 5, "obj-74", "textbutton", "int", 0, 5, "obj-99", "textbutton", "mode", 1, 5, "obj-99", "textbutton", "int", 0, 5, "obj-134", "textbutton", "mode", 1, 5, "obj-134", "textbutton", "int", 1, 5, "obj-189", "textbutton", "mode", 1, 5, "obj-189", "textbutton", "int", 1 ]
+						}
+, 						{
+							"number" : 9,
+							"data" : [ 4, "obj-43", "kslider", "chord", 5, "obj-46", "number", "int", 0, 5, "obj-29", "number", "int", 113, 5, "obj-35", "number", "int", 1, 5, "obj-38", "flonum", "float", 1.0, 5, "obj-41", "number", "int", 822, 5, "obj-13", "umenu", "int", 2, 6, "obj-123", "number~", "list", -1.0, 0.0, 5, "obj-124", "dial", "float", 7.0, 5, "obj-128", "dial", "float", 12.0, 6, "obj-129", "number~", "list", 0.0, 0.0, 6, "obj-130", "number~", "list", -0.05, 0.0, 5, "obj-131", "dial", "float", 950.0, 5, "obj-316", "number", "int", 1000, 5, "obj-60", "number", "int", 1000, 4, "obj-58", "function", "clear", 8, "obj-58", "function", "add_with_curve", 0.0, 1.0, 0, 0.0, 8, "obj-58", "function", "add_with_curve", 1000.0, 1.0, 0, 0.0, 5, "obj-58", "function", "domain", 1000.0, 6, "obj-58", "function", "range", 0.0, 1.0, 5, "obj-58", "function", "mode", 1, 5, "obj-73", "led", "int", 1, 5, "obj-149", "number", "int", 5, 9, "obj-84", "multislider", "list", 0.0, 0.0, 0.0, 0.0, 0.0, 9, "obj-96", "multislider", "list", 0.0, 0.0, 0.0, 0.0, 0.0, 6, "obj-127", "number~", "list", 1.0, 0.0, 5, "obj-62", "umenu", "int", 0, 6, "obj-16", "number~", "list", 0.5, 0.0, 6, "obj-15", "number~", "list", 1.0, 0.0, 6, "obj-221", "number~", "list", 1.0, 0.0, 6, "obj-222", "number~", "list", 2.0, 0.0, 6, "obj-231", "number~", "list", 1.0, 0.0, 6, "obj-232", "number~", "list", 0.0, 0.0, 5, "obj-331", "umenu", "int", 0, 6, "obj-323", "number~", "list", 1.0, 0.0, 6, "obj-322", "number~", "list", 0.0, 0.0, 6, "obj-337", "number~", "list", 10.0, 0.0, 9, "obj-346", "multislider", "list", 0.0, 0.0, 0.0, 0.0, 0.0, 6, "obj-365", "number~", "list", 0.35, 0.0, 5, "obj-21", "number", "int", 5, 5, "obj-416", "number", "int", 5, 4, "obj-457", "function", "clear", 8, "obj-457", "function", "add_with_curve", 0.0, 1.0, 0, 0.0, 8, "obj-457", "function", "add_with_curve", 999.999999999999773, 1.0, 0, 0.0, 5, "obj-457", "function", "domain", 1000.0, 6, "obj-457", "function", "range", 0.0, 1.0, 5, "obj-457", "function", "mode", 1, 5, "obj-198", "umenu", "int", 2, 6, "obj-188", "number~", "list", 1.0, 0.0, 5, "obj-187", "dial", "float", 9.0, 5, "obj-186", "dial", "float", 12.0, 6, "obj-185", "number~", "list", 0.0, 0.0, 6, "obj-184", "number~", "list", 0.05, 0.0, 5, "obj-182", "dial", "float", 1050.0, 5, "obj-174", "number", "int", 1000, 4, "obj-172", "function", "clear", 8, "obj-172", "function", "add_with_curve", 0.0, 1.0, 0, 0.0, 8, "obj-172", "function", "add_with_curve", 1000.0, 1.0, 0, 0.0, 5, "obj-172", "function", "domain", 1000.0, 6, "obj-172", "function", "range", 0.0, 1.0, 5, "obj-172", "function", "mode", 1, 5, "obj-165", "led", "int", 1, 9, "obj-164", "multislider", "list", 0.0, 0.0, 0.0, 0.0, 0.0, 6, "obj-159", "number~", "list", 1.0, 0.0, 6, "obj-152", "number~", "list", 1.0, 0.0, 6, "obj-151", "number~", "list", 2.0, 0.0, 5, "obj-126", "number", "int", 5, 5, "obj-327", "umenu", "int", 0, 6, "obj-311", "number~", "list", 2.0, 0.0, 5, "obj-310", "dial", "float", 10.0, 5, "obj-292", "dial", "float", 12.0, 6, "obj-290", "number~", "list", 0.0, 0.0, 6, "obj-288", "number~", "list", 0.0, 0.0, 5, "obj-287", "dial", "float", 1000.0, 5, "obj-274", "number", "int", 1000, 4, "obj-272", "function", "clear", 8, "obj-272", "function", "add_with_curve", 0.0, 0.0, 0, 0.0, 8, "obj-272", "function", "add_with_curve", 1000.0, 1.0, 0, 0.0, 5, "obj-272", "function", "domain", 1000.0, 6, "obj-272", "function", "range", 0.0, 1.0, 5, "obj-272", "function", "mode", 1, 5, "obj-265", "led", "int", 1, 9, "obj-264", "multislider", "list", 0.0, 0.0, 0.0, 0.0, 0.0, 6, "obj-261", "number~", "list", 1.0, 0.0, 6, "obj-259", "number~", "list", 1.0, 0.0, 6, "obj-258", "number~", "list", 0.0, 0.0, 5, "obj-255", "number", "int", 5, 5, "obj-426", "umenu", "int", 0, 6, "obj-408", "number~", "list", 0.0, 0.0, 5, "obj-407", "dial", "float", 8.0, 5, "obj-406", "dial", "float", 12.0, 6, "obj-405", "number~", "list", 0.0, 0.0, 6, "obj-404", "number~", "list", 0.0, 0.0, 5, "obj-403", "dial", "float", 1000.0, 5, "obj-395", "number", "int", 1000, 4, "obj-393", "function", "clear", 8, "obj-393", "function", "add_with_curve", 0.0, 0.0, 0, 0.0, 8, "obj-393", "function", "add_with_curve", 1000.0, 1.0, 0, 0.0, 5, "obj-393", "function", "domain", 1000.0, 6, "obj-393", "function", "range", 0.0, 1.0, 5, "obj-393", "function", "mode", 1, 5, "obj-387", "led", "int", 1, 9, "obj-386", "multislider", "list", 0.0, 0.0, 0.0, 0.0, 0.0, 6, "obj-383", "number~", "list", 1.0, 0.0, 6, "obj-381", "number~", "list", 1.0, 0.0, 6, "obj-380", "number~", "list", 0.0, 0.0, 5, "obj-376", "number", "int", 5, 5, "obj-498", "number", "int", 1000, 4, "obj-496", "function", "clear", 8, "obj-496", "function", "add_with_curve", 0.0, 1.0, 0, 0.0, 8, "obj-496", "function", "add_with_curve", 1000.0, 5.0, 0, 0.0, 5, "obj-496", "function", "domain", 1000.0, 6, "obj-496", "function", "range", 1.0, 5.0, 5, "obj-496", "function", "mode", 1, 5, "obj-505", "number", "int", 5, 5, "obj-471", "umenu", "int", 0, 6, "obj-468", "number~", "list", 2.0, 0.0, 6, "obj-467", "number~", "list", 1.0, 0.0, 6, "obj-451", "number~", "list", 1.0, 0.0, 6, "obj-450", "number~", "list", 0.0, 0.0, 5, "obj-448", "number", "int", 1000, 4, "obj-446", "function", "clear", 8, "obj-446", "function", "add_with_curve", 0.0, 1.0, 0, 0.0, 8, "obj-446", "function", "add_with_curve", 1000.0, 5.0, 0, 0.0, 5, "obj-446", "function", "domain", 1000.0, 6, "obj-446", "function", "range", 1.0, 5.0, 5, "obj-446", "function", "mode", 1, 5, "obj-242", "number", "int", 5, 5, "obj-78", "dial", "float", 350.0, 5, "obj-92", "dial", "float", 10000.0, 5, "obj-106", "dial", "float", 2000.0, 5, "obj-109", "dial", "float", 500.0, 5, "obj-110", "dial", "float", 1000.0, 5, "obj-111", "dial", "float", 1000.0, 5, "obj-121", "dial", "float", 1000.0, 5, "obj-122", "dial", "float", 1000.0, 5, "obj-157", "slider", "float", 112.0, 5, "obj-202", "slider", "float", 0.0, 5, "obj-203", "slider", "float", 821.0, 5, "obj-204", "slider", "float", 1000.0, 5, "obj-133", "dial", "float", 1000.0, 5, "obj-139", "dial", "float", 1000.0, 5, "obj-333", "textbutton", "mode", 1, 5, "obj-333", "textbutton", "int", 0, 5, "obj-334", "textbutton", "mode", 1, 5, "obj-334", "textbutton", "int", 1, 5, "obj-522", "textbutton", "mode", 1, 5, "obj-522", "textbutton", "int", 0, 5, "obj-525", "textbutton", "mode", 1, 5, "obj-525", "textbutton", "int", 1, 5, "obj-534", "textbutton", "mode", 1, 5, "obj-534", "textbutton", "int", 1, 5, "obj-535", "textbutton", "mode", 1, 5, "obj-535", "textbutton", "int", 0, 5, "obj-541", "textbutton", "mode", 1, 5, "obj-541", "textbutton", "int", 0, 5, "obj-542", "textbutton", "mode", 1, 5, "obj-542", "textbutton", "int", 1, 5, "obj-554", "textbutton", "mode", 1, 5, "obj-554", "textbutton", "int", 1, 5, "obj-555", "led", "int", 1, 5, "obj-558", "led", "int", 1, 5, "obj-564", "textbutton", "mode", 1, 5, "obj-564", "textbutton", "int", 1, 5, "obj-565", "led", "int", 1, 5, "obj-568", "textbutton", "mode", 1, 5, "obj-568", "textbutton", "int", 0, 5, "obj-581", "textbutton", "mode", 1, 5, "obj-581", "textbutton", "int", 0, 5, "obj-20", "textbutton", "mode", 1, 5, "obj-20", "textbutton", "int", 0, 5, "obj-48", "textbutton", "mode", 1, 5, "obj-48", "textbutton", "int", 0, 5, "obj-74", "textbutton", "mode", 1, 5, "obj-74", "textbutton", "int", 0, 5, "obj-99", "textbutton", "mode", 1, 5, "obj-99", "textbutton", "int", 0, 5, "obj-134", "textbutton", "mode", 1, 5, "obj-134", "textbutton", "int", 0, 5, "obj-189", "textbutton", "mode", 1, 5, "obj-189", "textbutton", "int", 0 ]
+						}
+, 						{
+							"number" : 10,
+							"data" : [ 4, "obj-43", "kslider", "chord", 5, "obj-46", "number", "int", 0, 5, "obj-29", "number", "int", 1, 5, "obj-35", "number", "int", 1, 5, "obj-38", "flonum", "float", 1.0, 5, "obj-41", "number", "int", 818, 5, "obj-13", "umenu", "int", 0, 6, "obj-123", "number~", "list", 0.0, 0.0, 5, "obj-124", "dial", "float", 8.0, 5, "obj-128", "dial", "float", 12.0, 6, "obj-129", "number~", "list", 0.0, 0.0, 6, "obj-130", "number~", "list", -0.55, 0.0, 5, "obj-131", "dial", "float", 450.0, 5, "obj-316", "number", "int", 1000, 5, "obj-60", "number", "int", 500, 4, "obj-58", "function", "clear", 8, "obj-58", "function", "add_with_curve", 0.0, 1.0, 0, 0.0, 8, "obj-58", "function", "add_with_curve", 500.0, 0.0, 0, 0.0, 5, "obj-58", "function", "domain", 500.0, 6, "obj-58", "function", "range", 0.0, 1.0, 5, "obj-58", "function", "mode", 1, 5, "obj-73", "led", "int", 1, 5, "obj-149", "number", "int", 5, 9, "obj-84", "multislider", "list", 0.0, 0.0, 0.0, 0.0, 0.0, 9, "obj-96", "multislider", "list", 0.0, 0.0, 0.0, 0.0, 0.0, 6, "obj-127", "number~", "list", 1.0, 0.0, 5, "obj-62", "umenu", "int", 0, 6, "obj-16", "number~", "list", 4.5, 0.0, 6, "obj-15", "number~", "list", 1.0, 0.0, 6, "obj-221", "number~", "list", 1.0, 0.0, 6, "obj-222", "number~", "list", 0.0, 0.0, 6, "obj-231", "number~", "list", 1.0, 0.0, 6, "obj-232", "number~", "list", 0.0, 0.0, 5, "obj-331", "umenu", "int", 1, 6, "obj-323", "number~", "list", 1.0, 0.0, 6, "obj-322", "number~", "list", 1.0, 0.0, 6, "obj-337", "number~", "list", 12.0, 0.0, 9, "obj-346", "multislider", "list", 0.0, 0.0, 0.0, 0.0, 0.0, 6, "obj-365", "number~", "list", 0.5, 0.0, 5, "obj-21", "number", "int", 5, 5, "obj-416", "number", "int", 5, 4, "obj-457", "function", "clear", 8, "obj-457", "function", "add_with_curve", 0.0, 1.0, 0, 0.0, 8, "obj-457", "function", "add_with_curve", 999.999999999999773, 1.0, 0, 0.0, 5, "obj-457", "function", "domain", 1000.0, 6, "obj-457", "function", "range", 0.0, 1.0, 5, "obj-457", "function", "mode", 1, 5, "obj-198", "umenu", "int", 0, 6, "obj-188", "number~", "list", -2.0, 0.0, 5, "obj-187", "dial", "float", 6.0, 5, "obj-186", "dial", "float", 12.0, 6, "obj-185", "number~", "list", 0.0, 0.0, 6, "obj-184", "number~", "list", 0.55, 0.0, 5, "obj-182", "dial", "float", 1550.0, 5, "obj-174", "number", "int", 330, 4, "obj-172", "function", "clear", 8, "obj-172", "function", "add_with_curve", 0.0, 1.0, 0, 0.0, 8, "obj-172", "function", "add_with_curve", 321.955087219073846, 0.0, 0, 0.0, 5, "obj-172", "function", "domain", 330.0, 6, "obj-172", "function", "range", 0.0, 1.0, 5, "obj-172", "function", "mode", 1, 5, "obj-165", "led", "int", 1, 9, "obj-164", "multislider", "list", 0.0, 0.0, 0.0, 0.0, 0.0, 6, "obj-159", "number~", "list", 1.0, 0.0, 6, "obj-152", "number~", "list", 1.0, 0.0, 6, "obj-151", "number~", "list", 0.0, 0.0, 5, "obj-126", "number", "int", 5, 5, "obj-327", "umenu", "int", 0, 6, "obj-311", "number~", "list", 1.0, 0.0, 5, "obj-310", "dial", "float", 9.0, 5, "obj-292", "dial", "float", 12.0, 6, "obj-290", "number~", "list", 0.0, 0.0, 6, "obj-288", "number~", "list", 0.0, 0.0, 5, "obj-287", "dial", "float", 1000.0, 5, "obj-274", "number", "int", 500, 4, "obj-272", "function", "clear", 8, "obj-272", "function", "add_with_curve", 0.0, 1.0, 0, 0.0, 8, "obj-272", "function", "add_with_curve", 250.155128130322765, 0.0, 0, 0.0, 8, "obj-272", "function", "add_with_curve", 500.0, 1.0, 0, 0.0, 5, "obj-272", "function", "domain", 500.0, 6, "obj-272", "function", "range", 0.0, 1.0, 5, "obj-272", "function", "mode", 1, 5, "obj-265", "led", "int", 1, 9, "obj-264", "multislider", "list", 0.0, 0.0, 0.0, 0.0, 0.0, 6, "obj-261", "number~", "list", 1.0, 0.0, 6, "obj-259", "number~", "list", 1.0, 0.0, 6, "obj-258", "number~", "list", 0.0, 0.0, 5, "obj-255", "number", "int", 5, 5, "obj-426", "umenu", "int", 0, 6, "obj-408", "number~", "list", 1.0, 0.0, 5, "obj-407", "dial", "float", 9.0, 5, "obj-406", "dial", "float", 12.0, 6, "obj-405", "number~", "list", 0.0, 0.0, 6, "obj-404", "number~", "list", 0.0, 0.0, 5, "obj-403", "dial", "float", 1000.0, 5, "obj-395", "number", "int", 250, 4, "obj-393", "function", "clear", 8, "obj-393", "function", "add_with_curve", 0.0, 1.0, 0, 0.0, 8, "obj-393", "function", "add_with_curve", 125.536487985624888, 0.0, 0, 0.0, 8, "obj-393", "function", "add_with_curve", 250.0, 1.0, 0, 0.0, 5, "obj-393", "function", "domain", 250.0, 6, "obj-393", "function", "range", 0.0, 1.0, 5, "obj-393", "function", "mode", 1, 5, "obj-387", "led", "int", 1, 9, "obj-386", "multislider", "list", 0.0, 0.0, 0.0, 0.0, 0.0, 6, "obj-383", "number~", "list", 1.0, 0.0, 6, "obj-381", "number~", "list", 1.0, 0.0, 6, "obj-380", "number~", "list", 0.0, 0.0, 5, "obj-376", "number", "int", 5, 5, "obj-498", "number", "int", 500, 4, "obj-496", "function", "clear", 8, "obj-496", "function", "add_with_curve", 0.0, 10.0, 0, 0.0, 8, "obj-496", "function", "add_with_curve", 500.0, 1.0, 0, 0.0, 5, "obj-496", "function", "domain", 500.0, 6, "obj-496", "function", "range", 1.0, 10.0, 5, "obj-496", "function", "mode", 1, 5, "obj-505", "number", "int", 10, 5, "obj-471", "umenu", "int", 0, 6, "obj-468", "number~", "list", 1.0, 0.0, 6, "obj-467", "number~", "list", 1.0, 0.0, 6, "obj-451", "number~", "list", 1.0, 0.0, 6, "obj-450", "number~", "list", 0.0, 0.0, 5, "obj-448", "number", "int", 330, 4, "obj-446", "function", "clear", 8, "obj-446", "function", "add_with_curve", 0.0, 5.0, 0, 0.0, 8, "obj-446", "function", "add_with_curve", 330.0, 1.0, 0, 0.0, 5, "obj-446", "function", "domain", 330.0, 6, "obj-446", "function", "range", 1.0, 5.0, 5, "obj-446", "function", "mode", 1, 5, "obj-242", "number", "int", 5, 5, "obj-78", "dial", "float", 500.0, 5, "obj-92", "dial", "float", 12000.0, 5, "obj-106", "dial", "float", 1000.0, 5, "obj-109", "dial", "float", 4500.0, 5, "obj-110", "dial", "float", 1000.0, 5, "obj-111", "dial", "float", 1000.0, 5, "obj-121", "dial", "float", 1000.0, 5, "obj-122", "dial", "float", 1000.0, 5, "obj-157", "slider", "float", 0.0, 5, "obj-202", "slider", "float", 0.0, 5, "obj-203", "slider", "float", 817.0, 5, "obj-204", "slider", "float", 1000.0, 5, "obj-133", "dial", "float", 1000.0, 5, "obj-139", "dial", "float", 1000.0, 5, "obj-333", "textbutton", "mode", 1, 5, "obj-333", "textbutton", "int", 0, 5, "obj-334", "textbutton", "mode", 1, 5, "obj-334", "textbutton", "int", 1, 5, "obj-522", "textbutton", "mode", 1, 5, "obj-522", "textbutton", "int", 0, 5, "obj-525", "textbutton", "mode", 1, 5, "obj-525", "textbutton", "int", 1, 5, "obj-534", "textbutton", "mode", 1, 5, "obj-534", "textbutton", "int", 1, 5, "obj-535", "textbutton", "mode", 1, 5, "obj-535", "textbutton", "int", 0, 5, "obj-541", "textbutton", "mode", 1, 5, "obj-541", "textbutton", "int", 0, 5, "obj-542", "textbutton", "mode", 1, 5, "obj-542", "textbutton", "int", 1, 5, "obj-554", "textbutton", "mode", 1, 5, "obj-554", "textbutton", "int", 0, 5, "obj-555", "led", "int", 1, 5, "obj-558", "led", "int", 1, 5, "obj-564", "textbutton", "mode", 1, 5, "obj-564", "textbutton", "int", 0, 5, "obj-565", "led", "int", 1, 5, "obj-568", "textbutton", "mode", 1, 5, "obj-568", "textbutton", "int", 0, 5, "obj-581", "textbutton", "mode", 1, 5, "obj-581", "textbutton", "int", 0, 5, "obj-20", "textbutton", "mode", 1, 5, "obj-20", "textbutton", "int", 1, 5, "obj-48", "textbutton", "mode", 1, 5, "obj-48", "textbutton", "int", 1, 5, "obj-74", "textbutton", "mode", 1, 5, "obj-74", "textbutton", "int", 1, 5, "obj-99", "textbutton", "mode", 1, 5, "obj-99", "textbutton", "int", 1, 5, "obj-134", "textbutton", "mode", 1, 5, "obj-134", "textbutton", "int", 1, 5, "obj-189", "textbutton", "mode", 1, 5, "obj-189", "textbutton", "int", 1 ]
+						}
+, 						{
+							"number" : 11,
+							"data" : [ 4, "obj-43", "kslider", "chord", 5, "obj-46", "number", "int", 0, 5, "obj-29", "number", "int", 1, 5, "obj-35", "number", "int", 1, 5, "obj-38", "flonum", "float", 1.0, 5, "obj-41", "number", "int", 1, 5, "obj-13", "umenu", "int", 0, 6, "obj-123", "number~", "list", 0.0, 0.0, 5, "obj-124", "dial", "float", 8.0, 5, "obj-128", "dial", "float", 12.0, 6, "obj-129", "number~", "list", 0.0, 0.0, 6, "obj-130", "number~", "list", 0.0, 0.0, 5, "obj-131", "dial", "float", 1000.0, 5, "obj-316", "number", "int", 1000, 5, "obj-60", "number", "int", 1000, 4, "obj-58", "function", "clear", 8, "obj-58", "function", "add_with_curve", 0.0, 1.0, 0, 0.0, 8, "obj-58", "function", "add_with_curve", 1000.0, 1.0, 0, 0.0, 5, "obj-58", "function", "domain", 1000.0, 6, "obj-58", "function", "range", 0.0, 1.0, 5, "obj-58", "function", "mode", 1, 5, "obj-73", "led", "int", 1, 5, "obj-149", "number", "int", 5, 9, "obj-84", "multislider", "list", 0.0, 0.0, 0.0, 0.0, 0.0, 9, "obj-96", "multislider", "list", 0.0, 0.0, 0.0, 0.0, 0.0, 6, "obj-127", "number~", "list", 1.0, 0.0, 5, "obj-62", "umenu", "int", 0, 6, "obj-16", "number~", "list", 0.5, 0.0, 6, "obj-15", "number~", "list", 1.0, 0.0, 6, "obj-221", "number~", "list", 1.0, 0.0, 6, "obj-222", "number~", "list", 0.0, 0.0, 6, "obj-231", "number~", "list", 0.0, 0.0, 6, "obj-232", "number~", "list", 0.0, 0.0, 5, "obj-331", "umenu", "int", 0, 6, "obj-323", "number~", "list", 0.0, 0.0, 6, "obj-322", "number~", "list", 0.0, 0.0, 6, "obj-337", "number~", "list", 10.0, 0.0, 9, "obj-346", "multislider", "list", 0.0, 0.0, 0.0, 0.0, 0.0, 6, "obj-365", "number~", "list", 1.0, 0.0, 5, "obj-21", "number", "int", 5, 5, "obj-416", "number", "int", 5, 4, "obj-457", "function", "clear", 8, "obj-457", "function", "add_with_curve", 0.0, 1.0, 0, 0.0, 8, "obj-457", "function", "add_with_curve", 1000.0, 1.0, 0, 0.0, 5, "obj-457", "function", "domain", 1000.0, 6, "obj-457", "function", "range", 0.0, 1.0, 5, "obj-457", "function", "mode", 1, 5, "obj-198", "umenu", "int", 0, 6, "obj-188", "number~", "list", 0.0, 0.0, 5, "obj-187", "dial", "float", 8.0, 5, "obj-186", "dial", "float", 12.0, 6, "obj-185", "number~", "list", 0.0, 0.0, 6, "obj-184", "number~", "list", 0.0, 0.0, 5, "obj-182", "dial", "float", 1000.0, 5, "obj-174", "number", "int", 1000, 4, "obj-172", "function", "clear", 8, "obj-172", "function", "add_with_curve", 0.0, 1.0, 0, 0.0, 8, "obj-172", "function", "add_with_curve", 1000.0, 1.0, 0, 0.0, 5, "obj-172", "function", "domain", 1000.0, 6, "obj-172", "function", "range", 0.0, 1.0, 5, "obj-172", "function", "mode", 1, 5, "obj-165", "led", "int", 1, 9, "obj-164", "multislider", "list", 0.0, 0.0, 0.0, 0.0, 0.0, 6, "obj-159", "number~", "list", 1.0, 0.0, 6, "obj-152", "number~", "list", 1.0, 0.0, 6, "obj-151", "number~", "list", 0.0, 0.0, 5, "obj-126", "number", "int", 5, 5, "obj-327", "umenu", "int", 0, 6, "obj-311", "number~", "list", 0.0, 0.0, 5, "obj-310", "dial", "float", 8.0, 5, "obj-292", "dial", "float", 12.0, 6, "obj-290", "number~", "list", 0.0, 0.0, 6, "obj-288", "number~", "list", 0.0, 0.0, 5, "obj-287", "dial", "float", 1000.0, 5, "obj-274", "number", "int", 1000, 4, "obj-272", "function", "clear", 8, "obj-272", "function", "add_with_curve", 0.0, 1.0, 0, 0.0, 8, "obj-272", "function", "add_with_curve", 1000.0, 1.0, 0, 0.0, 5, "obj-272", "function", "domain", 1000.0, 6, "obj-272", "function", "range", 0.0, 1.0, 5, "obj-272", "function", "mode", 1, 5, "obj-265", "led", "int", 0, 9, "obj-264", "multislider", "list", 0.0, 0.0, 0.0, 0.0, 0.0, 6, "obj-261", "number~", "list", 1.0, 0.0, 6, "obj-259", "number~", "list", 0.0, 0.0, 6, "obj-258", "number~", "list", 0.0, 0.0, 5, "obj-255", "number", "int", 5, 5, "obj-426", "umenu", "int", 0, 6, "obj-408", "number~", "list", 0.0, 0.0, 5, "obj-407", "dial", "float", 8.0, 5, "obj-406", "dial", "float", 12.0, 6, "obj-405", "number~", "list", 0.0, 0.0, 6, "obj-404", "number~", "list", 0.0, 0.0, 5, "obj-403", "dial", "float", 1000.0, 5, "obj-395", "number", "int", 1000, 4, "obj-393", "function", "clear", 8, "obj-393", "function", "add_with_curve", 0.0, 1.0, 0, 0.0, 8, "obj-393", "function", "add_with_curve", 1000.0, 1.0, 0, 0.0, 5, "obj-393", "function", "domain", 1000.0, 6, "obj-393", "function", "range", 0.0, 1.0, 5, "obj-393", "function", "mode", 1, 5, "obj-387", "led", "int", 0, 9, "obj-386", "multislider", "list", 0.0, 0.0, 0.0, 0.0, 0.0, 6, "obj-383", "number~", "list", 1.0, 0.0, 6, "obj-381", "number~", "list", 0.0, 0.0, 6, "obj-380", "number~", "list", 0.0, 0.0, 5, "obj-376", "number", "int", 5, 5, "obj-498", "number", "int", 1000, 4, "obj-496", "function", "clear", 8, "obj-496", "function", "add_with_curve", 0.0, 1.0, 0, 0.0, 8, "obj-496", "function", "add_with_curve", 1000.0, 1.0, 0, 0.0, 5, "obj-496", "function", "domain", 1000.0, 6, "obj-496", "function", "range", 1.0, 5.0, 5, "obj-496", "function", "mode", 1, 5, "obj-505", "number", "int", 5, 5, "obj-471", "umenu", "int", 0, 6, "obj-468", "number~", "list", 0.5, 0.0, 6, "obj-467", "number~", "list", 1.0, 0.0, 6, "obj-451", "number~", "list", 0.0, 0.0, 6, "obj-450", "number~", "list", 0.0, 0.0, 5, "obj-448", "number", "int", 1000, 4, "obj-446", "function", "clear", 8, "obj-446", "function", "add_with_curve", 0.0, 1.0, 0, 0.0, 8, "obj-446", "function", "add_with_curve", 1000.0, 1.0, 0, 0.0, 5, "obj-446", "function", "domain", 1000.0, 6, "obj-446", "function", "range", 1.0, 5.0, 5, "obj-446", "function", "mode", 1, 5, "obj-242", "number", "int", 5, 5, "obj-78", "dial", "float", 1000.0, 5, "obj-92", "dial", "float", 10000.0, 5, "obj-106", "dial", "float", 500.0, 5, "obj-109", "dial", "float", 500.0, 5, "obj-110", "dial", "float", 1000.0, 5, "obj-111", "dial", "float", 1000.0, 5, "obj-121", "dial", "float", 1000.0, 5, "obj-122", "dial", "float", 1000.0, 5, "obj-157", "slider", "float", 0.0, 5, "obj-202", "slider", "float", 0.0, 5, "obj-203", "slider", "float", 0.0, 5, "obj-204", "slider", "float", 1000.0, 5, "obj-133", "dial", "float", 1000.0, 5, "obj-139", "dial", "float", 1000.0, 5, "obj-333", "textbutton", "mode", 1, 5, "obj-333", "textbutton", "int", 1, 5, "obj-334", "textbutton", "mode", 1, 5, "obj-334", "textbutton", "int", 1, 5, "obj-522", "textbutton", "mode", 1, 5, "obj-522", "textbutton", "int", 1, 5, "obj-525", "textbutton", "mode", 1, 5, "obj-525", "textbutton", "int", 1, 5, "obj-534", "textbutton", "mode", 1, 5, "obj-534", "textbutton", "int", 1, 5, "obj-535", "textbutton", "mode", 1, 5, "obj-535", "textbutton", "int", 1, 5, "obj-541", "textbutton", "mode", 1, 5, "obj-541", "textbutton", "int", 1, 5, "obj-542", "textbutton", "mode", 1, 5, "obj-542", "textbutton", "int", 1, 5, "obj-554", "textbutton", "mode", 1, 5, "obj-554", "textbutton", "int", 1, 5, "obj-555", "led", "int", 0, 5, "obj-558", "led", "int", 0, 5, "obj-564", "textbutton", "mode", 1, 5, "obj-564", "textbutton", "int", 1, 5, "obj-565", "led", "int", 0, 5, "obj-568", "textbutton", "mode", 1, 5, "obj-568", "textbutton", "int", 1, 5, "obj-581", "textbutton", "mode", 1, 5, "obj-581", "textbutton", "int", 0, 5, "obj-20", "textbutton", "mode", 1, 5, "obj-20", "textbutton", "int", 0, 5, "obj-48", "textbutton", "mode", 1, 5, "obj-48", "textbutton", "int", 0, 5, "obj-74", "textbutton", "mode", 1, 5, "obj-74", "textbutton", "int", 0, 5, "obj-99", "textbutton", "mode", 1, 5, "obj-99", "textbutton", "int", 0, 5, "obj-134", "textbutton", "mode", 1, 5, "obj-134", "textbutton", "int", 0, 5, "obj-189", "textbutton", "mode", 1, 5, "obj-189", "textbutton", "int", 0 ]
+						}
+ ],
+					"stored1" : [ 0.807843137254902, 0.898039215686275, 0.909803921568627, 1.0 ],
+					"textcolor" : [ 0.564705882352941, 0.905882352941176, 0.862745098039216, 1.0 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-104",
+					"maxclass" : "number",
+					"minimum" : 1,
+					"numinlets" : 1,
+					"numoutlets" : 2,
+					"outlettype" : [ "", "bang" ],
+					"parameter_enable" : 0,
+					"patching_rect" : [ 60.154165616710543, 493.188862139520552, 50.0, 22.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 636.072470217551199, 919.006993395426889, 50.0, 22.0 ],
+					"textcolor" : [ 0.807843137254902, 0.898039215686275, 0.909803921568627, 1.0 ],
+					"tricolor" : [ 0.564705882352941, 0.905882352941176, 0.862745098039216, 1.0 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-67",
+					"items" : [ "Monophonic", ",", "Polyphonic" ],
+					"maxclass" : "umenu",
+					"numinlets" : 1,
+					"numoutlets" : 3,
+					"outlettype" : [ "int", "", "" ],
+					"parameter_enable" : 0,
+					"patching_rect" : [ 317.737100383718371, 41.879340857266925, 100.0, 22.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 588.273642092551199, 975.246789842250564, 100.0, 22.0 ],
+					"textcolor" : [ 0.807843137254902, 0.898039215686275, 0.909803921568627, 1.0 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"format" : 5,
+					"id" : "obj-61",
+					"maxclass" : "number",
+					"numinlets" : 1,
+					"numoutlets" : 2,
+					"outlettype" : [ "", "bang" ],
+					"parameter_enable" : 0,
+					"patching_rect" : [ 317.737100383718371, 245.695595473050616, 50.0, 22.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 690.273642092551199, 975.246789842250564, 50.0, 22.0 ],
+					"textcolor" : [ 0.807843137254902, 0.898039215686275, 0.909803921568627, 1.0 ],
+					"tricolor" : [ 0.564705882352941, 0.905882352941176, 0.862745098039216, 1.0 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-46",
+					"maxclass" : "number",
+					"numinlets" : 1,
+					"numoutlets" : 2,
+					"outlettype" : [ "", "bang" ],
+					"parameter_enable" : 0,
+					"patching_rect" : [ 922.737100383718371, 221.695595473050616, 50.0, 22.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 742.273642092551199, 975.246789842250564, 50.0, 22.0 ],
+					"textcolor" : [ 0.807843137254902, 0.898039215686275, 0.909803921568627, 1.0 ],
+					"tricolor" : [ 0.564705882352941, 0.905882352941176, 0.862745098039216, 1.0 ]
+				}
+
+			}
+, 			{
 				"box" : 				{
 					"id" : "obj-54",
 					"maxclass" : "message",
@@ -76,48 +319,12 @@
 			}
 , 			{
 				"box" : 				{
-					"angle" : 270.0,
-					"bgcolor" : [ 0.2, 0.2, 0.2, 0.0 ],
-					"border" : 3,
-					"bordercolor" : [ 0.192156862745098, 0.329411764705882, 0.505882352941176, 1.0 ],
-					"horizontal_direction" : 1,
-					"id" : "obj-56",
-					"maxclass" : "panel",
-					"mode" : 0,
-					"numinlets" : 1,
-					"numoutlets" : 0,
-					"patching_rect" : [ 79.274727084123924, 204.746443718671344, 128.0, 128.0 ],
-					"presentation" : 1,
-					"presentation_rect" : [ 776.029172513969115, 944.657221584919171, 15.456007949589548, 15.518041960027745 ],
-					"proportion" : 0.5,
-					"rounded" : 0,
-					"vertical_direction" : 2
-				}
-
-			}
-, 			{
-				"box" : 				{
 					"id" : "obj-275",
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 140.406801214893221, 517.661280239162352, 65.0, 22.0 ],
 					"text" : "send reset"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-267",
-					"ignoreclick" : 1,
-					"maxclass" : "button",
-					"numinlets" : 1,
-					"numoutlets" : 1,
-					"outlettype" : [ "bang" ],
-					"parameter_enable" : 0,
-					"patching_rect" : [ 140.406801214893221, 477.718537384805359, 24.0, 24.0 ],
-					"presentation" : 1,
-					"presentation_rect" : [ 592.419566685352265, 890.322378008964279, 46.163081377744675, 46.163081377744675 ]
 				}
 
 			}
@@ -180,7 +387,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 736.273370168886231, 2247.211684159391552, 100.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 1144.957743199770903, 683.122049321728355, 75.360703319311142, 22.0 ],
+					"presentation_rect" : [ 1144.889064224665617, 682.595486213760978, 75.360703319311142, 22.0 ],
 					"text" : "Loop",
 					"texton" : "Loop"
 				}
@@ -245,7 +452,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 178.208142235957439, 2247.211684159391552, 100.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 1144.957743199770903, 342.260888979309129, 75.913425534963608, 22.0 ],
+					"presentation_rect" : [ 1144.889064224665617, 341.734325871341753, 75.913425534963608, 22.0 ],
 					"text" : "Loop",
 					"texton" : "Loop"
 				}
@@ -310,7 +517,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 1274.759390786372478, 1741.27636291736053, 100.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 899.114272745554899, 342.107045099609422, 75.496758669614792, 22.0 ],
+					"presentation_rect" : [ 899.045593770449614, 341.580481991642046, 75.496758669614792, 22.0 ],
 					"text" : "Loop",
 					"texton" : "Loop"
 				}
@@ -375,7 +582,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 474.874823048793132, 1742.109696290430293, 100.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 653.323564322894072, 342.260888979309129, 75.496758669614792, 22.0 ],
+					"presentation_rect" : [ 653.254885347788786, 341.734325871341753, 75.496758669614792, 22.0 ],
 					"text" : "Loop",
 					"texton" : "Loop"
 				}
@@ -440,7 +647,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 1273.454312040455079, 1237.140730439423351, 100.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 407.282867195313429, 342.260888979309129, 75.496758669614792, 22.0 ],
+					"presentation_rect" : [ 407.214188220208143, 341.734325871341753, 75.496758669614792, 22.0 ],
 					"text" : "Loop",
 					"texton" : "Loop"
 				}
@@ -505,7 +712,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 474.874823048793132, 1236.972008590666974, 100.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 161.870333407923908, 342.260888979309129, 75.496758669614792, 22.0 ],
+					"presentation_rect" : [ 161.801654432818623, 341.734325871341753, 75.496758669614792, 22.0 ],
 					"text" : "Loop",
 					"texton" : "Loop"
 				}
@@ -534,7 +741,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 335.746739627002853, 612.731207365331557, 52.990360756715518, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 262.398408471115317, 890.322378008964279, 53.532732263207436, 21.798828125 ],
+					"presentation_rect" : [ 262.329729496010032, 889.795814900996902, 53.532732263207436, 21.798828125 ],
 					"text" : "Release",
 					"texton" : "Release"
 				}
@@ -551,7 +758,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 244.942982098539233, 612.731207365331557, 52.990360756715518, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 202.936139170929209, 890.322378008964279, 53.824138343334198, 21.798828125 ],
+					"presentation_rect" : [ 202.867460195823924, 889.795814900996902, 53.824138343334198, 21.798828125 ],
 					"text" : "Sustain",
 					"texton" : "Sustain"
 				}
@@ -568,7 +775,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 155.139591863830447, 612.731207365331557, 52.990360756715518, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 143.165689359808994, 890.322378008964279, 55.312515103717942, 21.798828125 ],
+					"presentation_rect" : [ 143.097010384703708, 889.795814900996902, 55.312515103717942, 21.798828125 ],
 					"text" : "Decay",
 					"texton" : "Decay"
 				}
@@ -585,62 +792,9 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 59.418871155460238, 612.731207365331557, 52.990360756715518, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 82.981447105214329, 890.322378008964279, 55.312515103718169, 21.798828125 ],
+					"presentation_rect" : [ 82.912768130109043, 889.795814900996902, 55.312515103718169, 21.798828125 ],
 					"text" : "Attack",
 					"texton" : "Attack"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-585",
-					"ignoreclick" : 1,
-					"maxclass" : "textbutton",
-					"numinlets" : 1,
-					"numoutlets" : 3,
-					"outlettype" : [ "", "", "int" ],
-					"parameter_enable" : 0,
-					"patching_rect" : [ 60.154165616710543, 435.796216542062666, 52.990360756715518, 20.0 ],
-					"presentation" : 1,
-					"presentation_rect" : [ 640.218394810352265, 890.322378008964279, 50.0, 21.798828125 ],
-					"text" : "Voices",
-					"texton" : "Voices"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"blinktime" : 50,
-					"id" : "obj-584",
-					"maxclass" : "textbutton",
-					"mode" : 1,
-					"numinlets" : 1,
-					"numoutlets" : 3,
-					"outlettype" : [ "", "", "int" ],
-					"parameter_enable" : 0,
-					"patching_rect" : [ 321.581128162425784, 482.139355356034912, 77.193398031394509, 20.0 ],
-					"presentation" : 1,
-					"presentation_rect" : [ 692.218394810352265, 914.121206133964279, 104.201171875, 22.0 ],
-					"text" : "Retrigger",
-					"texton" : "Retrigger"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"blinktime" : 50,
-					"id" : "obj-583",
-					"maxclass" : "textbutton",
-					"mode" : 1,
-					"numinlets" : 1,
-					"numoutlets" : 3,
-					"outlettype" : [ "", "", "int" ],
-					"parameter_enable" : 0,
-					"patching_rect" : [ 234.673713006059302, 482.139355356034912, 77.193398031394509, 20.0 ],
-					"presentation" : 1,
-					"presentation_rect" : [ 692.218394810352265, 890.322378008964279, 104.201171875, 21.798828125 ],
-					"text" : "Legato",
-					"texton" : "Legato"
 				}
 
 			}
@@ -655,7 +809,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 483.956877364761112, 425.118252217769623, 60.607999825617412, 18.529411673545837 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 82.981447105214329, 720.736315799094427, 180.63183463116502, 21.798828125 ],
+					"presentation_rect" : [ 82.912768130109043, 720.209752691127051, 180.63183463116502, 21.798828125 ],
 					"text" : "Duration (ms):",
 					"texton" : "Envelope Duration (ms):"
 				}
@@ -673,7 +827,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 849.126624340811532, 534.57306832075119, 100.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 82.981447105214329, 866.322378008964279, 115.496757358312607, 22.0 ],
+					"presentation_rect" : [ 82.912768130109043, 865.795814900996902, 115.496757358312607, 22.0 ],
 					"text" : "Loop",
 					"texton" : "Loop"
 				}
@@ -690,7 +844,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 1118.490157361639831, 536.218495244321502, 67.470745349070171, 18.529411673545837 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 1066.068856897061323, 719.209169851211755, 180.441535117726744, 21.798828125 ],
+					"presentation_rect" : [ 1066.000177921956038, 718.682606743244378, 180.441535117726744, 21.798828125 ],
 					"text" : "Harmonics:",
 					"texton" : "Harmonics:"
 				}
@@ -707,7 +861,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 1155.566344219327675, 2202.729666924027242, 67.644972622394562, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 482.697721241058844, 795.960363603966925, 36.631769066055767, 22.0 ],
+					"presentation_rect" : [ 482.629042265953558, 795.433800495999549, 36.631769066055767, 22.0 ],
 					"text" : "Rate",
 					"texton" : "Rate"
 				}
@@ -724,7 +878,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 1155.566344219327675, 2072.929152900816007, 67.644972622394562, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 369.425908927511955, 795.960363603966925, 45.609117763737913, 22.0 ],
+					"presentation_rect" : [ 369.357229952406669, 795.433800495999549, 45.609117763737913, 22.0 ],
 					"text" : "Depth",
 					"texton" : "Depth"
 				}
@@ -741,7 +895,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 1155.566344219327675, 1977.139675790906949, 67.644972622394562, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 338.200299616299162, 772.72095201645061, 108.060336386164181, 22.0 ],
+					"presentation_rect" : [ 338.131620641193877, 772.194388908483234, 108.060336386164181, 22.0 ],
 					"text" : "Waveform:",
 					"texton" : "Waveform:"
 				}
@@ -759,7 +913,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 1431.880676670748244, 1872.82555028283673, 100.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 575.719362794961398, 861.960363603966925, 115.104276478290558, 22.0 ],
+					"presentation_rect" : [ 575.650683819856113, 861.433800495999549, 115.104276478290558, 22.0 ],
 					"text" : "Sync",
 					"texton" : "Sync"
 				}
@@ -776,7 +930,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 1483.409931321678414, 1950.713522023766927, 67.470745349070171, 18.529411673545837 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 575.719362794961398, 715.755237079995368, 180.595322492222749, 21.798828125 ],
+					"presentation_rect" : [ 575.650683819856113, 715.228673972027991, 180.595322492222749, 21.798828125 ],
 					"text" : "Harmonics:",
 					"texton" : "Harmonics:"
 				}
@@ -795,7 +949,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 1212.417404371381508, 1878.200409388092794, 105.644972622394562, 24.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 396.439030841630938, 715.755237079995368, 174.363691493868828, 55.162197599808565 ],
+					"presentation_rect" : [ 396.370351866525652, 715.228673972027991, 174.363691493868828, 55.162197599808565 ],
 					"text" : "LFO",
 					"texton" : "LFO"
 				}
@@ -811,7 +965,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 1155.566344219327675, 1897.019789790657796, 24.0, 24.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 338.200299616299162, 715.755237079995368, 54.965714936455129, 54.965714936455129 ]
+					"presentation_rect" : [ 338.131620641193877, 715.228673972027991, 54.965714936455129, 54.965714936455129 ]
 				}
 
 			}
@@ -827,7 +981,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 834.468432784080505, 1886.368190800694947, 100.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 1066.068856897061323, 683.122049321728355, 75.360703319310687, 22.0 ],
+					"presentation_rect" : [ 1066.000177921956038, 682.595486213760978, 75.360703319310687, 22.0 ],
 					"text" : "Sync",
 					"texton" : "Sync"
 				}
@@ -844,7 +998,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 1028.639366379322382, 2223.143332738458412, 67.470745349070171, 18.529411673545837 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 1065.729941007598882, 560.517948617535239, 180.253506622526402, 21.798828125 ],
+					"presentation_rect" : [ 1065.661262032493596, 559.991385509567863, 180.253506622526402, 21.798828125 ],
 					"text" : "Harmonics:",
 					"texton" : "Harmonics:"
 				}
@@ -861,7 +1015,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 880.860432958463093, 1988.080175949071418, 60.607999825617412, 18.529411673545837 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 1065.729941007598882, 536.719120492535239, 180.253506622526402, 21.798828125 ],
+					"presentation_rect" : [ 1065.661262032493596, 536.192557384567863, 180.253506622526402, 21.798828125 ],
 					"text" : "Duration (ms):",
 					"texton" : "Envelope Duration (ms):"
 				}
@@ -878,7 +1032,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 582.581441954805882, 2199.867147148259392, 92.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 1188.595237721607191, 446.443618585663444, 96.573850666483395, 22.0 ],
+					"presentation_rect" : [ 1188.526558746501905, 445.917055477696067, 96.573850666483395, 22.0 ],
 					"text" : "Resonance",
 					"texton" : "Resonance"
 				}
@@ -895,7 +1049,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 582.581441954805882, 2085.894787991881913, 67.644972622394562, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 1097.654000505412114, 446.443618585663444, 44.212217390537262, 22.0 ],
+					"presentation_rect" : [ 1097.585321530306828, 445.917055477696067, 44.212217390537262, 22.0 ],
 					"text" : "Gain",
 					"texton" : "Gain"
 				}
@@ -912,7 +1066,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 582.581441954805882, 1984.332171967495469, 67.644972622394562, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 1065.729941007598882, 423.204206998147129, 108.060336386164181, 22.0 ],
+					"presentation_rect" : [ 1065.661262032493596, 422.677643890179752, 108.060336386164181, 22.0 ],
 					"text" : "Filter Type:",
 					"texton" : "Filter Type:"
 				}
@@ -928,7 +1082,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 582.581441954805882, 1910.868176018742815, 24.0, 24.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 1065.729941007598882, 366.238492061691886, 54.965714936455129, 54.965714936455129 ]
+					"presentation_rect" : [ 1065.661262032493596, 365.711928953724509, 54.965714936455129, 54.965714936455129 ]
 				}
 
 			}
@@ -945,7 +1099,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 643.125530852278644, 1886.368190800694947, 105.644972622394562, 24.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 1123.968672232930658, 366.238492061691886, 174.363691493868828, 55.162197599808565 ],
+					"presentation_rect" : [ 1123.899993257825372, 365.711928953724509, 174.363691493868828, 55.162197599808565 ],
 					"text" : "Filter 2",
 					"texton" : "Filter 2"
 				}
@@ -961,7 +1115,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 23.423278347685368, 1895.019789790657796, 24.0, 24.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 1066.068856897061323, 24.503545567390574, 54.965714936455129, 54.965714936455129 ]
+					"presentation_rect" : [ 1066.000177921956038, 23.976982459423198, 54.965714936455129, 54.965714936455129 ]
 				}
 
 			}
@@ -977,7 +1131,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 275.468432784080505, 1881.850298022774496, 100.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 1066.068856897061323, 342.260888979309129, 75.913425534963153, 22.0 ],
+					"presentation_rect" : [ 1066.000177921956038, 341.734325871341753, 75.913425534963153, 22.0 ],
 					"text" : "Sync",
 					"texton" : "Sync"
 				}
@@ -994,7 +1148,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 23.581441954805882, 2209.414826003435792, 92.113057553768158, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 1188.595237721607191, 104.708672091362132, 96.573850666483395, 22.0 ],
+					"presentation_rect" : [ 1188.526558746501905, 104.182108983394755, 96.573850666483395, 22.0 ],
 					"text" : "Resonance",
 					"texton" : "Resonance"
 				}
@@ -1011,7 +1165,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 23.581441954805882, 2091.355927083460756, 67.644972622394562, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 1097.992916394874555, 104.708672091362132, 44.212217390537262, 22.0 ],
+					"presentation_rect" : [ 1097.92423741976927, 104.182108983394755, 44.212217390537262, 22.0 ],
 					"text" : "Gain",
 					"texton" : "Gain"
 				}
@@ -1028,7 +1182,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 23.423278347685368, 1984.332171967495469, 67.644972622394562, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 1066.068856897061323, 81.469260503845817, 108.060336386164181, 22.0 ],
+					"presentation_rect" : [ 1066.000177921956038, 80.94269739587844, 108.060336386164181, 22.0 ],
 					"text" : "Filter Type:",
 					"texton" : "Filter Type:"
 				}
@@ -1045,7 +1199,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 326.180826365947723, 1988.080175949071418, 60.607999825617412, 18.529411673545837 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 1066.068856897061323, 195.692828938835191, 180.263506829738162, 21.798828125 ],
+					"presentation_rect" : [ 1066.000177921956038, 195.166265830867815, 180.263506829738162, 21.798828125 ],
 					"text" : "Duration (ms):",
 					"texton" : "Envelope Duration (ms):"
 				}
@@ -1062,7 +1216,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 469.0649022966046, 2214.661901668433529, 67.470745349070171, 18.529411673545837 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 1065.729941007598427, 219.491657063835191, 180.602422719201058, 21.798828125 ],
+					"presentation_rect" : [ 1065.661262032493141, 218.965093955867815, 180.602422719201058, 21.798828125 ],
 					"text" : "Harmonics:",
 					"texton" : "Harmonics:"
 				}
@@ -1081,7 +1235,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 79.274727084123924, 1874.925860016284332, 105.644972622394562, 24.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 1124.307588122393099, 24.503545567390574, 174.363691493868828, 55.162197599808565 ],
+					"presentation_rect" : [ 1124.238909147287814, 23.976982459423198, 174.363691493868828, 55.162197599808565 ],
 					"text" : "Filter 1",
 					"texton" : "Filter 1"
 				}
@@ -1098,7 +1252,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 823.965000726663334, 1566.38671899905512, 52.990360756715518, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 885.835053361560313, 104.990724787113322, 45.985511600971222, 22.0 ],
+					"presentation_rect" : [ 885.766374386455027, 104.464161679145946, 45.985511600971222, 22.0 ],
 					"text" : "Octave",
 					"texton" : "Octave"
 				}
@@ -1115,7 +1269,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 875.179781126860235, 1566.38671899905512, 67.644972622394562, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 934.977327628140301, 104.990724787113322, 63.700963067811472, 22.0 ],
+					"presentation_rect" : [ 934.908648653035016, 104.464161679145946, 63.700963067811472, 22.0 ],
 					"text" : "Transpose",
 					"texton" : "Transpose"
 				}
@@ -1132,7 +1286,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 943.722913282993886, 1566.38671899905512, 46.558708310127258, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 1001.606972701455561, 104.990724787113322, 46.441672921180725, 22.0 ],
+					"presentation_rect" : [ 1001.538293726350275, 104.464161679145946, 46.441672921180725, 22.0 ],
 					"text" : "Detune",
 					"texton" : "Detune"
 				}
@@ -1150,7 +1304,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 1463.418803468428678, 1361.557091490153653, 82.894737005233765, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 820.071599068349315, 512.611931016045219, 115.104276478290558, 21.912568390369415 ],
+					"presentation_rect" : [ 820.002920093244029, 512.085367908077842, 115.104276478290558, 21.912568390369415 ],
 					"text" : "Sync",
 					"texton" : "Sync"
 				}
@@ -1168,7 +1322,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 1124.898727476596832, 1361.557091490153653, 100.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 820.22538644284532, 342.260888979309129, 75.496758669614792, 22.0 ],
+					"presentation_rect" : [ 820.156707467740034, 341.734325871341753, 75.496758669614792, 22.0 ],
 					"text" : "Sync",
 					"texton" : "Sync"
 				}
@@ -1185,7 +1339,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 1499.847357189515606, 1433.179446514259098, 67.470745349070171, 18.529411673545837 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 820.22538644284532, 366.238492061691886, 180.441535117726744, 22.08088082075119 ],
+					"presentation_rect" : [ 820.156707467740034, 365.711928953724509, 180.441535117726744, 22.08088082075119 ],
 					"text" : "Harmonics:",
 					"texton" : "Harmonics:"
 				}
@@ -1202,7 +1356,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 1171.066572530514804, 1456.84374850572226, 60.607999825617412, 18.529411673545837 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 820.22538644284532, 195.692828938835191, 180.263506829738162, 21.798828125 ],
+					"presentation_rect" : [ 820.156707467740034, 195.166265830867815, 180.263506829738162, 21.798828125 ],
 					"text" : "Duration (ms):",
 					"texton" : "Envelope Duration (ms):"
 				}
@@ -1219,7 +1373,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 936.002267438057515, 1680.686490113303535, 78.0, 14.999478441477095 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 820.22538644284532, 104.990724787113322, 62.042647838592529, 22.0 ],
+					"presentation_rect" : [ 820.156707467740034, 104.464161679145946, 62.042647838592529, 22.0 ],
 					"text" : "Amplitude",
 					"texton" : "Amplitude"
 				}
@@ -1236,7 +1390,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 823.965000726663334, 1469.881532335004522, 67.644972622394562, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 820.22538644284532, 81.469260503845817, 108.060336386164181, 22.0 ],
+					"presentation_rect" : [ 820.156707467740034, 80.94269739587844, 108.060336386164181, 22.0 ],
 					"text" : "Waveform:",
 					"texton" : "Waveform:"
 				}
@@ -1255,7 +1409,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 935.109328932412154, 1367.178967920634477, 137.352290451526642, 27.658536672592163 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 878.464117668177096, 24.503545567390574, 174.363691493868828, 55.162197599808565 ],
+					"presentation_rect" : [ 878.39543869307181, 23.976982459423198, 174.363691493868828, 55.162197599808565 ],
 					"text" : "Modulator 2",
 					"texton" : "Modulator 2"
 				}
@@ -1273,7 +1427,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 326.180826365947723, 1368.045081182779995, 100.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 574.434678020184492, 342.260888979309129, 75.496753543615341, 22.0 ],
+					"presentation_rect" : [ 574.365999045079207, 341.734325871341753, 75.496753543615341, 22.0 ],
 					"text" : "Sync",
 					"texton" : "Sync"
 				}
@@ -1291,7 +1445,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 664.700902357779569, 1368.045081182779995, 82.894737005233765, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 574.434678020184492, 512.329878320294029, 115.104276478290558, 21.912568390369415 ],
+					"presentation_rect" : [ 574.365999045079207, 511.803315212326652, 115.104276478290558, 21.912568390369415 ],
 					"text" : "Sync",
 					"texton" : "Sync"
 				}
@@ -1308,7 +1462,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 701.847357189515492, 1442.293487981681437, 67.470745349070171, 18.529411673545837 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 574.434678020184492, 366.238492061691886, 180.832627115151354, 21.798828125 ],
+					"presentation_rect" : [ 574.365999045079207, 365.711928953724509, 180.832627115151354, 21.798828125 ],
 					"text" : "Harmonics:",
 					"texton" : "Harmonics:"
 				}
@@ -1325,7 +1479,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 378.180826365947723, 1458.579042668949342, 60.607999825617412, 18.529411673545837 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 574.434678020184492, 195.692828938835191, 180.263506829738162, 21.798828125 ],
+					"presentation_rect" : [ 574.365999045079207, 195.166265830867815, 180.263506829738162, 21.798828125 ],
 					"text" : "Duration (ms):",
 					"texton" : "Envelope Duration (ms):"
 				}
@@ -1342,7 +1496,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 126.274727084123924, 1682.194873820450994, 78.0, 14.999478441477095 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 574.434678020184492, 105.496346275481528, 62.042647838592529, 22.0 ],
+					"presentation_rect" : [ 574.365999045079207, 104.969783167514152, 62.042647838592529, 22.0 ],
 					"text" : "Amplitude",
 					"texton" : "Amplitude"
 				}
@@ -1359,7 +1513,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 143.488964903238866, 1566.38671899905512, 46.558708310127258, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 755.816264278794733, 105.496346275481528, 46.441672921180725, 22.0 ],
+					"presentation_rect" : [ 755.747585303689448, 104.969783167514152, 46.441672921180725, 22.0 ],
 					"text" : "Detune",
 					"texton" : "Detune"
 				}
@@ -1376,7 +1530,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 73.452240772926643, 1566.38671899905512, 67.644972622394562, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 689.186619205479474, 105.496346275481528, 63.700963067811472, 22.0 ],
+					"presentation_rect" : [ 689.117940230374188, 104.969783167514152, 63.700963067811472, 22.0 ],
 					"text" : "Transpose",
 					"texton" : "Transpose"
 				}
@@ -1393,7 +1547,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 23.742279994371984, 1566.38671899905512, 52.990360756715518, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 640.044344938899485, 105.496346275481528, 45.985511600971222, 22.0 ],
+					"presentation_rect" : [ 639.975665963794199, 104.969783167514152, 45.985511600971222, 22.0 ],
 					"text" : "Octave",
 					"texton" : "Octave"
 				}
@@ -1410,7 +1564,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 23.742279994371984, 1468.85764160128565, 67.644972622394562, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 574.434678020184492, 81.665743167199253, 108.060336386164181, 22.0 ],
+					"presentation_rect" : [ 574.365999045079207, 81.139180059231876, 108.060336386164181, 22.0 ],
 					"text" : "Waveform:",
 					"texton" : "Waveform:"
 				}
@@ -1429,7 +1583,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 145.274727084123924, 1373.386544510187832, 137.352290451526642, 27.658536672592163 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 632.673409245516268, 24.503545567390574, 174.363691493868828, 55.162197599808565 ],
+					"presentation_rect" : [ 632.604730270410982, 23.976982459423198, 174.363691493868828, 55.162197599808565 ],
 					"text" : "Modulator 1",
 					"texton" : "Modulator 1"
 				}
@@ -1447,7 +1601,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 1463.280391349441288, 862.299601136384354, 82.894737005233765, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 328.393980892603849, 512.806552102165824, 115.104276478290558, 21.912568390369415 ],
+					"presentation_rect" : [ 328.325301917498564, 512.279988994198447, 115.104276478290558, 21.912568390369415 ],
 					"text" : "Sync",
 					"texton" : "Sync"
 				}
@@ -1464,7 +1618,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 1507.548648273805156, 935.860034883022536, 67.470745349070171, 18.529411673545837 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 328.393980892603849, 366.238492061691886, 180.602422719200604, 21.798828125 ],
+					"presentation_rect" : [ 328.325301917498564, 365.711928953724509, 180.602422719200604, 21.798828125 ],
 					"text" : "Harmonics:",
 					"texton" : "Harmonics:"
 				}
@@ -1481,7 +1635,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 1170.928160411527642, 952.14558957029044, 60.607999825617412, 18.529411673545837 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 328.393980892603849, 195.469260146217948, 180.63183463116502, 21.798828125 ],
+					"presentation_rect" : [ 328.325301917498564, 194.942697038250571, 180.63183463116502, 21.798828125 ],
 					"text" : "Duration (ms):",
 					"texton" : "Envelope Duration (ms):"
 				}
@@ -1499,7 +1653,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 1124.76031535760967, 861.136959671974182, 100.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 328.393980892603849, 342.260888979309129, 75.496758669614792, 22.0 ],
+					"presentation_rect" : [ 328.325301917498564, 341.734325871341753, 75.496758669614792, 22.0 ],
 					"text" : "Sync",
 					"texton" : "Sync"
 				}
@@ -1516,7 +1670,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 940.605168587811704, 1059.740647592144342, 46.558708310127258, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 509.775567151214091, 105.862225830552688, 46.441672921180725, 21.798828125 ],
+					"presentation_rect" : [ 509.706888176108805, 105.335662722585312, 46.441672921180725, 21.798828125 ],
 					"text" : "Detune",
 					"texton" : "Detune"
 				}
@@ -1533,7 +1687,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 872.062036431678052, 1059.740647592144342, 67.644972622394562, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 443.24794904103419, 105.862225830552688, 63.496909141540527, 21.798828125 ],
+					"presentation_rect" : [ 443.179270065928904, 105.335662722585312, 63.496909141540527, 21.798828125 ],
 					"text" : "Transpose",
 					"texton" : "Transpose"
 				}
@@ -1550,7 +1704,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 820.847256031480924, 1059.740647592144342, 52.990360756715518, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 394.020914505775181, 105.692828938834964, 45.950978212058544, 21.798828125 ],
+					"presentation_rect" : [ 393.952235530669896, 105.166265830867587, 45.950978212058544, 21.798828125 ],
 					"text" : "Octave",
 					"texton" : "Octave"
 				}
@@ -1567,7 +1721,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 935.109328932412154, 1168.717002703773687, 78.0, 14.999478441477095 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 328.393980892603849, 105.491657063835191, 62.042647838592529, 22.0 ],
+					"presentation_rect" : [ 328.325301917498564, 104.965093955867815, 62.042647838592529, 22.0 ],
 					"text" : "Amplitude",
 					"texton" : "Amplitude"
 				}
@@ -1584,7 +1738,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 819.342436409838797, 958.291438980955718, 67.644972622394562, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 328.393980892603849, 81.862225830552688, 108.060336386163726, 22.0 ],
+					"presentation_rect" : [ 328.325301917498564, 81.335662722585312, 108.060336386163726, 22.0 ],
 					"text" : "Waveform:",
 					"texton" : "Waveform:"
 				}
@@ -1603,7 +1757,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 959.574123961095665, 868.346922247348289, 105.644972622394562, 24.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 386.632712117935625, 24.70002823074401, 174.363691493868828, 55.162197599808565 ],
+					"presentation_rect" : [ 386.56403314283034, 24.173465122776634, 174.363691493868828, 55.162197599808565 ],
 					"text" : "Carrier 2",
 					"texton" : "Carrier 2"
 				}
@@ -1622,7 +1776,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 192.859937536600683, 868.346922247348289, 105.644972622394562, 24.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 141.220178330546105, 24.70002823074401, 174.363691493868828, 55.162197599808565 ],
+					"presentation_rect" : [ 141.151499355440819, 24.173465122776634, 174.363691493868828, 55.162197599808565 ],
 					"text" : "Carrier 1",
 					"texton" : "Carrier 1"
 				}
@@ -1639,7 +1793,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 708.847357189515492, 935.860034883022536, 67.470745349070171, 18.529411673545837 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 82.981447105214329, 366.238492061691886, 180.602422719200604, 21.798828125 ],
+					"presentation_rect" : [ 82.912768130109043, 365.711928953724509, 180.602422719200604, 21.798828125 ],
 					"text" : "Harmonics:",
 					"texton" : "Harmonics:"
 				}
@@ -1656,7 +1810,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 372.572826540330311, 952.14558957029044, 60.607999825617412, 18.529411673545837 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 82.981447105214329, 195.469260146217948, 180.63183463116502, 21.798828125 ],
+					"presentation_rect" : [ 82.912768130109043, 194.942697038250571, 180.63183463116502, 21.798828125 ],
 					"text" : "Duration (ms):",
 					"texton" : "Envelope Duration (ms):"
 				}
@@ -1673,7 +1827,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 23.742279994371984, 964.413315411436542, 67.644972622394562, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 82.981447105214329, 81.862225830552688, 108.060336386164181, 22.0 ],
+					"presentation_rect" : [ 82.912768130109043, 81.335662722585312, 108.060336386164181, 22.0 ],
 					"text" : "Waveform:",
 					"texton" : "Waveform:"
 				}
@@ -1690,7 +1844,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 141.995372929060295, 1059.740647592144342, 46.558708310127258, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 264.363033363824343, 105.670432021217948, 46.441672921180725, 21.798828125 ],
+					"presentation_rect" : [ 264.294354388719057, 105.143868913250571, 46.441672921180725, 21.798828125 ],
 					"text" : "Detune",
 					"texton" : "Detune"
 				}
@@ -1707,7 +1861,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 73.452240772926643, 1059.740647592144342, 67.644972622394562, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 197.835415253644896, 105.670432021217948, 63.700963067811472, 21.798828125 ],
+					"presentation_rect" : [ 197.766736278539611, 105.143868913250571, 63.700963067811472, 21.798828125 ],
 					"text" : "Transpose",
 					"texton" : "Transpose"
 				}
@@ -1724,7 +1878,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 22.237460372729743, 1059.740647592144342, 52.990360756715518, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 148.608380718385661, 105.670432021217948, 45.985511600971222, 21.798828125 ],
+					"presentation_rect" : [ 148.539701743280375, 105.143868913250571, 45.985511600971222, 21.798828125 ],
 					"text" : "Octave",
 					"texton" : "Octave"
 				}
@@ -1741,7 +1895,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 132.488964903238866, 1175.548802413540216, 78.0, 14.999478441477095 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 82.981447105214329, 105.670432021217948, 62.042647838592529, 22.0 ],
+					"presentation_rect" : [ 82.912768130109043, 105.143868913250571, 62.042647838592529, 22.0 ],
 					"text" : "Amplitude",
 					"texton" : "Amplitude"
 				}
@@ -1759,7 +1913,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 664.700902357779569, 860.95430961125885, 82.894737005233765, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 82.981447105214329, 512.806552102165824, 115.496757358312607, 21.912568390369415 ],
+					"presentation_rect" : [ 82.912768130109043, 512.279988994198447, 115.496757358312607, 21.912568390369415 ],
 					"text" : "Sync",
 					"texton" : "Sync"
 				}
@@ -1777,7 +1931,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 326.180826365947723, 860.894807130098343, 100.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 82.981447105214329, 342.260888979309129, 75.496758669614792, 22.0 ],
+					"presentation_rect" : [ 82.912768130109043, 341.734325871341753, 75.496758669614792, 22.0 ],
 					"text" : "Sync",
 					"texton" : "Sync"
 				}
@@ -1793,7 +1947,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 1429.130674167353163, 1982.434582713085547, 100.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 693.36990752777001, 861.960363603966925, 115.299148896300721, 22.197802305221558 ],
+					"presentation_rect" : [ 693.301228552664725, 861.433800495999549, 115.299148896300721, 22.197802305221558 ],
 					"text" : "Clear",
 					"texton" : "Clear"
 				}
@@ -1809,7 +1963,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 959.162429466925914, 1897.019789790657796, 100.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 1223.565612944071745, 683.122049321728355, 75.649883424242034, 22.197802305221558 ],
+					"presentation_rect" : [ 1223.496933968966459, 682.595486213760978, 75.649883424242034, 22.197802305221558 ],
 					"text" : "Clear",
 					"texton" : "Clear"
 				}
@@ -1825,7 +1979,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 400.162429466925914, 1907.019789790657796, 100.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 1223.565612944071745, 342.260888979309129, 75.496758669614792, 22.113740265369415 ],
+					"presentation_rect" : [ 1223.496933968966459, 341.734325871341753, 75.496758669614792, 22.113740265369415 ],
 					"text" : "Clear",
 					"texton" : "Clear"
 				}
@@ -1841,7 +1995,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 1457.918800965033597, 1475.264077619437785, 100.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 937.722143801157927, 512.611931016045219, 115.299148896300267, 22.113740265369302 ],
+					"presentation_rect" : [ 937.653464826052641, 512.085367908077842, 115.299148896300267, 22.113740265369302 ],
 					"text" : "Clear",
 					"texton" : "Clear"
 				}
@@ -1857,7 +2011,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 1249.592724159442241, 1386.138480551818702, 100.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 977.722142489855742, 342.260888979309129, 75.496758669614792, 21.912568390369415 ],
+					"presentation_rect" : [ 977.653463514750456, 341.734325871341753, 75.496758669614792, 21.912568390369415 ],
 					"text" : "Clear",
 					"texton" : "Clear"
 				}
@@ -1873,7 +2027,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 655.446704283438748, 1475.264077619437785, 100.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 691.931435378497099, 512.725671281414634, 115.496757358313062, 22.113740265369415 ],
+					"presentation_rect" : [ 691.862756403391813, 512.199108173447257, 115.496757358313062, 22.113740265369415 ],
 					"text" : "Clear",
 					"texton" : "Clear"
 				}
@@ -1889,7 +2043,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 450.874823048793132, 1377.045081182779995, 100.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 731.931434067194914, 342.260888979309129, 75.496758669614792, 22.0 ],
+					"presentation_rect" : [ 731.862755092089628, 341.734325871341753, 75.496758669614792, 22.0 ],
 					"text" : "Clear",
 					"texton" : "Clear"
 				}
@@ -1905,7 +2059,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 1249.454312040455079, 876.858932554721832, 100.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 485.890736939614271, 342.260888979309129, 75.496758669614792, 22.0 ],
+					"presentation_rect" : [ 485.822057964508986, 341.734325871341753, 75.496758669614792, 22.0 ],
 					"text" : "Clear",
 					"texton" : "Clear"
 				}
@@ -1921,7 +2075,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 1463.280391349441288, 966.846922247348175, 100.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 445.890738250916456, 512.806552102165824, 115.496757358313062, 21.912568390369415 ],
+					"presentation_rect" : [ 445.822059275811171, 512.279988994198447, 115.496757358313062, 21.912568390369415 ],
 					"text" : "Clear",
 					"texton" : "Clear"
 				}
@@ -1937,7 +2091,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 654.456877364761112, 970.565918684005965, 100.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 200.478204463526936, 512.806552102165824, 115.319159957269903, 21.912568390369415 ],
+					"presentation_rect" : [ 200.40952548842165, 512.279988994198447, 115.319159957269903, 21.912568390369415 ],
 					"text" : "Clear",
 					"texton" : "Clear"
 				}
@@ -1953,7 +2107,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 450.874823048793132, 882.672729385690559, 100.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 240.478203152224751, 342.260888979309129, 75.496758669614792, 22.0 ],
+					"presentation_rect" : [ 240.409524177119465, 341.734325871341753, 75.496758669614792, 22.0 ],
 					"text" : "Clear",
 					"texton" : "Clear"
 				}
@@ -1969,7 +2123,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 1429.280391349441288, 418.679647797879852, 100.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 1066.068856897061323, 865.414296375183312, 232.949693629108879, 22.0 ],
+					"presentation_rect" : [ 1066.000177921956038, 864.887733267215935, 232.949693629108879, 22.0 ],
 					"text" : "Clear",
 					"texton" : "Clear"
 				}
@@ -1985,7 +2139,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 580.456878199226139, 417.763679141339935, 100.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 200.631991838022486, 866.322378008964279, 115.299148896300267, 22.0 ],
+					"presentation_rect" : [ 200.563312862917201, 865.795814900996902, 115.299148896300267, 22.0 ],
 					"text" : "Clear",
 					"texton" : "Clear"
 				}
@@ -2077,7 +2231,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 955.002267438057515, 1699.294931891693977, 40.0, 40.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 831.246710362141584, 128.990724787113322, 40.0, 40.0 ],
+					"presentation_rect" : [ 831.178031387036299, 128.464161679145946, 40.0, 40.0 ],
 					"size" : 10000.0
 				}
 
@@ -2096,7 +2250,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 145.274727084123924, 1699.194352261928088, 40.0, 40.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 585.456001939480757, 129.295174400481756, 40.0, 40.0 ],
+					"presentation_rect" : [ 585.387322964375471, 128.768611292514379, 40.0, 40.0 ],
 					"size" : 10000.0
 				}
 
@@ -2116,7 +2270,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 264.139591863830447, 645.013719588517915, 18.404255330562592, 103.297872602939606 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 204.848208342596308, 914.121206133964279, 50.0, 119.787234084869851 ],
+					"presentation_rect" : [ 204.779529367491023, 913.594643025996902, 50.0, 119.787234084869851 ],
 					"size" : 1000.0
 				}
 
@@ -2135,7 +2289,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 353.737100383718371, 645.013719588517915, 20.531914889812469, 103.297872602939606 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 264.061088404126849, 914.121206133964279, 50.207372397184372, 119.787234084869851 ],
+					"presentation_rect" : [ 263.992409429021563, 913.594643025996902, 50.207372397184372, 119.787234084869851 ],
 					"size" : 2000.0
 				}
 
@@ -2154,7 +2308,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 167.139591863830447, 645.013719588517915, 21.063829779624939, 103.297872602939606 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 145.821946911667737, 914.121206133964279, 50.0, 119.787234084869851 ],
+					"presentation_rect" : [ 145.753267936562452, 913.594643025996902, 50.0, 119.787234084869851 ],
 					"size" : 2000.0
 				}
 
@@ -2173,7 +2327,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 72.918871155460238, 645.013719588517915, 21.063829779624939, 103.297872602939606 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 85.637704657073527, 914.121206133964279, 50.0, 119.787234084869851 ],
+					"presentation_rect" : [ 85.569025681968242, 913.594643025996902, 50.0, 119.787234084869851 ],
 					"size" : 2000.0
 				}
 
@@ -2192,7 +2346,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 954.109328932412154, 1185.716481145250782, 40.0, 40.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 339.415304811900114, 129.491657063835191, 40.0, 40.0 ],
+					"presentation_rect" : [ 339.346625836794829, 128.965093955867815, 40.0, 40.0 ],
 					"size" : 2000.0
 				}
 
@@ -2211,7 +2365,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 151.488964903238866, 1192.54828085501731, 40.0, 40.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 94.002771024510594, 129.469260146217948, 40.0, 40.0 ],
+					"presentation_rect" : [ 93.934092049405308, 128.942697038250571, 40.0, 40.0 ],
 					"size" : 2000.0
 				}
 
@@ -2230,7 +2384,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 582.581441954805882, 2108.414549417108901, 40.0, 40.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 1099.760109200680745, 470.443618585663444, 40.0, 40.0 ],
+					"presentation_rect" : [ 1099.691430225575459, 469.917055477696067, 40.0, 40.0 ],
 					"size" : 4000.0
 				}
 
@@ -2249,7 +2403,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 23.581441954805882, 2113.355927083461211, 40.0, 40.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 1100.099025090143186, 128.708672091362132, 40.0, 40.0 ],
+					"presentation_rect" : [ 1100.030346115037901, 128.182108983394755, 40.0, 40.0 ],
 					"size" : 4000.0
 				}
 
@@ -2268,7 +2422,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 23.581441954805882, 2231.414826003436247, 40.0, 40.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 1216.882163054849116, 128.708672091362132, 40.0, 40.0 ],
+					"presentation_rect" : [ 1216.81348407974383, 128.182108983394755, 40.0, 40.0 ],
 					"size" : 20000.0
 				}
 
@@ -2287,7 +2441,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 582.581441954805882, 2223.143332738458412, 40.0, 40.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 1216.543247165386674, 470.443618585663444, 40.0, 40.0 ],
+					"presentation_rect" : [ 1216.474568190281389, 469.917055477696067, 40.0, 40.0 ],
 					"size" : 20000.0
 				}
 
@@ -2306,7 +2460,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 1155.566344219327675, 2223.348183264176896, 40.0, 40.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 481.013605774086955, 819.960363603966925, 40.0, 40.0 ],
+					"presentation_rect" : [ 480.944926798981669, 819.433800495999549, 40.0, 40.0 ],
 					"size" : 20000.0
 				}
 
@@ -2325,7 +2479,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 1155.566344219327675, 2095.047816203476032, 40.0, 40.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 372.230467809381025, 819.960363603966925, 40.0, 40.0 ],
+					"presentation_rect" : [ 372.16178883427574, 819.433800495999549, 40.0, 40.0 ],
 					"size" : 1000.0
 				}
 
@@ -2424,7 +2578,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 972.823254063807553, 2228.034108896206817, 50.0, 22.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 1248.332363726799485, 560.316776742535239, 50.0, 22.0 ],
+					"presentation_rect" : [ 1248.2636847516942, 559.790213634567863, 50.0, 22.0 ],
 					"textcolor" : [ 0.807843137254902, 0.898039215686275, 0.909803921568627, 1.0 ],
 					"tricolor" : [ 0.564705882352941, 0.905882352941176, 0.862745098039216, 1.0 ]
 				}
@@ -2621,18 +2775,6 @@
 			}
 , 			{
 				"box" : 				{
-					"id" : "obj-444",
-					"maxclass" : "newobj",
-					"numinlets" : 0,
-					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 746.366504430770874, 2102.205760351062963, 85.0, 22.0 ],
-					"text" : "receive trigger"
-				}
-
-			}
-, 			{
-				"box" : 				{
 					"id" : "obj-445",
 					"maxclass" : "message",
 					"numinlets" : 2,
@@ -2656,7 +2798,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 732.604727698763782, 2139.787956423741889, 200.0, 100.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 1065.729941007598882, 584.316776742535239, 232.602422719199694, 96.607470273971558 ],
+					"presentation_rect" : [ 1065.661262032493596, 583.790213634567863, 232.602422719199694, 96.607470273971558 ],
 					"range" : [ 1.0, 5.0 ],
 					"textcolor" : [ 0.807843137254902, 0.898039215686275, 0.909803921568627, 1.0 ]
 				}
@@ -2669,7 +2811,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 748.366504430770874, 2066.846050281106727, 81.0, 22.0 ],
+					"patching_rect" : [ 745.604727698763782, 2102.205760351062963, 81.0, 22.0 ],
 					"text" : "setdomain $1"
 				}
 
@@ -2686,7 +2828,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 834.468432784080505, 2008.332171967495469, 50.0, 22.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 1248.332363726799485, 536.719120492535239, 50.0, 22.0 ],
+					"presentation_rect" : [ 1248.2636847516942, 536.192557384567863, 50.0, 22.0 ],
 					"textcolor" : [ 0.807843137254902, 0.898039215686275, 0.909803921568627, 1.0 ],
 					"tricolor" : [ 0.564705882352941, 0.905882352941176, 0.862745098039216, 1.0 ]
 				}
@@ -2787,7 +2929,7 @@
 					"outlettype" : [ "signal", "float" ],
 					"patching_rect" : [ 582.581441954805882, 2151.564716149507149, 56.0, 22.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 1091.760109200680745, 512.443618585663444, 56.0, 22.0 ],
+					"presentation_rect" : [ 1091.691430225575459, 511.917055477696067, 56.0, 22.0 ],
 					"sig" : 1.0,
 					"textcolor" : [ 0.807843137254902, 0.898039215686275, 0.909803921568627, 1.0 ]
 				}
@@ -2808,7 +2950,7 @@
 					"outlettype" : [ "signal", "float" ],
 					"patching_rect" : [ 582.581441954805882, 2265.143332738458412, 56.0, 22.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 1208.543247165386674, 512.443618585663444, 56.0, 22.0 ],
+					"presentation_rect" : [ 1208.474568190281389, 511.917055477696067, 56.0, 22.0 ],
 					"sig" : 0.5,
 					"textcolor" : [ 0.807843137254902, 0.898039215686275, 0.909803921568627, 1.0 ]
 				}
@@ -2826,7 +2968,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 582.581441954805882, 2007.837355571721673, 78.0, 22.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 1175.094267787640092, 423.204206998147129, 122.897958755493164, 22.0 ],
+					"presentation_rect" : [ 1175.025588812534806, 422.677643890179752, 122.897958755493164, 22.0 ],
 					"textcolor" : [ 0.807843137254902, 0.898039215686275, 0.909803921568627, 1.0 ]
 				}
 
@@ -2908,7 +3050,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 413.823254063807553, 2228.034108896206817, 50.0, 22.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 1248.332363726799485, 219.491657063835191, 50.0, 22.0 ],
+					"presentation_rect" : [ 1248.2636847516942, 218.965093955867815, 50.0, 22.0 ],
 					"textcolor" : [ 0.807843137254902, 0.898039215686275, 0.909803921568627, 1.0 ],
 					"tricolor" : [ 0.564705882352941, 0.905882352941176, 0.862745098039216, 1.0 ]
 				}
@@ -3105,18 +3247,6 @@
 			}
 , 			{
 				"box" : 				{
-					"id" : "obj-494",
-					"maxclass" : "newobj",
-					"numinlets" : 0,
-					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 187.366504430770874, 2102.205760351062963, 85.0, 22.0 ],
-					"text" : "receive trigger"
-				}
-
-			}
-, 			{
-				"box" : 				{
 					"id" : "obj-495",
 					"maxclass" : "message",
 					"numinlets" : 2,
@@ -3140,7 +3270,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 173.604727698763782, 2139.787956423741889, 200.0, 100.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 1065.729941007598427, 243.290485188835191, 232.602422719200604, 96.607470273971558 ],
+					"presentation_rect" : [ 1065.661262032493141, 242.763922080867815, 232.602422719200604, 96.607470273971558 ],
 					"range" : [ 1.0, 5.0 ],
 					"textcolor" : [ 0.807843137254902, 0.898039215686275, 0.909803921568627, 1.0 ]
 				}
@@ -3153,7 +3283,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 189.366504430770874, 2066.846050281106727, 81.0, 22.0 ],
+					"patching_rect" : [ 186.604727698763782, 2102.205760351062963, 81.0, 22.0 ],
 					"text" : "setdomain $1"
 				}
 
@@ -3170,7 +3300,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 275.468432784080505, 2008.332171967495469, 50.0, 22.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 1248.332363726799485, 195.692828938835191, 50.0, 22.0 ],
+					"presentation_rect" : [ 1248.2636847516942, 195.166265830867815, 50.0, 22.0 ],
 					"textcolor" : [ 0.807843137254902, 0.898039215686275, 0.909803921568627, 1.0 ],
 					"tricolor" : [ 0.564705882352941, 0.905882352941176, 0.862745098039216, 1.0 ]
 				}
@@ -3217,7 +3347,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 1124.898727476596832, 1539.357626819333746, 120.0, 22.0 ],
+					"patching_rect" : [ 1124.898727476596832, 1576.406806760749532, 120.0, 22.0 ],
 					"text" : "send M2-DURATION"
 				}
 
@@ -3413,7 +3543,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 1397.418801799498624, 1475.264077619437785, 50.0, 22.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 1003.218901159471443, 366.238492061691886, 50.0, 22.0 ],
+					"presentation_rect" : [ 1003.150222184366157, 365.711928953724509, 50.0, 22.0 ],
 					"textcolor" : [ 0.807843137254902, 0.898039215686275, 0.909803921568627, 1.0 ],
 					"tricolor" : [ 0.564705882352941, 0.905882352941176, 0.862745098039216, 1.0 ]
 				}
@@ -3481,7 +3611,7 @@
 					"outlettype" : [ "signal", "float" ],
 					"patching_rect" : [ 947.002267438057515, 1743.666198130260454, 56.0, 22.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 823.246710362141584, 170.594931825992717, 56.0, 22.0 ],
+					"presentation_rect" : [ 823.178031387036299, 170.06836871802534, 56.0, 22.0 ],
 					"sig" : 1.0,
 					"textcolor" : [ 0.807843137254902, 0.898039215686275, 0.909803921568627, 1.0 ]
 				}
@@ -3497,7 +3627,7 @@
 					"outlettype" : [ "float", "float", "float", "float", "list", "" ],
 					"patching_rect" : [ 1397.418801799498624, 1690.414640080682602, 182.923081278800964, 120.769231915473938 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 820.071599068349315, 536.719120492535239, 232.408939183788334, 168.205126523971558 ],
+					"presentation_rect" : [ 820.002920093244029, 536.192557384567863, 232.408939183788334, 168.205126523971558 ],
 					"selectioncolor" : [ 0.490196078431373, 0.611764705882353, 0.607843137254902, 1.0 ],
 					"waveformcolor" : [ 0.564705882352941, 0.905882352941176, 0.862745098039216, 1.0 ]
 				}
@@ -3529,7 +3659,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 1397.418801799498624, 1533.823979687444535, 182.820503115653992, 120.769231915473938 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 820.071599068349315, 390.238492061691886, 233.147302091121674, 120.769231915473938 ],
+					"presentation_rect" : [ 820.002920093244029, 389.711928953724509, 233.147302091121674, 120.769231915473938 ],
 					"setminmax" : [ 0.0, 1.0 ],
 					"setstyle" : 1,
 					"size" : 5,
@@ -3548,7 +3678,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 822.460181105021093, 1389.178967920634477, 24.0, 24.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 820.22538644284532, 24.503545567390574, 54.965714936455129, 54.965714936455129 ]
+					"presentation_rect" : [ 820.156707467740034, 23.976982459423198, 54.965714936455129, 54.965714936455129 ]
 				}
 
 			}
@@ -3577,18 +3707,6 @@
 			}
 , 			{
 				"box" : 				{
-					"id" : "obj-391",
-					"maxclass" : "newobj",
-					"numinlets" : 0,
-					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 1036.796799123287201, 1574.717336889289527, 85.0, 22.0 ],
-					"text" : "receive trigger"
-				}
-
-			}
-, 			{
-				"box" : 				{
 					"id" : "obj-392",
 					"maxclass" : "message",
 					"numinlets" : 2,
@@ -3612,7 +3730,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 1023.035022391280108, 1612.299532961968907, 200.0, 100.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 820.22538644284532, 219.410776243084001, 232.602422719200604, 120.769231915473938 ],
+					"presentation_rect" : [ 820.156707467740034, 218.884213135116624, 232.602422719200604, 120.769231915473938 ],
 					"textcolor" : [ 0.807843137254902, 0.898039215686275, 0.909803921568627, 1.0 ]
 				}
 
@@ -3624,7 +3742,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 1038.796799123287201, 1539.357626819333746, 81.0, 22.0 ],
+					"patching_rect" : [ 1039.452536821365356, 1576.406806760749532, 81.0, 22.0 ],
 					"text" : "setdomain $1"
 				}
 
@@ -3639,9 +3757,9 @@
 					"outlettype" : [ "", "bang" ],
 					"outputonclick" : 1,
 					"parameter_enable" : 0,
-					"patching_rect" : [ 1124.898727476596832, 1480.84374850572226, 50.0, 22.0 ],
+					"patching_rect" : [ 1124.898727476596832, 1532.319157804857468, 50.0, 22.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 1002.827809162046378, 195.692828938835191, 50.0, 22.0 ],
+					"presentation_rect" : [ 1002.759130186941093, 195.166265830867815, 50.0, 22.0 ],
 					"textcolor" : [ 0.807843137254902, 0.898039215686275, 0.909803921568627, 1.0 ],
 					"tricolor" : [ 0.564705882352941, 0.905882352941176, 0.862745098039216, 1.0 ]
 				}
@@ -3733,7 +3851,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 947.002267438057515, 1588.38671899905512, 40.0, 40.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 1004.827809162045924, 128.990724787113322, 40.0, 40.0 ],
+					"presentation_rect" : [ 1004.759130186940638, 128.464161679145946, 40.0, 40.0 ],
 					"size" : 2000.0
 				}
 
@@ -3754,7 +3872,7 @@
 					"outlettype" : [ "signal", "float" ],
 					"patching_rect" : [ 939.002267438057515, 1630.217322107337623, 56.0, 22.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 996.827809162045924, 170.594931825992717, 56.0, 22.0 ],
+					"presentation_rect" : [ 996.759130186940638, 170.06836871802534, 56.0, 22.0 ],
 					"sig" : 0.0,
 					"textcolor" : [ 0.807843137254902, 0.898039215686275, 0.909803921568627, 1.0 ]
 				}
@@ -3776,7 +3894,7 @@
 					"outlettype" : [ "signal", "float" ],
 					"patching_rect" : [ 881.002267438057515, 1630.217322107337623, 56.0, 22.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 938.827809162045924, 170.594931825992717, 56.0, 22.0 ],
+					"presentation_rect" : [ 938.759130186940638, 170.06836871802534, 56.0, 22.0 ],
 					"sig" : 0.0,
 					"textcolor" : [ 0.807843137254902, 0.898039215686275, 0.909803921568627, 1.0 ]
 				}
@@ -3795,7 +3913,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 889.002267438057515, 1588.38671899905512, 40.0, 40.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 946.827809162045924, 128.990724787113322, 40.0, 40.0 ],
+					"presentation_rect" : [ 946.759130186940638, 128.464161679145946, 40.0, 40.0 ],
 					"size" : 25.0
 				}
 
@@ -3813,7 +3931,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 830.460181105021093, 1588.38671899905512, 40.0, 40.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 888.827809162045924, 128.990724787113322, 40.0, 40.0 ],
+					"presentation_rect" : [ 888.759130186940638, 128.464161679145946, 40.0, 40.0 ],
 					"size" : 17.0
 				}
 
@@ -3834,7 +3952,7 @@
 					"outlettype" : [ "signal", "float" ],
 					"patching_rect" : [ 822.460181105021093, 1630.217322107337623, 56.0, 22.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 880.827809162045924, 170.594931825992717, 56.0, 22.0 ],
+					"presentation_rect" : [ 880.759130186940638, 170.06836871802534, 56.0, 22.0 ],
 					"sig" : 0.0,
 					"textcolor" : [ 0.807843137254902, 0.898039215686275, 0.909803921568627, 1.0 ]
 				}
@@ -3873,7 +3991,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 823.965000726663334, 1492.135365080587235, 78.0, 22.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 929.58971322288653, 81.469260503845817, 123.238095939159393, 22.0 ],
+					"presentation_rect" : [ 929.521034247781245, 80.94269739587844, 123.238095939159393, 22.0 ],
 					"textcolor" : [ 0.807843137254902, 0.898039215686275, 0.909803921568627, 1.0 ]
 				}
 
@@ -3936,7 +4054,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 326.180826365947723, 1539.357626819333746, 120.0, 22.0 ],
+					"patching_rect" : [ 326.180826365947723, 1576.191051375619736, 120.0, 22.0 ],
 					"text" : "send M1-DURATION"
 				}
 
@@ -4132,7 +4250,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 598.700900688849515, 1475.264077619437785, 50.0, 22.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 757.428192736810615, 366.238492061691886, 50.0, 22.0 ],
+					"presentation_rect" : [ 757.35951376170533, 365.711928953724509, 50.0, 22.0 ],
 					"textcolor" : [ 0.807843137254902, 0.898039215686275, 0.909803921568627, 1.0 ],
 					"tricolor" : [ 0.564705882352941, 0.905882352941176, 0.862745098039216, 1.0 ]
 				}
@@ -4200,7 +4318,7 @@
 					"outlettype" : [ "signal", "float" ],
 					"patching_rect" : [ 137.274727084123924, 1744.227305047420487, 56.0, 22.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 577.456001939480757, 171.295174400481756, 56.0, 22.0 ],
+					"presentation_rect" : [ 577.387322964375471, 170.768611292514379, 56.0, 22.0 ],
 					"sig" : 1.0,
 					"textcolor" : [ 0.807843137254902, 0.898039215686275, 0.909803921568627, 1.0 ]
 				}
@@ -4216,7 +4334,7 @@
 					"outlettype" : [ "float", "float", "float", "float", "list", "" ],
 					"patching_rect" : [ 598.700900688849515, 1690.414640080682602, 182.923081278800964, 120.769231915473938 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 574.434678020184492, 536.719120492535239, 232.408939183788334, 168.205126523971558 ],
+					"presentation_rect" : [ 574.365999045079207, 536.192557384567863, 232.408939183788334, 168.205126523971558 ],
 					"selectioncolor" : [ 0.490196078431373, 0.611764705882353, 0.607843137254902, 1.0 ],
 					"waveformcolor" : [ 0.564705882352941, 0.905882352941176, 0.862745098039216, 1.0 ]
 				}
@@ -4248,7 +4366,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 598.700900688849515, 1533.823979687444535, 182.820503115653992, 120.769231915473938 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 574.434678020184492, 389.956439365940696, 232.993514716626123, 120.769231915473938 ],
+					"presentation_rect" : [ 574.365999045079207, 389.429876257973319, 232.993514716626123, 120.769231915473938 ],
 					"setminmax" : [ 0.0, 1.0 ],
 					"setstyle" : 1,
 					"size" : 5,
@@ -4267,7 +4385,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 23.742279994371984, 1389.178967920634477, 24.0, 24.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 574.434678020184492, 24.70002823074401, 54.965714936455129, 54.965714936455129 ]
+					"presentation_rect" : [ 574.365999045079207, 24.173465122776634, 54.965714936455129, 54.965714936455129 ]
 				}
 
 			}
@@ -4296,18 +4414,6 @@
 			}
 , 			{
 				"box" : 				{
-					"id" : "obj-270",
-					"maxclass" : "newobj",
-					"numinlets" : 0,
-					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 238.078898012638092, 1574.717336889289527, 85.0, 22.0 ],
-					"text" : "receive trigger"
-				}
-
-			}
-, 			{
-				"box" : 				{
 					"id" : "obj-271",
 					"maxclass" : "message",
 					"numinlets" : 2,
@@ -4331,7 +4437,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 224.317121280631, 1612.299532961968907, 200.0, 100.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 574.434678020184492, 219.410776243084001, 232.993514716625214, 120.993242176768831 ],
+					"presentation_rect" : [ 574.365999045079207, 218.884213135116624, 232.993514716625214, 120.993242176768831 ],
 					"textcolor" : [ 0.807843137254902, 0.898039215686275, 0.909803921568627, 1.0 ]
 				}
 
@@ -4343,7 +4449,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 240.078898012638092, 1539.357626819333746, 81.0, 22.0 ],
+					"patching_rect" : [ 244.160530626773834, 1576.191051375619736, 81.0, 22.0 ],
 					"text" : "setdomain $1"
 				}
 
@@ -4358,9 +4464,9 @@
 					"outlettype" : [ "", "bang" ],
 					"outputonclick" : 1,
 					"parameter_enable" : 0,
-					"patching_rect" : [ 326.180826365947723, 1480.84374850572226, 50.0, 22.0 ],
+					"patching_rect" : [ 326.180826365947723, 1533.823979687444535, 50.0, 22.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 757.428192736809706, 195.692828938835191, 50.0, 22.0 ],
+					"presentation_rect" : [ 757.35951376170442, 195.166265830867815, 50.0, 22.0 ],
 					"textcolor" : [ 0.807843137254902, 0.898039215686275, 0.909803921568627, 1.0 ],
 					"tricolor" : [ 0.564705882352941, 0.905882352941176, 0.862745098039216, 1.0 ]
 				}
@@ -4452,7 +4558,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 145.274727084123924, 1588.217322107337623, 40.0, 40.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 759.037100739385096, 129.295174400481756, 40.0, 40.0 ],
+					"presentation_rect" : [ 758.96842176427981, 128.768611292514379, 40.0, 40.0 ],
 					"size" : 2000.0
 				}
 
@@ -4473,7 +4579,7 @@
 					"outlettype" : [ "signal", "float" ],
 					"patching_rect" : [ 137.274727084123924, 1630.217322107337623, 56.0, 22.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 751.037100739385096, 171.295174400481756, 56.0, 22.0 ],
+					"presentation_rect" : [ 750.96842176427981, 170.768611292514379, 56.0, 22.0 ],
 					"sig" : 0.0,
 					"textcolor" : [ 0.807843137254902, 0.898039215686275, 0.909803921568627, 1.0 ]
 				}
@@ -4495,7 +4601,7 @@
 					"outlettype" : [ "signal", "float" ],
 					"patching_rect" : [ 79.274727084123924, 1630.217322107337623, 56.0, 22.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 693.037100739385096, 171.295174400481756, 56.0, 22.0 ],
+					"presentation_rect" : [ 692.96842176427981, 170.768611292514379, 56.0, 22.0 ],
 					"sig" : 0.0,
 					"textcolor" : [ 0.807843137254902, 0.898039215686275, 0.909803921568627, 1.0 ]
 				}
@@ -4514,7 +4620,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 87.274727084123924, 1588.38671899905512, 40.0, 40.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 701.037100739385096, 129.295174400481756, 40.0, 40.0 ],
+					"presentation_rect" : [ 700.96842176427981, 128.768611292514379, 40.0, 40.0 ],
 					"size" : 25.0
 				}
 
@@ -4532,7 +4638,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 28.732640751087501, 1588.38671899905512, 40.0, 40.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 643.037100739385096, 129.295174400481756, 40.0, 40.0 ],
+					"presentation_rect" : [ 642.96842176427981, 128.768611292514379, 40.0, 40.0 ],
 					"size" : 17.0
 				}
 
@@ -4553,7 +4659,7 @@
 					"outlettype" : [ "signal", "float" ],
 					"patching_rect" : [ 20.732640751087501, 1630.217322107337623, 56.0, 22.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 635.037100739385096, 171.295174400481756, 56.0, 22.0 ],
+					"presentation_rect" : [ 634.96842176427981, 170.768611292514379, 56.0, 22.0 ],
 					"sig" : 0.0,
 					"textcolor" : [ 0.807843137254902, 0.898039215686275, 0.909803921568627, 1.0 ]
 				}
@@ -4592,7 +4698,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 23.742279994371984, 1491.111474346868363, 78.0, 22.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 684.00625608683049, 81.665743167199253, 123.030844652554833, 22.0 ],
+					"presentation_rect" : [ 683.937577111725204, 81.139180059231876, 123.030844652554833, 22.0 ],
 					"textcolor" : [ 0.807843137254902, 0.898039215686275, 0.909803921568627, 1.0 ]
 				}
 
@@ -4655,7 +4761,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 1124.76031535760967, 1034.659467883901925, 119.0, 22.0 ],
+					"patching_rect" : [ 1125.26031535760967, 1071.492892440187916, 119.0, 22.0 ],
 					"text" : "send C2-DURATION"
 				}
 
@@ -4851,7 +4957,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 1397.280389680511234, 970.565918684005965, 50.0, 22.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 511.387495609229973, 366.238492061691886, 50.0, 22.0 ],
+					"presentation_rect" : [ 511.318816634124687, 365.711928953724509, 50.0, 22.0 ],
 					"textcolor" : [ 0.807843137254902, 0.898039215686275, 0.909803921568627, 1.0 ],
 					"tricolor" : [ 0.564705882352941, 0.905882352941176, 0.862745098039216, 1.0 ]
 				}
@@ -4919,7 +5025,7 @@
 					"outlettype" : [ "signal", "float" ],
 					"patching_rect" : [ 946.109328932412268, 1228.319876555995961, 56.0, 22.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 331.415304811900114, 171.491657063835191, 56.0, 22.0 ],
+					"presentation_rect" : [ 331.346625836794829, 170.965093955867815, 56.0, 22.0 ],
 					"sig" : 1.0,
 					"textcolor" : [ 0.807843137254902, 0.898039215686275, 0.909803921568627, 1.0 ]
 				}
@@ -4935,7 +5041,7 @@
 					"outlettype" : [ "float", "float", "float", "float", "list", "" ],
 					"patching_rect" : [ 1397.280389680511234, 1185.716481145250782, 182.923081278800964, 120.769231915473938 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 328.393980892603849, 536.719120492535239, 232.408939183788334, 168.681800305843353 ],
+					"presentation_rect" : [ 328.325301917498564, 536.192557384567863, 232.408939183788334, 168.681800305843353 ],
 					"selectioncolor" : [ 0.490196078431373, 0.611764705882353, 0.607843137254902, 1.0 ],
 					"waveformcolor" : [ 0.564705882352941, 0.905882352941176, 0.862745098039216, 1.0 ]
 				}
@@ -4967,7 +5073,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 1397.280389680511234, 1029.125820752012714, 182.820503115653992, 120.769231915473938 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 328.393980892603849, 390.037320186691886, 232.795906254612419, 120.769231915473938 ],
+					"presentation_rect" : [ 328.325301917498564, 389.510757078724509, 232.795906254612419, 120.769231915473938 ],
 					"setminmax" : [ 0.0, 1.0 ],
 					"setstyle" : 1,
 					"size" : 5,
@@ -4986,7 +5092,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 819.342436409838797, 876.858932554721832, 24.0, 24.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 328.393980892603849, 24.70002823074401, 55.162197599808565, 55.162197599808565 ]
+					"presentation_rect" : [ 328.325301917498564, 24.173465122776634, 55.162197599808565, 55.162197599808565 ]
 				}
 
 			}
@@ -5015,18 +5121,6 @@
 			}
 , 			{
 				"box" : 				{
-					"id" : "obj-170",
-					"maxclass" : "newobj",
-					"numinlets" : 0,
-					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 1036.658387004300039, 1070.019177953857707, 85.0, 22.0 ],
-					"text" : "receive trigger"
-				}
-
-			}
-, 			{
-				"box" : 				{
 					"id" : "obj-171",
 					"maxclass" : "message",
 					"numinlets" : 2,
@@ -5050,7 +5144,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 1022.896610272292946, 1107.601374026537087, 200.0, 100.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 328.393980892603849, 219.491657063835191, 232.993514716625214, 120.769231915473938 ],
+					"presentation_rect" : [ 328.325301917498564, 218.965093955867815, 232.993514716625214, 120.769231915473938 ],
 					"textcolor" : [ 0.807843137254902, 0.898039215686275, 0.909803921568627, 1.0 ]
 				}
 
@@ -5062,7 +5156,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 1038.658387004300039, 1034.659467883901925, 81.0, 22.0 ],
+					"patching_rect" : [ 1039.427617727681081, 1073.38094113695206, 81.0, 22.0 ],
 					"text" : "setdomain $1"
 				}
 
@@ -5077,9 +5171,9 @@
 					"outlettype" : [ "", "bang" ],
 					"outputonclick" : 1,
 					"parameter_enable" : 0,
-					"patching_rect" : [ 1124.76031535760967, 976.14558957029044, 50.0, 22.0 ],
+					"patching_rect" : [ 1124.76031535760967, 1028.537591453421101, 50.0, 22.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 511.02581552376887, 195.692828938835191, 49.970588088035583, 22.0 ],
+					"presentation_rect" : [ 510.957136548663584, 195.166265830867815, 49.970588088035583, 22.0 ],
 					"textcolor" : [ 0.807843137254902, 0.898039215686275, 0.909803921568627, 1.0 ],
 					"tricolor" : [ 0.564705882352941, 0.905882352941176, 0.862745098039216, 1.0 ]
 				}
@@ -5171,7 +5265,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 943.88452274287522, 1081.740647592144342, 40.0, 40.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 512.996403611804453, 129.661053955552688, 40.0, 40.0 ],
+					"presentation_rect" : [ 512.927724636699168, 129.134490847585312, 40.0, 40.0 ],
 					"size" : 2000.0
 				}
 
@@ -5192,7 +5286,7 @@
 					"outlettype" : [ "signal", "float" ],
 					"patching_rect" : [ 935.88452274287522, 1123.571250700426845, 56.0, 22.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 504.996403611804453, 171.491657063835191, 56.0, 22.0 ],
+					"presentation_rect" : [ 504.927724636699168, 170.965093955867815, 56.0, 22.0 ],
 					"sig" : 0.0,
 					"textcolor" : [ 0.807843137254902, 0.898039215686275, 0.909803921568627, 1.0 ]
 				}
@@ -5214,7 +5308,7 @@
 					"outlettype" : [ "signal", "float" ],
 					"patching_rect" : [ 877.88452274287522, 1123.571250700426845, 56.0, 22.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 446.996403611804453, 171.491657063835191, 56.0, 22.0 ],
+					"presentation_rect" : [ 446.927724636699168, 170.965093955867815, 56.0, 22.0 ],
 					"sig" : 0.0,
 					"textcolor" : [ 0.807843137254902, 0.898039215686275, 0.909803921568627, 1.0 ]
 				}
@@ -5233,7 +5327,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 885.88452274287522, 1081.740647592144342, 40.0, 40.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 454.996403611804453, 129.661053955552688, 40.0, 40.0 ],
+					"presentation_rect" : [ 454.927724636699168, 129.134490847585312, 40.0, 40.0 ],
 					"size" : 25.0
 				}
 
@@ -5251,7 +5345,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 827.342436409838797, 1081.740647592144342, 40.0, 40.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 396.996403611804453, 129.491657063835191, 40.0, 40.0 ],
+					"presentation_rect" : [ 396.927724636699168, 128.965093955867815, 40.0, 40.0 ],
 					"size" : 17.0
 				}
 
@@ -5272,7 +5366,7 @@
 					"outlettype" : [ "signal", "float" ],
 					"patching_rect" : [ 819.342436409838797, 1123.571250700426845, 56.0, 22.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 388.996403611804453, 171.491657063835191, 56.0, 22.0 ],
+					"presentation_rect" : [ 388.927724636699168, 170.965093955867815, 56.0, 22.0 ],
 					"sig" : 0.0,
 					"textcolor" : [ 0.807843137254902, 0.898039215686275, 0.909803921568627, 1.0 ]
 				}
@@ -5311,7 +5405,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 819.342436409838797, 980.291438980955718, 78.0, 22.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 438.038422382976023, 81.862225830552688, 122.95798122882843, 22.0 ],
+					"presentation_rect" : [ 437.969743407870737, 81.335662722585312, 122.95798122882843, 22.0 ],
 					"textcolor" : [ 0.807843137254902, 0.898039215686275, 0.909803921568627, 1.0 ]
 				}
 
@@ -5386,7 +5480,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 326.180826365947723, 1034.659467883901925, 119.0, 22.0 ],
+					"patching_rect" : [ 326.180826365947723, 1071.492892440187916, 119.0, 22.0 ],
 					"text" : "send C1-DURATION"
 				}
 
@@ -5664,7 +5758,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 483.956877364761112, 590.519923657178651, 200.0, 100.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 82.981447105214329, 744.535143924094427, 232.949693629107969, 119.787234084869624 ],
+					"presentation_rect" : [ 82.912768130109043, 744.008580816127051, 232.949693629107969, 119.787234084869624 ],
 					"textcolor" : [ 0.807843137254902, 0.898039215686275, 0.909803921568627, 1.0 ]
 				}
 
@@ -5741,7 +5835,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 598.700900688849515, 970.565918684005965, 50.0, 22.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 265.583869824414933, 366.238492061691886, 50.0, 22.0 ],
+					"presentation_rect" : [ 265.515190849309647, 365.711928953724509, 50.0, 22.0 ],
 					"textcolor" : [ 0.807843137254902, 0.898039215686275, 0.909803921568627, 1.0 ],
 					"tricolor" : [ 0.564705882352941, 0.905882352941176, 0.862745098039216, 1.0 ]
 				}
@@ -5831,7 +5925,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 1365.88067500181819, 1985.419405824750356, 50.0, 22.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 758.866664886083527, 715.755237079995368, 50.0, 22.0 ],
+					"presentation_rect" : [ 758.797985910978241, 715.228673972027991, 50.0, 22.0 ],
 					"textcolor" : [ 0.807843137254902, 0.898039215686275, 0.909803921568627, 1.0 ],
 					"tricolor" : [ 0.564705882352941, 0.905882352941176, 0.862745098039216, 1.0 ]
 				}
@@ -6021,7 +6115,7 @@
 					"outlettype" : [ "signal", "float" ],
 					"patching_rect" : [ 1155.566344219327675, 2138.869120701489919, 56.0, 22.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 364.230467809381025, 861.960363603966925, 56.0, 22.0 ],
+					"presentation_rect" : [ 364.16178883427574, 861.433800495999549, 56.0, 22.0 ],
 					"sig" : 1.0
 				}
 
@@ -6048,7 +6142,7 @@
 					"outlettype" : [ "float", "float", "float", "float", "list", "" ],
 					"patching_rect" : [ 1365.88067500181819, 2202.729666924027242, 182.923081278800964, 120.769231915473938 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 810.804265449052309, 715.836117900746558, 232.273730158805847, 168.205126523971558 ],
+					"presentation_rect" : [ 810.735586473947023, 715.309554792779181, 232.273730158805847, 168.205126523971558 ],
 					"selectioncolor" : [ 0.490196078431373, 0.611764705882353, 0.607843137254902, 1.0 ],
 					"waveformcolor" : [ 0.564705882352941, 0.905882352941176, 0.862745098039216, 1.0 ]
 				}
@@ -6080,7 +6174,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 1365.88067500181819, 2046.139006530789175, 182.820503115653992, 120.769231915473938 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 575.719362794961398, 739.554065204995368, 232.949693629108879, 120.769231915473938 ],
+					"presentation_rect" : [ 575.650683819856113, 739.027502097027991, 232.949693629108879, 120.769231915473938 ],
 					"setminmax" : [ 0.0, 1.0 ],
 					"setstyle" : 1,
 					"size" : 5,
@@ -6115,7 +6209,7 @@
 					"outlettype" : [ "signal", "float" ],
 					"patching_rect" : [ 1155.566344219327675, 2267.040915923676948, 56.0, 22.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 473.0136057740865, 861.960363603966925, 56.0, 22.0 ],
+					"presentation_rect" : [ 472.944926798981214, 861.433800495999549, 56.0, 22.0 ],
 					"sig" : 10.0
 				}
 
@@ -6189,34 +6283,8 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 1155.566344219327675, 1999.139675790906949, 78.0, 22.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 447.564626396340373, 772.72095201645061, 123.238095939159393, 22.0 ],
+					"presentation_rect" : [ 447.495947421235087, 772.194388908483234, 123.238095939159393, 22.0 ],
 					"textcolor" : [ 0.807843137254902, 0.898039215686275, 0.909803921568627, 1.0 ]
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-294",
-					"maxclass" : "spectroscope~",
-					"numinlets" : 2,
-					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 1194.187236924450417, 204.746443718671344, 327.0, 124.0 ],
-					"presentation" : 1,
-					"presentation_rect" : [ 798.409790436034655, 890.322378008964279, 260.0, 101.0 ]
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"automatic" : 1,
-					"id" : "obj-291",
-					"maxclass" : "scope~",
-					"numinlets" : 2,
-					"numoutlets" : 0,
-					"patching_rect" : [ 1194.187236924450417, 74.814440865392498, 326.52744432290433, 124.252013027667545 ],
-					"presentation" : 1,
-					"presentation_rect" : [ 330.419566685352265, 890.322378008964279, 259.656340092420578, 105.586062209869851 ]
 				}
 
 			}
@@ -6351,7 +6419,7 @@
 					"outlettype" : [ "signal", "float" ],
 					"patching_rect" : [ 23.581441954805882, 2154.485525424989646, 56.0, 22.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 1092.099025090143186, 170.708672091362132, 56.0, 22.0 ],
+					"presentation_rect" : [ 1092.030346115037901, 170.182108983394755, 56.0, 22.0 ],
 					"sig" : 1.0,
 					"textcolor" : [ 0.807843137254902, 0.898039215686275, 0.909803921568627, 1.0 ]
 				}
@@ -6372,7 +6440,7 @@
 					"outlettype" : [ "signal", "float" ],
 					"patching_rect" : [ 23.581441954805882, 2273.452465740565458, 56.0, 22.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 1208.882163054849116, 170.708672091362132, 56.0, 22.0 ],
+					"presentation_rect" : [ 1208.81348407974383, 170.182108983394755, 56.0, 22.0 ],
 					"sig" : 0.5,
 					"textcolor" : [ 0.807843137254902, 0.898039215686275, 0.909803921568627, 1.0 ]
 				}
@@ -6390,70 +6458,8 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 23.581441954805882, 2007.325365482582129, 78.0, 22.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 1175.433183677102534, 81.469260503845817, 122.897958755493164, 22.0 ],
+					"presentation_rect" : [ 1175.364504701997248, 80.94269739587844, 122.897958755493164, 22.0 ],
 					"textcolor" : [ 0.807843137254902, 0.898039215686275, 0.909803921568627, 1.0 ]
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"active1" : [ 0.352941176470588, 0.607843137254902, 0.929411764705882, 1.0 ],
-					"bubblesize" : 14,
-					"id" : "obj-163",
-					"maxclass" : "preset",
-					"numinlets" : 1,
-					"numoutlets" : 4,
-					"outlettype" : [ "preset", "int", "preset", "int" ],
-					"patching_rect" : [ 43.63530735401514, 136.006672084331058, 206.933059844886429, 25.216386616230011 ],
-					"presentation" : 1,
-					"presentation_rect" : [ 592.419566685352265, 941.371206074360089, 204.0, 24.591185629367828 ],
-					"preset_data" : [ 						{
-							"number" : 1,
-							"data" : [ 4, "obj-43", "kslider", "chord", 5, "obj-46", "number", "int", 0, 5, "obj-29", "number", "int", 320, 5, "obj-35", "number", "int", 665, 5, "obj-38", "flonum", "float", 0.71657806634903, 5, "obj-41", "number", "int", 472, 5, "obj-13", "umenu", "int", 0, 6, "obj-123", "number~", "list", 0.0, 0.0, 5, "obj-124", "dial", "float", 8.0, 5, "obj-128", "dial", "float", 12.0, 6, "obj-129", "number~", "list", 0.0, 0.0, 6, "obj-130", "number~", "list", -0.1, 0.0, 5, "obj-131", "dial", "float", 900.0, 5, "obj-316", "number", "int", 1000, 5, "obj-60", "number", "int", 1000, 4, "obj-58", "function", "clear", 8, "obj-58", "function", "add_with_curve", 0.0, 1.0, 0, 0.0, 8, "obj-58", "function", "add_with_curve", 1000.0, 1.0, 0, 0.0, 5, "obj-58", "function", "domain", 1000.0, 6, "obj-58", "function", "range", 0.0, 1.0, 5, "obj-58", "function", "mode", 1, 5, "obj-73", "led", "int", 1, 5, "obj-149", "number", "int", 5, 9, "obj-84", "multislider", "list", 0.0, 0.0, 0.0, 0.0, 0.0, 9, "obj-96", "multislider", "list", 0.0, 0.0, 0.0, 0.0, 0.0, 6, "obj-127", "number~", "list", 1.0, 0.0, 5, "obj-62", "umenu", "int", 0, 6, "obj-16", "number~", "list", 1.5, 0.0, 6, "obj-15", "number~", "list", 1.0, 0.0, 6, "obj-221", "number~", "list", 1.0, 0.0, 6, "obj-222", "number~", "list", 0.0, 0.0, 6, "obj-231", "number~", "list", 1.0, 0.0, 6, "obj-232", "number~", "list", 0.0, 0.0, 5, "obj-331", "umenu", "int", 0, 6, "obj-323", "number~", "list", 1.0, 0.0, 6, "obj-322", "number~", "list", 0.0, 0.0, 6, "obj-337", "number~", "list", 2.0, 0.0, 9, "obj-346", "multislider", "list", 0.0, 0.0, 0.0, 0.0, 0.0, 6, "obj-365", "number~", "list", 0.2, 0.0, 5, "obj-21", "number", "int", 5, 5, "obj-416", "number", "int", 5, 4, "obj-457", "function", "clear", 8, "obj-457", "function", "add_with_curve", 0.0, 1.0, 0, 0.0, 8, "obj-457", "function", "add_with_curve", 999.999999999999773, 1.0, 0, 0.0, 5, "obj-457", "function", "domain", 1000.0, 6, "obj-457", "function", "range", 0.0, 1.0, 5, "obj-457", "function", "mode", 1, 5, "obj-198", "umenu", "int", 0, 6, "obj-188", "number~", "list", -2.0, 0.0, 5, "obj-187", "dial", "float", 6.0, 5, "obj-186", "dial", "float", 12.0, 6, "obj-185", "number~", "list", 0.0, 0.0, 6, "obj-184", "number~", "list", 0.1, 0.0, 5, "obj-182", "dial", "float", 1100.0, 5, "obj-174", "number", "int", 1000, 4, "obj-172", "function", "clear", 8, "obj-172", "function", "add_with_curve", 0.0, 1.0, 0, 0.0, 8, "obj-172", "function", "add_with_curve", 1000.0, 1.0, 0, 0.0, 5, "obj-172", "function", "domain", 1000.0, 6, "obj-172", "function", "range", 0.0, 1.0, 5, "obj-172", "function", "mode", 1, 5, "obj-165", "led", "int", 1, 9, "obj-164", "multislider", "list", 0.0, 0.0, 0.0, 0.0, 0.0, 6, "obj-159", "number~", "list", 1.0, 0.0, 6, "obj-152", "number~", "list", 1.0, 0.0, 6, "obj-151", "number~", "list", 0.0, 0.0, 5, "obj-126", "number", "int", 5, 5, "obj-327", "umenu", "int", 0, 6, "obj-311", "number~", "list", -1.0, 0.0, 5, "obj-310", "dial", "float", 7.0, 5, "obj-292", "dial", "float", 12.0, 6, "obj-290", "number~", "list", 0.0, 0.0, 6, "obj-288", "number~", "list", 0.0, 0.0, 5, "obj-287", "dial", "float", 1000.0, 5, "obj-274", "number", "int", 1000, 4, "obj-272", "function", "clear", 8, "obj-272", "function", "add_with_curve", 0.0, 1.0, 0, 0.0, 8, "obj-272", "function", "add_with_curve", 1000.0, 1.0, 0, 0.0, 5, "obj-272", "function", "domain", 1000.0, 6, "obj-272", "function", "range", 0.0, 1.0, 5, "obj-272", "function", "mode", 1, 5, "obj-265", "led", "int", 1, 9, "obj-264", "multislider", "list", 0.0, 0.0, 0.0, 0.0, 0.0, 6, "obj-261", "number~", "list", 3.0, 0.0, 6, "obj-259", "number~", "list", 1.0, 0.0, 6, "obj-258", "number~", "list", 0.0, 0.0, 5, "obj-255", "number", "int", 5, 5, "obj-426", "umenu", "int", 0, 6, "obj-408", "number~", "list", 2.0, 0.0, 5, "obj-407", "dial", "float", 10.0, 5, "obj-406", "dial", "float", 12.0, 6, "obj-405", "number~", "list", 0.0, 0.0, 6, "obj-404", "number~", "list", 0.0, 0.0, 5, "obj-403", "dial", "float", 1000.0, 5, "obj-395", "number", "int", 1000, 4, "obj-393", "function", "clear", 8, "obj-393", "function", "add_with_curve", 0.0, 1.0, 0, 0.0, 8, "obj-393", "function", "add_with_curve", 1000.0, 1.0, 0, 0.0, 5, "obj-393", "function", "domain", 1000.0, 6, "obj-393", "function", "range", 0.0, 1.0, 5, "obj-393", "function", "mode", 1, 5, "obj-387", "led", "int", 1, 9, "obj-386", "multislider", "list", 0.0, 0.0, 0.0, 0.0, 0.0, 6, "obj-383", "number~", "list", 1.0, 0.0, 6, "obj-381", "number~", "list", 1.0, 0.0, 6, "obj-380", "number~", "list", 0.0, 0.0, 5, "obj-376", "number", "int", 5, 5, "obj-498", "number", "int", 1000, 4, "obj-496", "function", "clear", 8, "obj-496", "function", "add_with_curve", 0.0, 1.0, 0, 0.0, 8, "obj-496", "function", "add_with_curve", 1000.0, 1.0, 0, 0.0, 5, "obj-496", "function", "domain", 1000.0, 6, "obj-496", "function", "range", 1.0, 5.0, 5, "obj-496", "function", "mode", 1, 5, "obj-505", "number", "int", 5, 5, "obj-471", "umenu", "int", 0, 6, "obj-468", "number~", "list", 1.0, 0.0, 6, "obj-467", "number~", "list", 1.0, 0.0, 6, "obj-451", "number~", "list", 1.0, 0.0, 6, "obj-450", "number~", "list", 0.0, 0.0, 5, "obj-448", "number", "int", 1000, 4, "obj-446", "function", "clear", 8, "obj-446", "function", "add_with_curve", 0.0, 1.0, 0, 0.0, 8, "obj-446", "function", "add_with_curve", 1000.0, 1.0, 0, 0.0, 5, "obj-446", "function", "domain", 1000.0, 6, "obj-446", "function", "range", 1.0, 5.0, 5, "obj-446", "function", "mode", 1, 5, "obj-242", "number", "int", 5, 5, "obj-78", "dial", "float", 200.0, 5, "obj-92", "dial", "float", 2000.0, 5, "obj-106", "dial", "float", 1000.0, 5, "obj-109", "dial", "float", 1500.0, 5, "obj-110", "dial", "float", 1000.0, 5, "obj-111", "dial", "float", 1000.0, 5, "obj-121", "dial", "float", 1000.0, 5, "obj-122", "dial", "float", 1000.0, 5, "obj-157", "slider", "float", 319.0, 5, "obj-202", "slider", "float", 664.0, 5, "obj-203", "slider", "float", 471.0, 5, "obj-204", "slider", "float", 716.57806396484375, 5, "obj-133", "dial", "float", 3000.0, 5, "obj-139", "dial", "float", 1000.0, 5, "obj-333", "textbutton", "mode", 1, 5, "obj-333", "textbutton", "int", 0, 5, "obj-334", "textbutton", "mode", 1, 5, "obj-334", "textbutton", "int", 0, 5, "obj-522", "textbutton", "mode", 1, 5, "obj-522", "textbutton", "int", 0, 5, "obj-525", "textbutton", "mode", 1, 5, "obj-525", "textbutton", "int", 0, 5, "obj-534", "textbutton", "mode", 1, 5, "obj-534", "textbutton", "int", 0, 5, "obj-535", "textbutton", "mode", 1, 5, "obj-535", "textbutton", "int", 0, 5, "obj-541", "textbutton", "mode", 1, 5, "obj-541", "textbutton", "int", 0, 5, "obj-542", "textbutton", "mode", 1, 5, "obj-542", "textbutton", "int", 0, 5, "obj-554", "textbutton", "mode", 1, 5, "obj-554", "textbutton", "int", 0, 5, "obj-555", "led", "int", 1, 5, "obj-558", "led", "int", 1, 5, "obj-564", "textbutton", "mode", 1, 5, "obj-564", "textbutton", "int", 0, 5, "obj-565", "led", "int", 1, 5, "obj-568", "textbutton", "mode", 1, 5, "obj-568", "textbutton", "int", 0, 5, "obj-581", "textbutton", "mode", 1, 5, "obj-581", "textbutton", "int", 0, 5, "obj-20", "textbutton", "mode", 1, 5, "obj-20", "textbutton", "int", 0, 5, "obj-48", "textbutton", "mode", 1, 5, "obj-48", "textbutton", "int", 0, 5, "obj-74", "textbutton", "mode", 1, 5, "obj-74", "textbutton", "int", 0, 5, "obj-99", "textbutton", "mode", 1, 5, "obj-99", "textbutton", "int", 0, 5, "obj-134", "textbutton", "mode", 1, 5, "obj-134", "textbutton", "int", 0, 5, "obj-189", "textbutton", "mode", 1, 5, "obj-189", "textbutton", "int", 0 ]
-						}
-, 						{
-							"number" : 2,
-							"data" : [ 4, "obj-43", "kslider", "chord", 5, "obj-46", "number", "int", 0, 5, "obj-29", "number", "int", 121, 5, "obj-35", "number", "int", 463, 5, "obj-38", "flonum", "float", 0.746275067329407, 5, "obj-41", "number", "int", 267, 5, "obj-13", "umenu", "int", 5, 6, "obj-123", "number~", "list", 0.0, 0.0, 5, "obj-124", "dial", "float", 8.0, 5, "obj-128", "dial", "float", 12.0, 6, "obj-129", "number~", "list", 0.0, 0.0, 6, "obj-130", "number~", "list", 0.0, 0.0, 5, "obj-131", "dial", "float", 1000.0, 5, "obj-316", "number", "int", 1000, 5, "obj-60", "number", "int", 1000, 4, "obj-58", "function", "clear", 8, "obj-58", "function", "add_with_curve", 0.0, 1.0, 0, 0.0, 8, "obj-58", "function", "add_with_curve", 1000.0, 1.0, 0, 0.0, 5, "obj-58", "function", "domain", 1000.0, 6, "obj-58", "function", "range", 0.0, 1.0, 5, "obj-58", "function", "mode", 1, 5, "obj-73", "led", "int", 1, 5, "obj-149", "number", "int", 5, 9, "obj-84", "multislider", "list", 0.0, 0.0, 0.0, 0.0, 0.0, 9, "obj-96", "multislider", "list", 1.0, 0.517331123352051, 0.302565515041351, 0.618397235870361, 0.229417011141777, 6, "obj-127", "number~", "list", 1.0, 0.0, 5, "obj-62", "umenu", "int", 0, 6, "obj-16", "number~", "list", 0.5, 0.0, 6, "obj-15", "number~", "list", 1.0, 0.0, 6, "obj-221", "number~", "list", 1.0, 0.0, 6, "obj-222", "number~", "list", 5.0, 0.0, 6, "obj-231", "number~", "list", 1.0, 0.0, 6, "obj-232", "number~", "list", 0.0, 0.0, 5, "obj-331", "umenu", "int", 0, 6, "obj-323", "number~", "list", 0.0, 0.0, 6, "obj-322", "number~", "list", 0.0, 0.0, 6, "obj-337", "number~", "list", 10.0, 0.0, 9, "obj-346", "multislider", "list", 0.0, 0.0, 0.0, 0.0, 0.0, 6, "obj-365", "number~", "list", 1.0, 0.0, 5, "obj-21", "number", "int", 5, 5, "obj-416", "number", "int", 5, 4, "obj-457", "function", "clear", 8, "obj-457", "function", "add_with_curve", 0.0, 1.0, 0, 0.0, 8, "obj-457", "function", "add_with_curve", 999.999999999999773, 1.0, 0, 0.0, 5, "obj-457", "function", "domain", 1000.0, 6, "obj-457", "function", "range", 0.0, 1.0, 5, "obj-457", "function", "mode", 1, 5, "obj-198", "umenu", "int", 5, 6, "obj-188", "number~", "list", -1.0, 0.0, 5, "obj-187", "dial", "float", 7.0, 5, "obj-186", "dial", "float", 12.0, 6, "obj-185", "number~", "list", 0.0, 0.0, 6, "obj-184", "number~", "list", 0.0, 0.0, 5, "obj-182", "dial", "float", 1000.0, 5, "obj-174", "number", "int", 1000, 4, "obj-172", "function", "clear", 8, "obj-172", "function", "add_with_curve", 0.0, 1.0, 0, 0.0, 8, "obj-172", "function", "add_with_curve", 1000.0, 1.0, 0, 0.0, 5, "obj-172", "function", "domain", 1000.0, 6, "obj-172", "function", "range", 0.0, 1.0, 5, "obj-172", "function", "mode", 1, 5, "obj-165", "led", "int", 1, 9, "obj-164", "multislider", "list", 1.0, 0.517331123352051, 0.302565515041351, 0.82968533039093, 0.229417011141777, 6, "obj-159", "number~", "list", 1.0, 0.0, 6, "obj-152", "number~", "list", 1.0, 0.0, 6, "obj-151", "number~", "list", 5.0, 0.0, 5, "obj-126", "number", "int", 5, 5, "obj-327", "umenu", "int", 5, 6, "obj-311", "number~", "list", 2.0, 0.0, 5, "obj-310", "dial", "float", 10.0, 5, "obj-292", "dial", "float", 12.0, 6, "obj-290", "number~", "list", 0.0, 0.0, 6, "obj-288", "number~", "list", 0.0, 0.0, 5, "obj-287", "dial", "float", 1000.0, 5, "obj-274", "number", "int", 1000, 4, "obj-272", "function", "clear", 8, "obj-272", "function", "add_with_curve", 0.0, 1.0, 0, 0.0, 8, "obj-272", "function", "add_with_curve", 1000.0, 1.0, 0, 0.0, 5, "obj-272", "function", "domain", 1000.0, 6, "obj-272", "function", "range", 0.0, 1.0, 5, "obj-272", "function", "mode", 1, 5, "obj-265", "led", "int", 1, 9, "obj-264", "multislider", "list", 1.0, 0.517331123352051, 0.766286432743073, 0.618397235870361, 0.229417011141777, 6, "obj-261", "number~", "list", 1.0, 0.0, 6, "obj-259", "number~", "list", 1.0, 0.0, 6, "obj-258", "number~", "list", 5.0, 0.0, 5, "obj-255", "number", "int", 5, 5, "obj-426", "umenu", "int", 5, 6, "obj-408", "number~", "list", -1.0, 0.0, 5, "obj-407", "dial", "float", 7.0, 5, "obj-406", "dial", "float", 12.0, 6, "obj-405", "number~", "list", 0.0, 0.0, 6, "obj-404", "number~", "list", 0.0, 0.0, 5, "obj-403", "dial", "float", 1000.0, 5, "obj-395", "number", "int", 1000, 4, "obj-393", "function", "clear", 8, "obj-393", "function", "add_with_curve", 0.0, 1.0, 0, 0.0, 8, "obj-393", "function", "add_with_curve", 1000.0, 1.0, 0, 0.0, 5, "obj-393", "function", "domain", 1000.0, 6, "obj-393", "function", "range", 0.0, 1.0, 5, "obj-393", "function", "mode", 1, 5, "obj-387", "led", "int", 1, 9, "obj-386", "multislider", "list", 1.0, 0.517331123352051, 0.302565515041351, 0.618397235870361, 0.806259453296661, 6, "obj-383", "number~", "list", 2.5, 0.0, 6, "obj-381", "number~", "list", 1.0, 0.0, 6, "obj-380", "number~", "list", 5.0, 0.0, 5, "obj-376", "number", "int", 5, 5, "obj-498", "number", "int", 1000, 4, "obj-496", "function", "clear", 8, "obj-496", "function", "add_with_curve", 0.0, 1.0, 0, 0.0, 8, "obj-496", "function", "add_with_curve", 1000.0, 1.0, 0, 0.0, 5, "obj-496", "function", "domain", 1000.0, 6, "obj-496", "function", "range", 1.0, 5.0, 5, "obj-496", "function", "mode", 1, 5, "obj-505", "number", "int", 5, 5, "obj-471", "umenu", "int", 1, 6, "obj-468", "number~", "list", 0.5, 0.0, 6, "obj-467", "number~", "list", 1.0, 0.0, 6, "obj-451", "number~", "list", 1.0, 0.0, 6, "obj-450", "number~", "list", 1.0, 0.0, 5, "obj-448", "number", "int", 1000, 4, "obj-446", "function", "clear", 8, "obj-446", "function", "add_with_curve", 0.0, 1.0, 0, 0.0, 8, "obj-446", "function", "add_with_curve", 1000.0, 1.0, 0, 0.0, 5, "obj-446", "function", "domain", 1000.0, 6, "obj-446", "function", "range", 1.0, 5.0, 5, "obj-446", "function", "mode", 1, 5, "obj-242", "number", "int", 5, 5, "obj-78", "dial", "float", 1000.0, 5, "obj-92", "dial", "float", 10000.0, 5, "obj-106", "dial", "float", 500.0, 5, "obj-109", "dial", "float", 500.0, 5, "obj-110", "dial", "float", 1000.0, 5, "obj-111", "dial", "float", 1000.0, 5, "obj-121", "dial", "float", 1000.0, 5, "obj-122", "dial", "float", 1000.0, 5, "obj-157", "slider", "float", 120.0, 5, "obj-202", "slider", "float", 462.0, 5, "obj-203", "slider", "float", 266.0, 5, "obj-204", "slider", "float", 746.27508544921875, 5, "obj-133", "dial", "float", 1000.0, 5, "obj-139", "dial", "float", 2500.0, 5, "obj-333", "textbutton", "mode", 1, 5, "obj-333", "textbutton", "int", 0, 5, "obj-334", "textbutton", "mode", 1, 5, "obj-334", "textbutton", "int", 0, 5, "obj-522", "textbutton", "mode", 1, 5, "obj-522", "textbutton", "int", 0, 5, "obj-525", "textbutton", "mode", 1, 5, "obj-525", "textbutton", "int", 0, 5, "obj-534", "textbutton", "mode", 1, 5, "obj-534", "textbutton", "int", 0, 5, "obj-535", "textbutton", "mode", 1, 5, "obj-535", "textbutton", "int", 0, 5, "obj-541", "textbutton", "mode", 1, 5, "obj-541", "textbutton", "int", 0, 5, "obj-542", "textbutton", "mode", 1, 5, "obj-542", "textbutton", "int", 0, 5, "obj-554", "textbutton", "mode", 1, 5, "obj-554", "textbutton", "int", 0, 5, "obj-555", "led", "int", 1, 5, "obj-558", "led", "int", 1, 5, "obj-564", "textbutton", "mode", 1, 5, "obj-564", "textbutton", "int", 0, 5, "obj-565", "led", "int", 0, 5, "obj-568", "textbutton", "mode", 1, 5, "obj-568", "textbutton", "int", 0, 5, "obj-581", "textbutton", "mode", 1, 5, "obj-581", "textbutton", "int", 0, 5, "obj-20", "textbutton", "mode", 1, 5, "obj-20", "textbutton", "int", 0, 5, "obj-48", "textbutton", "mode", 1, 5, "obj-48", "textbutton", "int", 0, 5, "obj-74", "textbutton", "mode", 1, 5, "obj-74", "textbutton", "int", 0, 5, "obj-99", "textbutton", "mode", 1, 5, "obj-99", "textbutton", "int", 0, 5, "obj-134", "textbutton", "mode", 1, 5, "obj-134", "textbutton", "int", 0, 5, "obj-189", "textbutton", "mode", 1, 5, "obj-189", "textbutton", "int", 0 ]
-						}
-, 						{
-							"number" : 3,
-							"data" : [ 4, "obj-43", "kslider", "chord", 5, "obj-46", "number", "int", 0, 5, "obj-29", "number", "int", 189, 5, "obj-35", "number", "int", 135, 5, "obj-38", "flonum", "float", 0.757505178451538, 5, "obj-41", "number", "int", 821, 5, "obj-13", "umenu", "int", 2, 6, "obj-123", "number~", "list", 0.0, 0.0, 5, "obj-124", "dial", "float", 8.0, 5, "obj-128", "dial", "float", 12.0, 6, "obj-129", "number~", "list", 0.0, 0.0, 6, "obj-130", "number~", "list", -0.05, 0.0, 5, "obj-131", "dial", "float", 950.0, 5, "obj-316", "number", "int", 1000, 5, "obj-60", "number", "int", 1000, 4, "obj-58", "function", "clear", 8, "obj-58", "function", "add_with_curve", 0.0, 1.0, 0, 0.0, 8, "obj-58", "function", "add_with_curve", 1000.0, 1.0, 0, 0.0, 5, "obj-58", "function", "domain", 1000.0, 6, "obj-58", "function", "range", 0.0, 1.0, 5, "obj-58", "function", "mode", 1, 5, "obj-73", "led", "int", 1, 5, "obj-149", "number", "int", 5, 9, "obj-84", "multislider", "list", 0.0, 0.0, 0.0, 0.0, 0.0, 9, "obj-96", "multislider", "list", 0.0, 0.0, 0.0, 0.0, 0.0, 6, "obj-127", "number~", "list", 2.0, 0.0, 5, "obj-62", "umenu", "int", 0, 6, "obj-16", "number~", "list", 2.5, 0.0, 6, "obj-15", "number~", "list", 1.0, 0.0, 6, "obj-221", "number~", "list", 1.0, 0.0, 6, "obj-222", "number~", "list", 2.0, 0.0, 6, "obj-231", "number~", "list", 1.0, 0.0, 6, "obj-232", "number~", "list", 0.0, 0.0, 5, "obj-331", "umenu", "int", 0, 6, "obj-323", "number~", "list", 0.0, 0.0, 6, "obj-322", "number~", "list", 0.0, 0.0, 6, "obj-337", "number~", "list", 10.0, 0.0, 9, "obj-346", "multislider", "list", 0.0, 0.0, 0.0, 0.0, 0.0, 6, "obj-365", "number~", "list", 1.0, 0.0, 5, "obj-21", "number", "int", 5, 5, "obj-416", "number", "int", 5, 4, "obj-457", "function", "clear", 8, "obj-457", "function", "add_with_curve", 0.0, 1.0, 0, 0.0, 8, "obj-457", "function", "add_with_curve", 999.999999999999773, 1.0, 0, 0.0, 5, "obj-457", "function", "domain", 1000.0, 6, "obj-457", "function", "range", 0.0, 1.0, 5, "obj-457", "function", "mode", 1, 5, "obj-198", "umenu", "int", 2, 6, "obj-188", "number~", "list", 0.0, 0.0, 5, "obj-187", "dial", "float", 8.0, 5, "obj-186", "dial", "float", 12.0, 6, "obj-185", "number~", "list", 0.0, 0.0, 6, "obj-184", "number~", "list", 0.05, 0.0, 5, "obj-182", "dial", "float", 1050.0, 5, "obj-174", "number", "int", 1000, 4, "obj-172", "function", "clear", 8, "obj-172", "function", "add_with_curve", 0.0, 1.0, 0, 0.0, 8, "obj-172", "function", "add_with_curve", 1000.0, 1.0, 0, 0.0, 5, "obj-172", "function", "domain", 1000.0, 6, "obj-172", "function", "range", 0.0, 1.0, 5, "obj-172", "function", "mode", 1, 5, "obj-165", "led", "int", 1, 9, "obj-164", "multislider", "list", 0.0, 0.0, 0.0, 0.0, 0.0, 6, "obj-159", "number~", "list", 2.0, 0.0, 6, "obj-152", "number~", "list", 1.0, 0.0, 6, "obj-151", "number~", "list", 2.0, 0.0, 5, "obj-126", "number", "int", 5, 5, "obj-327", "umenu", "int", 0, 6, "obj-311", "number~", "list", -1.0, 0.0, 5, "obj-310", "dial", "float", 7.0, 5, "obj-292", "dial", "float", 12.0, 6, "obj-290", "number~", "list", 0.0, 0.0, 6, "obj-288", "number~", "list", 0.0, 0.0, 5, "obj-287", "dial", "float", 1000.0, 5, "obj-274", "number", "int", 1000, 4, "obj-272", "function", "clear", 8, "obj-272", "function", "add_with_curve", 0.0, 1.0, 0, 0.0, 8, "obj-272", "function", "add_with_curve", 1000.0, 1.0, 0, 0.0, 5, "obj-272", "function", "domain", 1000.0, 6, "obj-272", "function", "range", 0.0, 1.0, 5, "obj-272", "function", "mode", 1, 5, "obj-265", "led", "int", 1, 9, "obj-264", "multislider", "list", 0.0, 0.0, 0.0, 0.0, 0.0, 6, "obj-261", "number~", "list", 1.0, 0.0, 6, "obj-259", "number~", "list", 1.0, 0.0, 6, "obj-258", "number~", "list", 0.0, 0.0, 5, "obj-255", "number", "int", 5, 5, "obj-426", "umenu", "int", 0, 6, "obj-408", "number~", "list", -1.0, 0.0, 5, "obj-407", "dial", "float", 7.0, 5, "obj-406", "dial", "float", 12.0, 6, "obj-405", "number~", "list", 0.0, 0.0, 6, "obj-404", "number~", "list", 0.0, 0.0, 5, "obj-403", "dial", "float", 1000.0, 5, "obj-395", "number", "int", 1000, 4, "obj-393", "function", "clear", 8, "obj-393", "function", "add_with_curve", 0.0, 1.0, 0, 0.0, 8, "obj-393", "function", "add_with_curve", 1000.0, 1.0, 0, 0.0, 5, "obj-393", "function", "domain", 1000.0, 6, "obj-393", "function", "range", 0.0, 1.0, 5, "obj-393", "function", "mode", 1, 5, "obj-387", "led", "int", 1, 9, "obj-386", "multislider", "list", 0.0, 0.0, 0.0, 0.0, 0.0, 6, "obj-383", "number~", "list", 1.0, 0.0, 6, "obj-381", "number~", "list", 1.0, 0.0, 6, "obj-380", "number~", "list", 0.0, 0.0, 5, "obj-376", "number", "int", 5, 5, "obj-498", "number", "int", 1000, 4, "obj-496", "function", "clear", 8, "obj-496", "function", "add_with_curve", 0.0, 2.01730564761746, 0, 0.0, 8, "obj-496", "function", "add_with_curve", 1000.0, 2.01730564761746, 0, 0.0, 5, "obj-496", "function", "domain", 1000.0, 6, "obj-496", "function", "range", 1.0, 5.0, 5, "obj-496", "function", "mode", 1, 5, "obj-505", "number", "int", 5, 5, "obj-471", "umenu", "int", 0, 6, "obj-468", "number~", "list", 1.0, 0.0, 6, "obj-467", "number~", "list", 1.0, 0.0, 6, "obj-451", "number~", "list", 1.0, 0.0, 6, "obj-450", "number~", "list", 0.0, 0.0, 5, "obj-448", "number", "int", 1000, 4, "obj-446", "function", "clear", 8, "obj-446", "function", "add_with_curve", 0.0, 2.008916030618962, 0, 0.0, 8, "obj-446", "function", "add_with_curve", 1000.0, 2.008916030618962, 0, 0.0, 5, "obj-446", "function", "domain", 1000.0, 6, "obj-446", "function", "range", 1.0, 5.0, 5, "obj-446", "function", "mode", 1, 5, "obj-242", "number", "int", 5, 5, "obj-78", "dial", "float", 1000.0, 5, "obj-92", "dial", "float", 10000.0, 5, "obj-106", "dial", "float", 1000.0, 5, "obj-109", "dial", "float", 2500.0, 5, "obj-110", "dial", "float", 1000.0, 5, "obj-111", "dial", "float", 1000.0, 5, "obj-121", "dial", "float", 2000.0, 5, "obj-122", "dial", "float", 2000.0, 5, "obj-157", "slider", "float", 188.0, 5, "obj-202", "slider", "float", 134.0, 5, "obj-203", "slider", "float", 820.0, 5, "obj-204", "slider", "float", 757.50518798828125, 5, "obj-133", "dial", "float", 1000.0, 5, "obj-139", "dial", "float", 1000.0, 5, "obj-333", "textbutton", "mode", 1, 5, "obj-333", "textbutton", "int", 0, 5, "obj-334", "textbutton", "mode", 1, 5, "obj-334", "textbutton", "int", 0, 5, "obj-522", "textbutton", "mode", 1, 5, "obj-522", "textbutton", "int", 0, 5, "obj-525", "textbutton", "mode", 1, 5, "obj-525", "textbutton", "int", 0, 5, "obj-534", "textbutton", "mode", 1, 5, "obj-534", "textbutton", "int", 0, 5, "obj-535", "textbutton", "mode", 1, 5, "obj-535", "textbutton", "int", 0, 5, "obj-541", "textbutton", "mode", 1, 5, "obj-541", "textbutton", "int", 0, 5, "obj-542", "textbutton", "mode", 1, 5, "obj-542", "textbutton", "int", 0, 5, "obj-554", "textbutton", "mode", 1, 5, "obj-554", "textbutton", "int", 0, 5, "obj-555", "led", "int", 1, 5, "obj-558", "led", "int", 1, 5, "obj-564", "textbutton", "mode", 1, 5, "obj-564", "textbutton", "int", 0, 5, "obj-565", "led", "int", 0, 5, "obj-568", "textbutton", "mode", 1, 5, "obj-568", "textbutton", "int", 0, 5, "obj-581", "textbutton", "mode", 1, 5, "obj-581", "textbutton", "int", 0, 5, "obj-20", "textbutton", "mode", 1, 5, "obj-20", "textbutton", "int", 0, 5, "obj-48", "textbutton", "mode", 1, 5, "obj-48", "textbutton", "int", 0, 5, "obj-74", "textbutton", "mode", 1, 5, "obj-74", "textbutton", "int", 0, 5, "obj-99", "textbutton", "mode", 1, 5, "obj-99", "textbutton", "int", 0, 5, "obj-134", "textbutton", "mode", 1, 5, "obj-134", "textbutton", "int", 0, 5, "obj-189", "textbutton", "mode", 1, 5, "obj-189", "textbutton", "int", 0 ]
-						}
-, 						{
-							"number" : 4,
-							"data" : [ 4, "obj-43", "kslider", "chord", 5, "obj-46", "number", "int", 0, 5, "obj-29", "number", "int", 74, 5, "obj-35", "number", "int", 991, 5, "obj-38", "flonum", "float", 0.871873080730438, 5, "obj-41", "number", "int", 325, 5, "obj-13", "umenu", "int", 1, 6, "obj-123", "number~", "list", 0.0, 0.0, 5, "obj-124", "dial", "float", 8.0, 5, "obj-128", "dial", "float", 12.0, 6, "obj-129", "number~", "list", 0.0, 0.0, 6, "obj-130", "number~", "list", 0.0, 0.0, 5, "obj-131", "dial", "float", 1000.0, 5, "obj-316", "number", "int", 1000, 5, "obj-60", "number", "int", 1000, 4, "obj-58", "function", "clear", 8, "obj-58", "function", "add_with_curve", 0.0, 1.0, 0, 0.0, 8, "obj-58", "function", "add_with_curve", 1000.0, 1.0, 0, 0.0, 5, "obj-58", "function", "domain", 1000.0, 6, "obj-58", "function", "range", 0.0, 1.0, 5, "obj-58", "function", "mode", 1, 5, "obj-73", "led", "int", 1, 5, "obj-149", "number", "int", 5, 9, "obj-84", "multislider", "list", 0.0, 0.0, 0.0, 0.0, 0.0, 9, "obj-96", "multislider", "list", 0.0, 0.0, 0.0, 0.0, 0.0, 6, "obj-127", "number~", "list", 1.0, 0.0, 5, "obj-62", "umenu", "int", 0, 6, "obj-16", "number~", "list", 5.5, 0.0, 6, "obj-15", "number~", "list", 1.0, 0.0, 6, "obj-221", "number~", "list", 1.0, 0.0, 6, "obj-222", "number~", "list", 1.0, 0.0, 6, "obj-231", "number~", "list", 1.0, 0.0, 6, "obj-232", "number~", "list", 0.0, 0.0, 5, "obj-331", "umenu", "int", 0, 6, "obj-323", "number~", "list", 0.0, 0.0, 6, "obj-322", "number~", "list", 0.0, 0.0, 6, "obj-337", "number~", "list", 10.0, 0.0, 9, "obj-346", "multislider", "list", 0.0, 0.0, 0.0, 0.0, 0.0, 6, "obj-365", "number~", "list", 1.0, 0.0, 5, "obj-21", "number", "int", 5, 5, "obj-416", "number", "int", 5, 4, "obj-457", "function", "clear", 8, "obj-457", "function", "add_with_curve", 0.0, 1.0, 0, 0.0, 8, "obj-457", "function", "add_with_curve", 999.999999999999773, 1.0, 0, 0.0, 5, "obj-457", "function", "domain", 1000.0, 6, "obj-457", "function", "range", 0.0, 1.0, 5, "obj-457", "function", "mode", 1, 5, "obj-198", "umenu", "int", 1, 6, "obj-188", "number~", "list", -1.0, 0.0, 5, "obj-187", "dial", "float", 7.0, 5, "obj-186", "dial", "float", 12.0, 6, "obj-185", "number~", "list", 0.0, 0.0, 6, "obj-184", "number~", "list", 0.0, 0.0, 5, "obj-182", "dial", "float", 1000.0, 5, "obj-174", "number", "int", 1000, 4, "obj-172", "function", "clear", 8, "obj-172", "function", "add_with_curve", 0.0, 1.0, 0, 0.0, 8, "obj-172", "function", "add_with_curve", 1000.0, 1.0, 0, 0.0, 5, "obj-172", "function", "domain", 1000.0, 6, "obj-172", "function", "range", 0.0, 1.0, 5, "obj-172", "function", "mode", 1, 5, "obj-165", "led", "int", 1, 9, "obj-164", "multislider", "list", 0.0, 0.0, 0.0, 0.0, 0.0, 6, "obj-159", "number~", "list", 1.0, 0.0, 6, "obj-152", "number~", "list", 1.0, 0.0, 6, "obj-151", "number~", "list", 1.0, 0.0, 5, "obj-126", "number", "int", 5, 5, "obj-327", "umenu", "int", 5, 6, "obj-311", "number~", "list", 1.0, 0.0, 5, "obj-310", "dial", "float", 9.0, 5, "obj-292", "dial", "float", 12.0, 6, "obj-290", "number~", "list", 0.0, 0.0, 6, "obj-288", "number~", "list", 0.0, 0.0, 5, "obj-287", "dial", "float", 1000.0, 5, "obj-274", "number", "int", 1000, 4, "obj-272", "function", "clear", 8, "obj-272", "function", "add_with_curve", 0.0, 1.0, 0, 0.0, 8, "obj-272", "function", "add_with_curve", 1000.0, 1.0, 0, 0.0, 5, "obj-272", "function", "domain", 1000.0, 6, "obj-272", "function", "range", 0.0, 1.0, 5, "obj-272", "function", "mode", 1, 5, "obj-265", "led", "int", 1, 9, "obj-264", "multislider", "list", 1.0, 0.75123131275177, 0.445498824119568, 0.152505174279213, 0.0, 6, "obj-261", "number~", "list", 1.0, 0.0, 6, "obj-259", "number~", "list", 1.0, 0.0, 6, "obj-258", "number~", "list", 5.0, 0.0, 5, "obj-255", "number", "int", 5, 5, "obj-426", "umenu", "int", 5, 6, "obj-408", "number~", "list", -2.0, 0.0, 5, "obj-407", "dial", "float", 6.0, 5, "obj-406", "dial", "float", 12.0, 6, "obj-405", "number~", "list", 0.0, 0.0, 6, "obj-404", "number~", "list", 0.0, 0.0, 5, "obj-403", "dial", "float", 1000.0, 5, "obj-395", "number", "int", 1000, 4, "obj-393", "function", "clear", 8, "obj-393", "function", "add_with_curve", 0.0, 1.0, 0, 0.0, 8, "obj-393", "function", "add_with_curve", 1000.0, 1.0, 0, 0.0, 5, "obj-393", "function", "domain", 1000.0, 6, "obj-393", "function", "range", 0.0, 1.0, 5, "obj-393", "function", "mode", 1, 5, "obj-387", "led", "int", 1, 9, "obj-386", "multislider", "list", 1.0, 0.358662307262421, 0.0, 0.320445746183395, 0.320445746183395, 6, "obj-383", "number~", "list", 1.0, 0.0, 6, "obj-381", "number~", "list", 1.0, 0.0, 6, "obj-380", "number~", "list", 5.0, 0.0, 5, "obj-376", "number", "int", 5, 5, "obj-498", "number", "int", 1000, 4, "obj-496", "function", "clear", 8, "obj-496", "function", "add_with_curve", 0.0, 1.0, 0, 0.0, 8, "obj-496", "function", "add_with_curve", 1000.0, 4.870129490493445, 0, -0.5, 5, "obj-496", "function", "domain", 1000.0, 6, "obj-496", "function", "range", 1.0, 5.0, 5, "obj-496", "function", "mode", 1, 5, "obj-505", "number", "int", 5, 5, "obj-471", "umenu", "int", 0, 6, "obj-468", "number~", "list", 4.0, 0.0, 6, "obj-467", "number~", "list", 1.0, 0.0, 6, "obj-451", "number~", "list", 1.0, 0.0, 6, "obj-450", "number~", "list", 0.0, 0.0, 5, "obj-448", "number", "int", 1000, 4, "obj-446", "function", "clear", 8, "obj-446", "function", "add_with_curve", 0.0, 1.0, 0, 0.0, 8, "obj-446", "function", "add_with_curve", 1000.0, 5.0, 0, -0.55, 5, "obj-446", "function", "domain", 1000.0, 6, "obj-446", "function", "range", 1.0, 5.0, 5, "obj-446", "function", "mode", 1, 5, "obj-242", "number", "int", 5, 5, "obj-78", "dial", "float", 1000.0, 5, "obj-92", "dial", "float", 10000.0, 5, "obj-106", "dial", "float", 4000.0, 5, "obj-109", "dial", "float", 5500.0, 5, "obj-110", "dial", "float", 1000.0, 5, "obj-111", "dial", "float", 1000.0, 5, "obj-121", "dial", "float", 1000.0, 5, "obj-122", "dial", "float", 1000.0, 5, "obj-157", "slider", "float", 73.0, 5, "obj-202", "slider", "float", 990.0, 5, "obj-203", "slider", "float", 324.0, 5, "obj-204", "slider", "float", 871.87310791015625, 5, "obj-133", "dial", "float", 1000.0, 5, "obj-139", "dial", "float", 1000.0, 5, "obj-333", "textbutton", "mode", 1, 5, "obj-333", "textbutton", "int", 0, 5, "obj-334", "textbutton", "mode", 1, 5, "obj-334", "textbutton", "int", 0, 5, "obj-522", "textbutton", "mode", 1, 5, "obj-522", "textbutton", "int", 0, 5, "obj-525", "textbutton", "mode", 1, 5, "obj-525", "textbutton", "int", 0, 5, "obj-534", "textbutton", "mode", 1, 5, "obj-534", "textbutton", "int", 0, 5, "obj-535", "textbutton", "mode", 1, 5, "obj-535", "textbutton", "int", 0, 5, "obj-541", "textbutton", "mode", 1, 5, "obj-541", "textbutton", "int", 0, 5, "obj-542", "textbutton", "mode", 1, 5, "obj-542", "textbutton", "int", 0, 5, "obj-554", "textbutton", "mode", 1, 5, "obj-554", "textbutton", "int", 0, 5, "obj-555", "led", "int", 1, 5, "obj-558", "led", "int", 1, 5, "obj-564", "textbutton", "mode", 1, 5, "obj-564", "textbutton", "int", 0, 5, "obj-565", "led", "int", 0, 5, "obj-568", "textbutton", "mode", 1, 5, "obj-568", "textbutton", "int", 0, 5, "obj-581", "textbutton", "mode", 1, 5, "obj-581", "textbutton", "int", 0, 5, "obj-20", "textbutton", "mode", 1, 5, "obj-20", "textbutton", "int", 0, 5, "obj-48", "textbutton", "mode", 1, 5, "obj-48", "textbutton", "int", 0, 5, "obj-74", "textbutton", "mode", 1, 5, "obj-74", "textbutton", "int", 0, 5, "obj-99", "textbutton", "mode", 1, 5, "obj-99", "textbutton", "int", 0, 5, "obj-134", "textbutton", "mode", 1, 5, "obj-134", "textbutton", "int", 0, 5, "obj-189", "textbutton", "mode", 1, 5, "obj-189", "textbutton", "int", 0 ]
-						}
-, 						{
-							"number" : 5,
-							"data" : [ 4, "obj-43", "kslider", "chord", 5, "obj-46", "number", "int", 0, 5, "obj-29", "number", "int", 191, 5, "obj-35", "number", "int", 273, 5, "obj-38", "flonum", "float", 0.851160228252411, 5, "obj-41", "number", "int", 1221, 5, "obj-13", "umenu", "int", 5, 6, "obj-123", "number~", "list", 0.0, 0.0, 5, "obj-124", "dial", "float", 8.0, 5, "obj-128", "dial", "float", 12.0, 6, "obj-129", "number~", "list", 0.0, 0.0, 6, "obj-130", "number~", "list", -0.3, 0.0, 5, "obj-131", "dial", "float", 700.0, 5, "obj-316", "number", "int", 1000, 5, "obj-60", "number", "int", 1000, 4, "obj-58", "function", "clear", 8, "obj-58", "function", "add_with_curve", 0.0, 1.0, 0, 0.0, 8, "obj-58", "function", "add_with_curve", 1000.0, 1.0, 0, 0.0, 5, "obj-58", "function", "domain", 1000.0, 6, "obj-58", "function", "range", 0.0, 1.0, 5, "obj-58", "function", "mode", 1, 5, "obj-73", "led", "int", 1, 5, "obj-149", "number", "int", 5, 9, "obj-84", "multislider", "list", 1.0, 0.773689150810242, 0.504308938980103, 0.414515554904938, 0.1579629778862, 9, "obj-96", "multislider", "list", 1.0, 0.773689150810242, 0.504308938980103, 0.414515554904938, 0.1579629778862, 6, "obj-127", "number~", "list", 1.0, 0.0, 5, "obj-62", "umenu", "int", 0, 6, "obj-16", "number~", "list", 4.5, 0.0, 6, "obj-15", "number~", "list", 1.0, 0.0, 6, "obj-221", "number~", "list", 1.0, 0.0, 6, "obj-222", "number~", "list", 5.0, 0.0, 6, "obj-231", "number~", "list", 1.0, 0.0, 6, "obj-232", "number~", "list", 0.0, 0.0, 5, "obj-331", "umenu", "int", 4, 6, "obj-323", "number~", "list", 1.0, 0.0, 6, "obj-322", "number~", "list", 4.0, 0.0, 6, "obj-337", "number~", "list", 10.0, 0.0, 9, "obj-346", "multislider", "list", 0.0, 0.0, 0.0, 0.0, 0.0, 6, "obj-365", "number~", "list", 0.3, 0.0, 5, "obj-21", "number", "int", 5, 5, "obj-416", "number", "int", 5, 4, "obj-457", "function", "clear", 8, "obj-457", "function", "add_with_curve", 0.0, 1.0, 0, 0.0, 8, "obj-457", "function", "add_with_curve", 999.999999999999773, 1.0, 0, 0.0, 5, "obj-457", "function", "domain", 1000.0, 6, "obj-457", "function", "range", 0.0, 1.0, 5, "obj-457", "function", "mode", 1, 5, "obj-198", "umenu", "int", 5, 6, "obj-188", "number~", "list", -2.0, 0.0, 5, "obj-187", "dial", "float", 6.0, 5, "obj-186", "dial", "float", 12.0, 6, "obj-185", "number~", "list", 0.0, 0.0, 6, "obj-184", "number~", "list", 0.3, 0.0, 5, "obj-182", "dial", "float", 1300.0, 5, "obj-174", "number", "int", 1000, 4, "obj-172", "function", "clear", 8, "obj-172", "function", "add_with_curve", 0.0, 1.0, 0, 0.0, 8, "obj-172", "function", "add_with_curve", 1000.0, 1.0, 0, 0.0, 5, "obj-172", "function", "domain", 1000.0, 6, "obj-172", "function", "range", 0.0, 1.0, 5, "obj-172", "function", "mode", 1, 5, "obj-165", "led", "int", 1, 9, "obj-164", "multislider", "list", 1.0, 0.773689150810242, 0.504308938980103, 0.414515554904938, 0.1579629778862, 6, "obj-159", "number~", "list", 1.0, 0.0, 6, "obj-152", "number~", "list", 1.0, 0.0, 6, "obj-151", "number~", "list", 5.0, 0.0, 5, "obj-126", "number", "int", 5, 5, "obj-327", "umenu", "int", 5, 6, "obj-311", "number~", "list", -3.0, 0.0, 5, "obj-310", "dial", "float", 5.0, 5, "obj-292", "dial", "float", 12.0, 6, "obj-290", "number~", "list", 0.0, 0.0, 6, "obj-288", "number~", "list", 0.0, 0.0, 5, "obj-287", "dial", "float", 1000.0, 5, "obj-274", "number", "int", 1000, 4, "obj-272", "function", "clear", 8, "obj-272", "function", "add_with_curve", 0.0, 0.0, 0, 0.0, 8, "obj-272", "function", "add_with_curve", 1000.0, 1.0, 0, -0.4, 5, "obj-272", "function", "domain", 1000.0, 6, "obj-272", "function", "range", 0.0, 1.0, 5, "obj-272", "function", "mode", 1, 5, "obj-265", "led", "int", 1, 9, "obj-264", "multislider", "list", 1.0, 0.773689150810242, 0.504308938980103, 0.414515554904938, 0.1579629778862, 6, "obj-261", "number~", "list", 6.0, 0.0, 6, "obj-259", "number~", "list", 1.0, 0.0, 6, "obj-258", "number~", "list", 5.0, 0.0, 5, "obj-255", "number", "int", 5, 5, "obj-426", "umenu", "int", 5, 6, "obj-408", "number~", "list", 2.0, 0.0, 5, "obj-407", "dial", "float", 10.0, 5, "obj-406", "dial", "float", 12.0, 6, "obj-405", "number~", "list", 0.0, 0.0, 6, "obj-404", "number~", "list", 0.0, 0.0, 5, "obj-403", "dial", "float", 1000.0, 5, "obj-395", "number", "int", 1000, 4, "obj-393", "function", "clear", 8, "obj-393", "function", "add_with_curve", 0.0, 0.0, 0, 0.0, 8, "obj-393", "function", "add_with_curve", 1000.0, 1.0, 0, 0.2, 5, "obj-393", "function", "domain", 1000.0, 6, "obj-393", "function", "range", 0.0, 1.0, 5, "obj-393", "function", "mode", 1, 5, "obj-387", "led", "int", 1, 9, "obj-386", "multislider", "list", 1.0, 0.773689150810242, 0.504308938980103, 0.414515554904938, 0.1579629778862, 6, "obj-383", "number~", "list", 1.0, 0.0, 6, "obj-381", "number~", "list", 1.0, 0.0, 6, "obj-380", "number~", "list", 5.0, 0.0, 5, "obj-376", "number", "int", 5, 5, "obj-498", "number", "int", 2000, 4, "obj-496", "function", "clear", 8, "obj-496", "function", "add_with_curve", 0.0, 1.0, 0, 0.0, 8, "obj-496", "function", "add_with_curve", 1008.120537328889327, 5.0, 0, -0.3, 8, "obj-496", "function", "add_with_curve", 2000.0, 1.0, 0, 0.3, 5, "obj-496", "function", "domain", 2000.0, 6, "obj-496", "function", "range", 1.0, 5.0, 5, "obj-496", "function", "mode", 1, 5, "obj-505", "number", "int", 5, 5, "obj-471", "umenu", "int", 0, 6, "obj-468", "number~", "list", 1.0, 0.0, 6, "obj-467", "number~", "list", 1.0, 0.0, 6, "obj-451", "number~", "list", 1.0, 0.0, 6, "obj-450", "number~", "list", 0.0, 0.0, 5, "obj-448", "number", "int", 500, 4, "obj-446", "function", "clear", 8, "obj-446", "function", "add_with_curve", 0.0, 1.0, 0, 0.0, 8, "obj-446", "function", "add_with_curve", 500.0, 5.0, 0, 0.0, 5, "obj-446", "function", "domain", 500.0, 6, "obj-446", "function", "range", 1.0, 5.0, 5, "obj-446", "function", "mode", 1, 5, "obj-242", "number", "int", 5, 5, "obj-78", "dial", "float", 300.0, 5, "obj-92", "dial", "float", 10000.0, 5, "obj-106", "dial", "float", 1000.0, 5, "obj-109", "dial", "float", 4500.0, 5, "obj-110", "dial", "float", 1000.0, 5, "obj-111", "dial", "float", 1000.0, 5, "obj-121", "dial", "float", 1000.0, 5, "obj-122", "dial", "float", 1000.0, 5, "obj-157", "slider", "float", 190.0, 5, "obj-202", "slider", "float", 272.0, 5, "obj-203", "slider", "float", 1220.0, 5, "obj-204", "slider", "float", 851.16021728515625, 5, "obj-133", "dial", "float", 6000.0, 5, "obj-139", "dial", "float", 1000.0, 5, "obj-333", "textbutton", "mode", 1, 5, "obj-333", "textbutton", "int", 0, 5, "obj-334", "textbutton", "mode", 1, 5, "obj-334", "textbutton", "int", 1, 5, "obj-522", "textbutton", "mode", 1, 5, "obj-522", "textbutton", "int", 0, 5, "obj-525", "textbutton", "mode", 1, 5, "obj-525", "textbutton", "int", 1, 5, "obj-534", "textbutton", "mode", 1, 5, "obj-534", "textbutton", "int", 1, 5, "obj-535", "textbutton", "mode", 1, 5, "obj-535", "textbutton", "int", 0, 5, "obj-541", "textbutton", "mode", 1, 5, "obj-541", "textbutton", "int", 0, 5, "obj-542", "textbutton", "mode", 1, 5, "obj-542", "textbutton", "int", 1, 5, "obj-554", "textbutton", "mode", 1, 5, "obj-554", "textbutton", "int", 0, 5, "obj-555", "led", "int", 1, 5, "obj-558", "led", "int", 1, 5, "obj-564", "textbutton", "mode", 1, 5, "obj-564", "textbutton", "int", 0, 5, "obj-565", "led", "int", 1, 5, "obj-568", "textbutton", "mode", 1, 5, "obj-568", "textbutton", "int", 0, 5, "obj-581", "textbutton", "mode", 1, 5, "obj-581", "textbutton", "int", 0, 5, "obj-20", "textbutton", "mode", 1, 5, "obj-20", "textbutton", "int", 0, 5, "obj-48", "textbutton", "mode", 1, 5, "obj-48", "textbutton", "int", 0, 5, "obj-74", "textbutton", "mode", 1, 5, "obj-74", "textbutton", "int", 0, 5, "obj-99", "textbutton", "mode", 1, 5, "obj-99", "textbutton", "int", 0, 5, "obj-134", "textbutton", "mode", 1, 5, "obj-134", "textbutton", "int", 1, 5, "obj-189", "textbutton", "mode", 1, 5, "obj-189", "textbutton", "int", 0 ]
-						}
-, 						{
-							"number" : 6,
-							"data" : [ 4, "obj-43", "kslider", "chord", 5, "obj-46", "number", "int", 0, 5, "obj-29", "number", "int", 207, 5, "obj-35", "number", "int", 708, 5, "obj-38", "flonum", "float", 0.837288200855255, 5, "obj-41", "number", "int", 502, 5, "obj-13", "umenu", "int", 4, 6, "obj-123", "number~", "list", -2.0, 0.0, 5, "obj-124", "dial", "float", 6.0, 5, "obj-128", "dial", "float", 12.0, 6, "obj-129", "number~", "list", 0.0, 0.0, 6, "obj-130", "number~", "list", 0.0, 0.0, 5, "obj-131", "dial", "float", 1000.0, 5, "obj-316", "number", "int", 1000, 5, "obj-60", "number", "int", 1000, 4, "obj-58", "function", "clear", 8, "obj-58", "function", "add_with_curve", 0.0, 1.0, 0, 0.0, 8, "obj-58", "function", "add_with_curve", 1000.0, 1.0, 0, 0.0, 5, "obj-58", "function", "domain", 1000.0, 6, "obj-58", "function", "range", 0.0, 1.0, 5, "obj-58", "function", "mode", 1, 5, "obj-73", "led", "int", 1, 5, "obj-149", "number", "int", 5, 9, "obj-84", "multislider", "list", 0.0, 0.0, 0.0, 0.0, 0.0, 9, "obj-96", "multislider", "list", 0.0, 0.0, 0.0, 0.0, 0.0, 6, "obj-127", "number~", "list", 1.0, 0.0, 5, "obj-62", "umenu", "int", 0, 6, "obj-16", "number~", "list", 6.0, 0.0, 6, "obj-15", "number~", "list", 1.0, 0.0, 6, "obj-221", "number~", "list", 1.0, 0.0, 6, "obj-222", "number~", "list", 4.0, 0.0, 6, "obj-231", "number~", "list", 1.0, 0.0, 6, "obj-232", "number~", "list", 0.0, 0.0, 5, "obj-331", "umenu", "int", 0, 6, "obj-323", "number~", "list", 0.0, 0.0, 6, "obj-322", "number~", "list", 0.0, 0.0, 6, "obj-337", "number~", "list", 10.0, 0.0, 9, "obj-346", "multislider", "list", 0.0, 0.0, 0.0, 0.0, 0.0, 6, "obj-365", "number~", "list", 1.0, 0.0, 5, "obj-21", "number", "int", 5, 5, "obj-416", "number", "int", 5, 4, "obj-457", "function", "clear", 8, "obj-457", "function", "add_with_curve", 0.0, 1.0, 0, 0.0, 8, "obj-457", "function", "add_with_curve", 999.999999999999773, 1.0, 0, 0.0, 5, "obj-457", "function", "domain", 1000.0, 6, "obj-457", "function", "range", 0.0, 1.0, 5, "obj-457", "function", "mode", 1, 5, "obj-198", "umenu", "int", 4, 6, "obj-188", "number~", "list", 2.0, 0.0, 5, "obj-187", "dial", "float", 10.0, 5, "obj-186", "dial", "float", 12.0, 6, "obj-185", "number~", "list", 0.0, 0.0, 6, "obj-184", "number~", "list", 0.0, 0.0, 5, "obj-182", "dial", "float", 1000.0, 5, "obj-174", "number", "int", 1000, 4, "obj-172", "function", "clear", 8, "obj-172", "function", "add_with_curve", 0.0, 1.0, 0, 0.0, 8, "obj-172", "function", "add_with_curve", 1000.0, 1.0, 0, 0.0, 5, "obj-172", "function", "domain", 1000.0, 6, "obj-172", "function", "range", 0.0, 1.0, 5, "obj-172", "function", "mode", 1, 5, "obj-165", "led", "int", 1, 9, "obj-164", "multislider", "list", 0.0, 0.0, 0.0, 0.0, 0.0, 6, "obj-159", "number~", "list", 1.0, 0.0, 6, "obj-152", "number~", "list", 1.0, 0.0, 6, "obj-151", "number~", "list", 4.0, 0.0, 5, "obj-126", "number", "int", 5, 5, "obj-327", "umenu", "int", 0, 6, "obj-311", "number~", "list", 0.0, 0.0, 5, "obj-310", "dial", "float", 8.0, 5, "obj-292", "dial", "float", 12.0, 6, "obj-290", "number~", "list", 0.0, 0.0, 6, "obj-288", "number~", "list", 0.0, 0.0, 5, "obj-287", "dial", "float", 1000.0, 5, "obj-274", "number", "int", 1000, 4, "obj-272", "function", "clear", 8, "obj-272", "function", "add_with_curve", 0.0, 1.0, 0, 0.0, 8, "obj-272", "function", "add_with_curve", 1000.0, 1.0, 0, 0.0, 5, "obj-272", "function", "domain", 1000.0, 6, "obj-272", "function", "range", 0.0, 1.0, 5, "obj-272", "function", "mode", 1, 5, "obj-265", "led", "int", 1, 9, "obj-264", "multislider", "list", 0.0, 0.0, 0.0, 0.0, 0.0, 6, "obj-261", "number~", "list", 1.0, 0.0, 6, "obj-259", "number~", "list", 1.0, 0.0, 6, "obj-258", "number~", "list", 0.0, 0.0, 5, "obj-255", "number", "int", 5, 5, "obj-426", "umenu", "int", 0, 6, "obj-408", "number~", "list", 0.0, 0.0, 5, "obj-407", "dial", "float", 8.0, 5, "obj-406", "dial", "float", 12.0, 6, "obj-405", "number~", "list", 0.0, 0.0, 6, "obj-404", "number~", "list", 0.0, 0.0, 5, "obj-403", "dial", "float", 1000.0, 5, "obj-395", "number", "int", 1000, 4, "obj-393", "function", "clear", 8, "obj-393", "function", "add_with_curve", 0.0, 1.0, 0, 0.0, 8, "obj-393", "function", "add_with_curve", 1000.0, 1.0, 0, 0.0, 5, "obj-393", "function", "domain", 1000.0, 6, "obj-393", "function", "range", 0.0, 1.0, 5, "obj-393", "function", "mode", 1, 5, "obj-387", "led", "int", 1, 9, "obj-386", "multislider", "list", 0.0, 0.0, 0.0, 0.0, 0.0, 6, "obj-383", "number~", "list", 1.0, 0.0, 6, "obj-381", "number~", "list", 1.0, 0.0, 6, "obj-380", "number~", "list", 0.0, 0.0, 5, "obj-376", "number", "int", 5, 5, "obj-498", "number", "int", 1000, 4, "obj-496", "function", "clear", 8, "obj-496", "function", "add_with_curve", 0.0, 1.0, 0, 0.0, 8, "obj-496", "function", "add_with_curve", 1000.0, 1.0, 0, 0.0, 5, "obj-496", "function", "domain", 1000.0, 6, "obj-496", "function", "range", 1.0, 5.0, 5, "obj-496", "function", "mode", 1, 5, "obj-505", "number", "int", 5, 5, "obj-471", "umenu", "int", 0, 6, "obj-468", "number~", "list", 0.5, 0.0, 6, "obj-467", "number~", "list", 1.0, 0.0, 6, "obj-451", "number~", "list", 1.0, 0.0, 6, "obj-450", "number~", "list", 0.0, 0.0, 5, "obj-448", "number", "int", 1000, 4, "obj-446", "function", "clear", 8, "obj-446", "function", "add_with_curve", 0.0, 5.0, 0, 0.0, 8, "obj-446", "function", "add_with_curve", 1000.0, 5.0, 0, 0.0, 5, "obj-446", "function", "domain", 1000.0, 6, "obj-446", "function", "range", 1.0, 5.0, 5, "obj-446", "function", "mode", 1, 5, "obj-242", "number", "int", 5, 5, "obj-78", "dial", "float", 1000.0, 5, "obj-92", "dial", "float", 10000.0, 5, "obj-106", "dial", "float", 500.0, 5, "obj-109", "dial", "float", 6000.0, 5, "obj-110", "dial", "float", 1000.0, 5, "obj-111", "dial", "float", 1000.0, 5, "obj-121", "dial", "float", 1000.0, 5, "obj-122", "dial", "float", 1000.0, 5, "obj-157", "slider", "float", 206.0, 5, "obj-202", "slider", "float", 707.0, 5, "obj-203", "slider", "float", 501.0, 5, "obj-204", "slider", "float", 837.2882080078125, 5, "obj-133", "dial", "float", 1000.0, 5, "obj-139", "dial", "float", 1000.0, 5, "obj-333", "textbutton", "mode", 1, 5, "obj-333", "textbutton", "int", 0, 5, "obj-334", "textbutton", "mode", 1, 5, "obj-334", "textbutton", "int", 0, 5, "obj-522", "textbutton", "mode", 1, 5, "obj-522", "textbutton", "int", 0, 5, "obj-525", "textbutton", "mode", 1, 5, "obj-525", "textbutton", "int", 0, 5, "obj-534", "textbutton", "mode", 1, 5, "obj-534", "textbutton", "int", 0, 5, "obj-535", "textbutton", "mode", 1, 5, "obj-535", "textbutton", "int", 0, 5, "obj-541", "textbutton", "mode", 1, 5, "obj-541", "textbutton", "int", 0, 5, "obj-542", "textbutton", "mode", 1, 5, "obj-542", "textbutton", "int", 0, 5, "obj-554", "textbutton", "mode", 1, 5, "obj-554", "textbutton", "int", 0, 5, "obj-555", "led", "int", 1, 5, "obj-558", "led", "int", 1, 5, "obj-564", "textbutton", "mode", 1, 5, "obj-564", "textbutton", "int", 0, 5, "obj-565", "led", "int", 0, 5, "obj-568", "textbutton", "mode", 1, 5, "obj-568", "textbutton", "int", 1, 5, "obj-581", "textbutton", "mode", 1, 5, "obj-581", "textbutton", "int", 0, 5, "obj-20", "textbutton", "mode", 1, 5, "obj-20", "textbutton", "int", 0, 5, "obj-48", "textbutton", "mode", 1, 5, "obj-48", "textbutton", "int", 0, 5, "obj-74", "textbutton", "mode", 1, 5, "obj-74", "textbutton", "int", 0, 5, "obj-99", "textbutton", "mode", 1, 5, "obj-99", "textbutton", "int", 0, 5, "obj-134", "textbutton", "mode", 1, 5, "obj-134", "textbutton", "int", 0, 5, "obj-189", "textbutton", "mode", 1, 5, "obj-189", "textbutton", "int", 0 ]
-						}
-, 						{
-							"number" : 7,
-							"data" : [ 4, "obj-43", "kslider", "chord", 5, "obj-46", "number", "int", 0, 5, "obj-29", "number", "int", 207, 5, "obj-35", "number", "int", 708, 5, "obj-38", "flonum", "float", 0.837288200855255, 5, "obj-41", "number", "int", 502, 5, "obj-13", "umenu", "int", 5, 6, "obj-123", "number~", "list", -2.0, 0.0, 5, "obj-124", "dial", "float", 6.0, 5, "obj-128", "dial", "float", 12.0, 6, "obj-129", "number~", "list", 0.0, 0.0, 6, "obj-130", "number~", "list", 0.0, 0.0, 5, "obj-131", "dial", "float", 1000.0, 5, "obj-316", "number", "int", 1000, 5, "obj-60", "number", "int", 1000, 4, "obj-58", "function", "clear", 8, "obj-58", "function", "add_with_curve", 0.0, 1.0, 0, 0.0, 8, "obj-58", "function", "add_with_curve", 1000.0, 1.0, 0, 0.0, 5, "obj-58", "function", "domain", 1000.0, 6, "obj-58", "function", "range", 0.0, 1.0, 5, "obj-58", "function", "mode", 1, 5, "obj-73", "led", "int", 1, 5, "obj-149", "number", "int", 10, 14, "obj-84", "multislider", "list", 0.397777527570724, 0.092730298638344, 0.255422174930573, 0.377441048622131, 0.133403271436691, 0.174076229333878, 0.255422174930573, 0.235085681080818, 0.194412708282471, 0.275758653879166, 14, "obj-96", "multislider", "list", 0.397777527570724, 0.092730298638344, 0.255422174930573, 0.377441048622131, 0.133403271436691, 0.174076229333878, 0.255422174930573, 0.235085681080818, 0.194412708282471, 0.275758653879166, 6, "obj-127", "number~", "list", 1.0, 0.0, 5, "obj-62", "umenu", "int", 0, 6, "obj-16", "number~", "list", 2.5, 0.0, 6, "obj-15", "number~", "list", 1.0, 0.0, 6, "obj-221", "number~", "list", 1.0, 0.0, 6, "obj-222", "number~", "list", 5.0, 0.0, 6, "obj-231", "number~", "list", 1.0, 0.0, 6, "obj-232", "number~", "list", 0.0, 0.0, 5, "obj-331", "umenu", "int", 0, 6, "obj-323", "number~", "list", 0.0, 0.0, 6, "obj-322", "number~", "list", 0.0, 0.0, 6, "obj-337", "number~", "list", 10.0, 0.0, 14, "obj-346", "multislider", "list", 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 6, "obj-365", "number~", "list", 1.0, 0.0, 5, "obj-21", "number", "int", 10, 5, "obj-416", "number", "int", 10, 4, "obj-457", "function", "clear", 8, "obj-457", "function", "add_with_curve", 0.0, 1.0, 0, 0.0, 8, "obj-457", "function", "add_with_curve", 999.999999999999773, 1.0, 0, 0.0, 5, "obj-457", "function", "domain", 1000.0, 6, "obj-457", "function", "range", 0.0, 1.0, 5, "obj-457", "function", "mode", 1, 5, "obj-198", "umenu", "int", 5, 6, "obj-188", "number~", "list", 2.0, 0.0, 5, "obj-187", "dial", "float", 10.0, 5, "obj-186", "dial", "float", 12.0, 6, "obj-185", "number~", "list", 0.0, 0.0, 6, "obj-184", "number~", "list", 0.0, 0.0, 5, "obj-182", "dial", "float", 1000.0, 5, "obj-174", "number", "int", 1000, 4, "obj-172", "function", "clear", 8, "obj-172", "function", "add_with_curve", 0.0, 1.0, 0, 0.0, 8, "obj-172", "function", "add_with_curve", 1000.0, 1.0, 0, 0.0, 5, "obj-172", "function", "domain", 1000.0, 6, "obj-172", "function", "range", 0.0, 1.0, 5, "obj-172", "function", "mode", 1, 5, "obj-165", "led", "int", 1, 14, "obj-164", "multislider", "list", 0.397777527570724, 0.092730298638344, 0.255422174930573, 0.377441048622131, 0.133403271436691, 0.174076229333878, 0.255422174930573, 0.235085681080818, 0.194412708282471, 0.275758653879166, 6, "obj-159", "number~", "list", 1.0, 0.0, 6, "obj-152", "number~", "list", 1.0, 0.0, 6, "obj-151", "number~", "list", 5.0, 0.0, 5, "obj-126", "number", "int", 10, 5, "obj-327", "umenu", "int", 5, 6, "obj-311", "number~", "list", 1.0, 0.0, 5, "obj-310", "dial", "float", 9.0, 5, "obj-292", "dial", "float", 12.0, 6, "obj-290", "number~", "list", 0.0, 0.0, 6, "obj-288", "number~", "list", -0.05, 0.0, 5, "obj-287", "dial", "float", 950.0, 5, "obj-274", "number", "int", 1000, 4, "obj-272", "function", "clear", 8, "obj-272", "function", "add_with_curve", 0.0, 1.0, 0, 0.0, 8, "obj-272", "function", "add_with_curve", 1000.0, 1.0, 0, 0.0, 5, "obj-272", "function", "domain", 1000.0, 6, "obj-272", "function", "range", 0.0, 1.0, 5, "obj-272", "function", "mode", 1, 5, "obj-265", "led", "int", 1, 14, "obj-264", "multislider", "list", 0.397777527570724, 0.092730298638344, 0.255422174930573, 0.377441048622131, 0.133403271436691, 0.174076229333878, 0.255422174930573, 0.235085681080818, 0.194412708282471, 0.275758653879166, 6, "obj-261", "number~", "list", 1.0, 0.0, 6, "obj-259", "number~", "list", 1.0, 0.0, 6, "obj-258", "number~", "list", 5.0, 0.0, 5, "obj-255", "number", "int", 10, 5, "obj-426", "umenu", "int", 5, 6, "obj-408", "number~", "list", 1.0, 0.0, 5, "obj-407", "dial", "float", 9.0, 5, "obj-406", "dial", "float", 12.0, 6, "obj-405", "number~", "list", 0.0, 0.0, 6, "obj-404", "number~", "list", 0.05, 0.0, 5, "obj-403", "dial", "float", 1050.0, 5, "obj-395", "number", "int", 1000, 4, "obj-393", "function", "clear", 8, "obj-393", "function", "add_with_curve", 0.0, 1.0, 0, 0.0, 8, "obj-393", "function", "add_with_curve", 1000.0, 1.0, 0, 0.0, 5, "obj-393", "function", "domain", 1000.0, 6, "obj-393", "function", "range", 0.0, 1.0, 5, "obj-393", "function", "mode", 1, 5, "obj-387", "led", "int", 1, 14, "obj-386", "multislider", "list", 0.397777527570724, 0.092730298638344, 0.255422174930573, 0.377441048622131, 0.133403271436691, 0.174076229333878, 0.255422174930573, 0.235085681080818, 0.194412708282471, 0.275758653879166, 6, "obj-383", "number~", "list", 1.0, 0.0, 6, "obj-381", "number~", "list", 1.0, 0.0, 6, "obj-380", "number~", "list", 5.0, 0.0, 5, "obj-376", "number", "int", 10, 5, "obj-498", "number", "int", 1000, 4, "obj-496", "function", "clear", 8, "obj-496", "function", "add_with_curve", 0.0, 1.0, 0, 0.0, 8, "obj-496", "function", "add_with_curve", 1000.0, 1.0, 0, 0.0, 5, "obj-496", "function", "domain", 1000.0, 6, "obj-496", "function", "range", 1.0, 2.0, 5, "obj-496", "function", "mode", 1, 5, "obj-505", "number", "int", 2, 5, "obj-471", "umenu", "int", 1, 6, "obj-468", "number~", "list", 0.5, 0.0, 6, "obj-467", "number~", "list", 1.0, 0.0, 6, "obj-451", "number~", "list", 1.0, 0.0, 6, "obj-450", "number~", "list", 1.0, 0.0, 5, "obj-448", "number", "int", 1000, 4, "obj-446", "function", "clear", 8, "obj-446", "function", "add_with_curve", 0.0, 2.0, 0, 0.0, 8, "obj-446", "function", "add_with_curve", 1000.0, 2.0, 0, 0.0, 5, "obj-446", "function", "domain", 1000.0, 6, "obj-446", "function", "range", 1.0, 2.0, 5, "obj-446", "function", "mode", 1, 5, "obj-242", "number", "int", 2, 5, "obj-78", "dial", "float", 1000.0, 5, "obj-92", "dial", "float", 10000.0, 5, "obj-106", "dial", "float", 500.0, 5, "obj-109", "dial", "float", 2500.0, 5, "obj-110", "dial", "float", 1000.0, 5, "obj-111", "dial", "float", 1000.0, 5, "obj-121", "dial", "float", 1000.0, 5, "obj-122", "dial", "float", 1000.0, 5, "obj-157", "slider", "float", 206.0, 5, "obj-202", "slider", "float", 707.0, 5, "obj-203", "slider", "float", 501.0, 5, "obj-204", "slider", "float", 837.2882080078125, 5, "obj-133", "dial", "float", 1000.0, 5, "obj-139", "dial", "float", 1000.0, 5, "obj-333", "textbutton", "mode", 1, 5, "obj-333", "textbutton", "int", 0, 5, "obj-334", "textbutton", "mode", 1, 5, "obj-334", "textbutton", "int", 1, 5, "obj-522", "textbutton", "mode", 1, 5, "obj-522", "textbutton", "int", 0, 5, "obj-525", "textbutton", "mode", 1, 5, "obj-525", "textbutton", "int", 1, 5, "obj-534", "textbutton", "mode", 1, 5, "obj-534", "textbutton", "int", 1, 5, "obj-535", "textbutton", "mode", 1, 5, "obj-535", "textbutton", "int", 0, 5, "obj-541", "textbutton", "mode", 1, 5, "obj-541", "textbutton", "int", 0, 5, "obj-542", "textbutton", "mode", 1, 5, "obj-542", "textbutton", "int", 1, 5, "obj-554", "textbutton", "mode", 1, 5, "obj-554", "textbutton", "int", 0, 5, "obj-555", "led", "int", 1, 5, "obj-558", "led", "int", 1, 5, "obj-564", "textbutton", "mode", 1, 5, "obj-564", "textbutton", "int", 0, 5, "obj-565", "led", "int", 0, 5, "obj-568", "textbutton", "mode", 1, 5, "obj-568", "textbutton", "int", 0, 5, "obj-581", "textbutton", "mode", 1, 5, "obj-581", "textbutton", "int", 0, 5, "obj-20", "textbutton", "mode", 1, 5, "obj-20", "textbutton", "int", 0, 5, "obj-48", "textbutton", "mode", 1, 5, "obj-48", "textbutton", "int", 0, 5, "obj-74", "textbutton", "mode", 1, 5, "obj-74", "textbutton", "int", 0, 5, "obj-99", "textbutton", "mode", 1, 5, "obj-99", "textbutton", "int", 0, 5, "obj-134", "textbutton", "mode", 1, 5, "obj-134", "textbutton", "int", 0, 5, "obj-189", "textbutton", "mode", 1, 5, "obj-189", "textbutton", "int", 0 ]
-						}
-, 						{
-							"number" : 8,
-							"data" : [ 4, "obj-43", "kslider", "chord", 5, "obj-46", "number", "int", 0, 5, "obj-29", "number", "int", 1, 5, "obj-35", "number", "int", 1, 5, "obj-38", "flonum", "float", 1.0, 5, "obj-41", "number", "int", 871, 5, "obj-13", "umenu", "int", 1, 6, "obj-123", "number~", "list", -2.0, 0.0, 5, "obj-124", "dial", "float", 6.0, 5, "obj-128", "dial", "float", 12.0, 6, "obj-129", "number~", "list", 0.0, 0.0, 6, "obj-130", "number~", "list", 0.0, 0.0, 5, "obj-131", "dial", "float", 1000.0, 5, "obj-316", "number", "int", 500, 5, "obj-60", "number", "int", 500, 4, "obj-58", "function", "clear", 8, "obj-58", "function", "add_with_curve", 0.0, 1.0, 0, 0.0, 8, "obj-58", "function", "add_with_curve", 500.0, 0.0, 0, 0.0, 5, "obj-58", "function", "domain", 500.0, 6, "obj-58", "function", "range", 0.0, 1.0, 5, "obj-58", "function", "mode", 1, 5, "obj-73", "led", "int", 1, 5, "obj-149", "number", "int", 5, 9, "obj-84", "multislider", "list", 0.0, 0.0, 0.0, 0.0, 0.0, 9, "obj-96", "multislider", "list", 0.0, 0.0, 0.0, 0.0, 0.0, 6, "obj-127", "number~", "list", 1.0, 0.0, 5, "obj-62", "umenu", "int", 0, 6, "obj-16", "number~", "list", 0.5, 0.0, 6, "obj-15", "number~", "list", 1.0, 0.0, 6, "obj-221", "number~", "list", 1.0, 0.0, 6, "obj-222", "number~", "list", 1.0, 0.0, 6, "obj-231", "number~", "list", 1.0, 0.0, 6, "obj-232", "number~", "list", 0.0, 0.0, 5, "obj-331", "umenu", "int", 0, 6, "obj-323", "number~", "list", 0.0, 0.0, 6, "obj-322", "number~", "list", 0.0, 0.0, 6, "obj-337", "number~", "list", 10.0, 0.0, 9, "obj-346", "multislider", "list", 0.0, 0.0, 0.0, 0.0, 0.0, 6, "obj-365", "number~", "list", 1.0, 0.0, 5, "obj-21", "number", "int", 5, 5, "obj-416", "number", "int", 5, 4, "obj-457", "function", "clear", 8, "obj-457", "function", "add_with_curve", 0.0, 1.0, 0, 0.0, 8, "obj-457", "function", "add_with_curve", 500.0, 0.0, 0, 0.0, 5, "obj-457", "function", "domain", 500.0, 6, "obj-457", "function", "range", 0.0, 1.0, 5, "obj-457", "function", "mode", 1, 5, "obj-198", "umenu", "int", 2, 6, "obj-188", "number~", "list", 1.0, 0.0, 5, "obj-187", "dial", "float", 9.0, 5, "obj-186", "dial", "float", 12.0, 6, "obj-185", "number~", "list", 0.0, 0.0, 6, "obj-184", "number~", "list", 0.0, 0.0, 5, "obj-182", "dial", "float", 1000.0, 5, "obj-174", "number", "int", 250, 4, "obj-172", "function", "clear", 8, "obj-172", "function", "add_with_curve", 0.0, 1.0, 0, 0.0, 8, "obj-172", "function", "add_with_curve", 250.0, 0.0, 0, 0.0, 5, "obj-172", "function", "domain", 250.0, 6, "obj-172", "function", "range", 0.0, 1.0, 5, "obj-172", "function", "mode", 1, 5, "obj-165", "led", "int", 1, 9, "obj-164", "multislider", "list", 0.0, 0.0, 0.0, 0.0, 0.0, 6, "obj-159", "number~", "list", 1.0, 0.0, 6, "obj-152", "number~", "list", 1.0, 0.0, 6, "obj-151", "number~", "list", 2.0, 0.0, 5, "obj-126", "number", "int", 5, 5, "obj-327", "umenu", "int", 0, 6, "obj-311", "number~", "list", -1.0, 0.0, 5, "obj-310", "dial", "float", 7.0, 5, "obj-292", "dial", "float", 12.0, 6, "obj-290", "number~", "list", 0.0, 0.0, 6, "obj-288", "number~", "list", -0.1, 0.0, 5, "obj-287", "dial", "float", 900.0, 5, "obj-274", "number", "int", 500, 4, "obj-272", "function", "clear", 8, "obj-272", "function", "add_with_curve", 0.0, 1.0, 0, 0.0, 8, "obj-272", "function", "add_with_curve", 500.0, 1.0, 0, 0.0, 5, "obj-272", "function", "domain", 500.0, 6, "obj-272", "function", "range", 0.0, 1.0, 5, "obj-272", "function", "mode", 1, 5, "obj-265", "led", "int", 1, 9, "obj-264", "multislider", "list", 0.0, 0.0, 0.0, 0.0, 0.0, 6, "obj-261", "number~", "list", 1.0, 0.0, 6, "obj-259", "number~", "list", 1.0, 0.0, 6, "obj-258", "number~", "list", 0.0, 0.0, 5, "obj-255", "number", "int", 5, 5, "obj-426", "umenu", "int", 0, 6, "obj-408", "number~", "list", 0.0, 0.0, 5, "obj-407", "dial", "float", 8.0, 5, "obj-406", "dial", "float", 12.0, 6, "obj-405", "number~", "list", 0.0, 0.0, 6, "obj-404", "number~", "list", 0.1, 0.0, 5, "obj-403", "dial", "float", 1100.0, 5, "obj-395", "number", "int", 500, 4, "obj-393", "function", "clear", 8, "obj-393", "function", "add_with_curve", 0.0, 1.0, 0, 0.0, 8, "obj-393", "function", "add_with_curve", 500.0, 1.0, 0, 0.0, 5, "obj-393", "function", "domain", 500.0, 6, "obj-393", "function", "range", 0.0, 1.0, 5, "obj-393", "function", "mode", 1, 5, "obj-387", "led", "int", 1, 9, "obj-386", "multislider", "list", 0.0, 0.0, 0.0, 0.0, 0.0, 6, "obj-383", "number~", "list", 1.0, 0.0, 6, "obj-381", "number~", "list", 1.0, 0.0, 6, "obj-380", "number~", "list", 0.0, 0.0, 5, "obj-376", "number", "int", 5, 5, "obj-498", "number", "int", 500, 4, "obj-496", "function", "clear", 8, "obj-496", "function", "add_with_curve", 0.0, 1.0, 0, 0.0, 8, "obj-496", "function", "add_with_curve", 500.0, 10.0, 0, 0.0, 5, "obj-496", "function", "domain", 500.0, 6, "obj-496", "function", "range", 1.0, 10.0, 5, "obj-496", "function", "mode", 1, 5, "obj-505", "number", "int", 10, 5, "obj-471", "umenu", "int", 0, 6, "obj-468", "number~", "list", 4.0, 0.0, 6, "obj-467", "number~", "list", 1.0, 0.0, 6, "obj-451", "number~", "list", 1.0, 0.0, 6, "obj-450", "number~", "list", 0.0, 0.0, 5, "obj-448", "number", "int", 250, 4, "obj-446", "function", "clear", 8, "obj-446", "function", "add_with_curve", 0.0, 10.0, 0, 0.0, 8, "obj-446", "function", "add_with_curve", 250.0, 1.0, 0, 0.0, 5, "obj-446", "function", "domain", 250.0, 6, "obj-446", "function", "range", 1.0, 10.0, 5, "obj-446", "function", "mode", 1, 5, "obj-242", "number", "int", 10, 5, "obj-78", "dial", "float", 1000.0, 5, "obj-92", "dial", "float", 10000.0, 5, "obj-106", "dial", "float", 4000.0, 5, "obj-109", "dial", "float", 500.0, 5, "obj-110", "dial", "float", 1000.0, 5, "obj-111", "dial", "float", 1000.0, 5, "obj-121", "dial", "float", 1000.0, 5, "obj-122", "dial", "float", 1000.0, 5, "obj-157", "slider", "float", 0.0, 5, "obj-202", "slider", "float", 0.0, 5, "obj-203", "slider", "float", 870.0, 5, "obj-204", "slider", "float", 1000.0, 5, "obj-133", "dial", "float", 1000.0, 5, "obj-139", "dial", "float", 1000.0, 5, "obj-333", "textbutton", "mode", 1, 5, "obj-333", "textbutton", "int", 1, 5, "obj-334", "textbutton", "mode", 1, 5, "obj-334", "textbutton", "int", 0, 5, "obj-522", "textbutton", "mode", 1, 5, "obj-522", "textbutton", "int", 1, 5, "obj-525", "textbutton", "mode", 1, 5, "obj-525", "textbutton", "int", 0, 5, "obj-534", "textbutton", "mode", 1, 5, "obj-534", "textbutton", "int", 0, 5, "obj-535", "textbutton", "mode", 1, 5, "obj-535", "textbutton", "int", 0, 5, "obj-541", "textbutton", "mode", 1, 5, "obj-541", "textbutton", "int", 0, 5, "obj-542", "textbutton", "mode", 1, 5, "obj-542", "textbutton", "int", 1, 5, "obj-554", "textbutton", "mode", 1, 5, "obj-554", "textbutton", "int", 0, 5, "obj-555", "led", "int", 1, 5, "obj-558", "led", "int", 1, 5, "obj-564", "textbutton", "mode", 1, 5, "obj-564", "textbutton", "int", 0, 5, "obj-565", "led", "int", 0, 5, "obj-568", "textbutton", "mode", 1, 5, "obj-568", "textbutton", "int", 1, 5, "obj-581", "textbutton", "mode", 1, 5, "obj-581", "textbutton", "int", 1, 5, "obj-20", "textbutton", "mode", 1, 5, "obj-20", "textbutton", "int", 1, 5, "obj-48", "textbutton", "mode", 1, 5, "obj-48", "textbutton", "int", 1, 5, "obj-74", "textbutton", "mode", 1, 5, "obj-74", "textbutton", "int", 0, 5, "obj-99", "textbutton", "mode", 1, 5, "obj-99", "textbutton", "int", 0, 5, "obj-134", "textbutton", "mode", 1, 5, "obj-134", "textbutton", "int", 1, 5, "obj-189", "textbutton", "mode", 1, 5, "obj-189", "textbutton", "int", 1 ]
-						}
-, 						{
-							"number" : 9,
-							"data" : [ 4, "obj-43", "kslider", "chord", 5, "obj-46", "number", "int", 0, 5, "obj-29", "number", "int", 113, 5, "obj-35", "number", "int", 1, 5, "obj-38", "flonum", "float", 1.0, 5, "obj-41", "number", "int", 822, 5, "obj-13", "umenu", "int", 2, 6, "obj-123", "number~", "list", -1.0, 0.0, 5, "obj-124", "dial", "float", 7.0, 5, "obj-128", "dial", "float", 12.0, 6, "obj-129", "number~", "list", 0.0, 0.0, 6, "obj-130", "number~", "list", -0.05, 0.0, 5, "obj-131", "dial", "float", 950.0, 5, "obj-316", "number", "int", 1000, 5, "obj-60", "number", "int", 1000, 4, "obj-58", "function", "clear", 8, "obj-58", "function", "add_with_curve", 0.0, 1.0, 0, 0.0, 8, "obj-58", "function", "add_with_curve", 1000.0, 1.0, 0, 0.0, 5, "obj-58", "function", "domain", 1000.0, 6, "obj-58", "function", "range", 0.0, 1.0, 5, "obj-58", "function", "mode", 1, 5, "obj-73", "led", "int", 1, 5, "obj-149", "number", "int", 5, 9, "obj-84", "multislider", "list", 0.0, 0.0, 0.0, 0.0, 0.0, 9, "obj-96", "multislider", "list", 0.0, 0.0, 0.0, 0.0, 0.0, 6, "obj-127", "number~", "list", 1.0, 0.0, 5, "obj-62", "umenu", "int", 0, 6, "obj-16", "number~", "list", 0.5, 0.0, 6, "obj-15", "number~", "list", 1.0, 0.0, 6, "obj-221", "number~", "list", 1.0, 0.0, 6, "obj-222", "number~", "list", 2.0, 0.0, 6, "obj-231", "number~", "list", 1.0, 0.0, 6, "obj-232", "number~", "list", 0.0, 0.0, 5, "obj-331", "umenu", "int", 0, 6, "obj-323", "number~", "list", 1.0, 0.0, 6, "obj-322", "number~", "list", 0.0, 0.0, 6, "obj-337", "number~", "list", 10.0, 0.0, 9, "obj-346", "multislider", "list", 0.0, 0.0, 0.0, 0.0, 0.0, 6, "obj-365", "number~", "list", 0.35, 0.0, 5, "obj-21", "number", "int", 5, 5, "obj-416", "number", "int", 5, 4, "obj-457", "function", "clear", 8, "obj-457", "function", "add_with_curve", 0.0, 1.0, 0, 0.0, 8, "obj-457", "function", "add_with_curve", 999.999999999999773, 1.0, 0, 0.0, 5, "obj-457", "function", "domain", 1000.0, 6, "obj-457", "function", "range", 0.0, 1.0, 5, "obj-457", "function", "mode", 1, 5, "obj-198", "umenu", "int", 2, 6, "obj-188", "number~", "list", 1.0, 0.0, 5, "obj-187", "dial", "float", 9.0, 5, "obj-186", "dial", "float", 12.0, 6, "obj-185", "number~", "list", 0.0, 0.0, 6, "obj-184", "number~", "list", 0.05, 0.0, 5, "obj-182", "dial", "float", 1050.0, 5, "obj-174", "number", "int", 1000, 4, "obj-172", "function", "clear", 8, "obj-172", "function", "add_with_curve", 0.0, 1.0, 0, 0.0, 8, "obj-172", "function", "add_with_curve", 1000.0, 1.0, 0, 0.0, 5, "obj-172", "function", "domain", 1000.0, 6, "obj-172", "function", "range", 0.0, 1.0, 5, "obj-172", "function", "mode", 1, 5, "obj-165", "led", "int", 1, 9, "obj-164", "multislider", "list", 0.0, 0.0, 0.0, 0.0, 0.0, 6, "obj-159", "number~", "list", 1.0, 0.0, 6, "obj-152", "number~", "list", 1.0, 0.0, 6, "obj-151", "number~", "list", 2.0, 0.0, 5, "obj-126", "number", "int", 5, 5, "obj-327", "umenu", "int", 0, 6, "obj-311", "number~", "list", 2.0, 0.0, 5, "obj-310", "dial", "float", 10.0, 5, "obj-292", "dial", "float", 12.0, 6, "obj-290", "number~", "list", 0.0, 0.0, 6, "obj-288", "number~", "list", 0.0, 0.0, 5, "obj-287", "dial", "float", 1000.0, 5, "obj-274", "number", "int", 1000, 4, "obj-272", "function", "clear", 8, "obj-272", "function", "add_with_curve", 0.0, 0.0, 0, 0.0, 8, "obj-272", "function", "add_with_curve", 1000.0, 1.0, 0, 0.0, 5, "obj-272", "function", "domain", 1000.0, 6, "obj-272", "function", "range", 0.0, 1.0, 5, "obj-272", "function", "mode", 1, 5, "obj-265", "led", "int", 1, 9, "obj-264", "multislider", "list", 0.0, 0.0, 0.0, 0.0, 0.0, 6, "obj-261", "number~", "list", 1.0, 0.0, 6, "obj-259", "number~", "list", 1.0, 0.0, 6, "obj-258", "number~", "list", 0.0, 0.0, 5, "obj-255", "number", "int", 5, 5, "obj-426", "umenu", "int", 0, 6, "obj-408", "number~", "list", 0.0, 0.0, 5, "obj-407", "dial", "float", 8.0, 5, "obj-406", "dial", "float", 12.0, 6, "obj-405", "number~", "list", 0.0, 0.0, 6, "obj-404", "number~", "list", 0.0, 0.0, 5, "obj-403", "dial", "float", 1000.0, 5, "obj-395", "number", "int", 1000, 4, "obj-393", "function", "clear", 8, "obj-393", "function", "add_with_curve", 0.0, 0.0, 0, 0.0, 8, "obj-393", "function", "add_with_curve", 1000.0, 1.0, 0, 0.0, 5, "obj-393", "function", "domain", 1000.0, 6, "obj-393", "function", "range", 0.0, 1.0, 5, "obj-393", "function", "mode", 1, 5, "obj-387", "led", "int", 1, 9, "obj-386", "multislider", "list", 0.0, 0.0, 0.0, 0.0, 0.0, 6, "obj-383", "number~", "list", 1.0, 0.0, 6, "obj-381", "number~", "list", 1.0, 0.0, 6, "obj-380", "number~", "list", 0.0, 0.0, 5, "obj-376", "number", "int", 5, 5, "obj-498", "number", "int", 1000, 4, "obj-496", "function", "clear", 8, "obj-496", "function", "add_with_curve", 0.0, 1.0, 0, 0.0, 8, "obj-496", "function", "add_with_curve", 1000.0, 5.0, 0, 0.0, 5, "obj-496", "function", "domain", 1000.0, 6, "obj-496", "function", "range", 1.0, 5.0, 5, "obj-496", "function", "mode", 1, 5, "obj-505", "number", "int", 5, 5, "obj-471", "umenu", "int", 0, 6, "obj-468", "number~", "list", 2.0, 0.0, 6, "obj-467", "number~", "list", 1.0, 0.0, 6, "obj-451", "number~", "list", 1.0, 0.0, 6, "obj-450", "number~", "list", 0.0, 0.0, 5, "obj-448", "number", "int", 1000, 4, "obj-446", "function", "clear", 8, "obj-446", "function", "add_with_curve", 0.0, 1.0, 0, 0.0, 8, "obj-446", "function", "add_with_curve", 1000.0, 5.0, 0, 0.0, 5, "obj-446", "function", "domain", 1000.0, 6, "obj-446", "function", "range", 1.0, 5.0, 5, "obj-446", "function", "mode", 1, 5, "obj-242", "number", "int", 5, 5, "obj-78", "dial", "float", 350.0, 5, "obj-92", "dial", "float", 10000.0, 5, "obj-106", "dial", "float", 2000.0, 5, "obj-109", "dial", "float", 500.0, 5, "obj-110", "dial", "float", 1000.0, 5, "obj-111", "dial", "float", 1000.0, 5, "obj-121", "dial", "float", 1000.0, 5, "obj-122", "dial", "float", 1000.0, 5, "obj-157", "slider", "float", 112.0, 5, "obj-202", "slider", "float", 0.0, 5, "obj-203", "slider", "float", 821.0, 5, "obj-204", "slider", "float", 1000.0, 5, "obj-133", "dial", "float", 1000.0, 5, "obj-139", "dial", "float", 1000.0, 5, "obj-333", "textbutton", "mode", 1, 5, "obj-333", "textbutton", "int", 0, 5, "obj-334", "textbutton", "mode", 1, 5, "obj-334", "textbutton", "int", 1, 5, "obj-522", "textbutton", "mode", 1, 5, "obj-522", "textbutton", "int", 0, 5, "obj-525", "textbutton", "mode", 1, 5, "obj-525", "textbutton", "int", 1, 5, "obj-534", "textbutton", "mode", 1, 5, "obj-534", "textbutton", "int", 1, 5, "obj-535", "textbutton", "mode", 1, 5, "obj-535", "textbutton", "int", 0, 5, "obj-541", "textbutton", "mode", 1, 5, "obj-541", "textbutton", "int", 0, 5, "obj-542", "textbutton", "mode", 1, 5, "obj-542", "textbutton", "int", 1, 5, "obj-554", "textbutton", "mode", 1, 5, "obj-554", "textbutton", "int", 1, 5, "obj-555", "led", "int", 1, 5, "obj-558", "led", "int", 1, 5, "obj-564", "textbutton", "mode", 1, 5, "obj-564", "textbutton", "int", 1, 5, "obj-565", "led", "int", 1, 5, "obj-568", "textbutton", "mode", 1, 5, "obj-568", "textbutton", "int", 0, 5, "obj-581", "textbutton", "mode", 1, 5, "obj-581", "textbutton", "int", 0, 5, "obj-20", "textbutton", "mode", 1, 5, "obj-20", "textbutton", "int", 0, 5, "obj-48", "textbutton", "mode", 1, 5, "obj-48", "textbutton", "int", 0, 5, "obj-74", "textbutton", "mode", 1, 5, "obj-74", "textbutton", "int", 0, 5, "obj-99", "textbutton", "mode", 1, 5, "obj-99", "textbutton", "int", 0, 5, "obj-134", "textbutton", "mode", 1, 5, "obj-134", "textbutton", "int", 0, 5, "obj-189", "textbutton", "mode", 1, 5, "obj-189", "textbutton", "int", 0 ]
-						}
-, 						{
-							"number" : 10,
-							"data" : [ 4, "obj-43", "kslider", "chord", 5, "obj-46", "number", "int", 0, 5, "obj-29", "number", "int", 1, 5, "obj-35", "number", "int", 1, 5, "obj-38", "flonum", "float", 1.0, 5, "obj-41", "number", "int", 818, 5, "obj-13", "umenu", "int", 0, 6, "obj-123", "number~", "list", 0.0, 0.0, 5, "obj-124", "dial", "float", 8.0, 5, "obj-128", "dial", "float", 12.0, 6, "obj-129", "number~", "list", 0.0, 0.0, 6, "obj-130", "number~", "list", -0.55, 0.0, 5, "obj-131", "dial", "float", 450.0, 5, "obj-316", "number", "int", 1000, 5, "obj-60", "number", "int", 500, 4, "obj-58", "function", "clear", 8, "obj-58", "function", "add_with_curve", 0.0, 1.0, 0, 0.0, 8, "obj-58", "function", "add_with_curve", 500.0, 0.0, 0, 0.0, 5, "obj-58", "function", "domain", 500.0, 6, "obj-58", "function", "range", 0.0, 1.0, 5, "obj-58", "function", "mode", 1, 5, "obj-73", "led", "int", 1, 5, "obj-149", "number", "int", 5, 9, "obj-84", "multislider", "list", 0.0, 0.0, 0.0, 0.0, 0.0, 9, "obj-96", "multislider", "list", 0.0, 0.0, 0.0, 0.0, 0.0, 6, "obj-127", "number~", "list", 1.0, 0.0, 5, "obj-62", "umenu", "int", 0, 6, "obj-16", "number~", "list", 4.5, 0.0, 6, "obj-15", "number~", "list", 1.0, 0.0, 6, "obj-221", "number~", "list", 1.0, 0.0, 6, "obj-222", "number~", "list", 0.0, 0.0, 6, "obj-231", "number~", "list", 1.0, 0.0, 6, "obj-232", "number~", "list", 0.0, 0.0, 5, "obj-331", "umenu", "int", 1, 6, "obj-323", "number~", "list", 1.0, 0.0, 6, "obj-322", "number~", "list", 1.0, 0.0, 6, "obj-337", "number~", "list", 12.0, 0.0, 9, "obj-346", "multislider", "list", 0.0, 0.0, 0.0, 0.0, 0.0, 6, "obj-365", "number~", "list", 0.5, 0.0, 5, "obj-21", "number", "int", 5, 5, "obj-416", "number", "int", 5, 4, "obj-457", "function", "clear", 8, "obj-457", "function", "add_with_curve", 0.0, 1.0, 0, 0.0, 8, "obj-457", "function", "add_with_curve", 999.999999999999773, 1.0, 0, 0.0, 5, "obj-457", "function", "domain", 1000.0, 6, "obj-457", "function", "range", 0.0, 1.0, 5, "obj-457", "function", "mode", 1, 5, "obj-198", "umenu", "int", 0, 6, "obj-188", "number~", "list", -2.0, 0.0, 5, "obj-187", "dial", "float", 6.0, 5, "obj-186", "dial", "float", 12.0, 6, "obj-185", "number~", "list", 0.0, 0.0, 6, "obj-184", "number~", "list", 0.55, 0.0, 5, "obj-182", "dial", "float", 1550.0, 5, "obj-174", "number", "int", 330, 4, "obj-172", "function", "clear", 8, "obj-172", "function", "add_with_curve", 0.0, 1.0, 0, 0.0, 8, "obj-172", "function", "add_with_curve", 321.955087219073846, 0.0, 0, 0.0, 5, "obj-172", "function", "domain", 330.0, 6, "obj-172", "function", "range", 0.0, 1.0, 5, "obj-172", "function", "mode", 1, 5, "obj-165", "led", "int", 1, 9, "obj-164", "multislider", "list", 0.0, 0.0, 0.0, 0.0, 0.0, 6, "obj-159", "number~", "list", 1.0, 0.0, 6, "obj-152", "number~", "list", 1.0, 0.0, 6, "obj-151", "number~", "list", 0.0, 0.0, 5, "obj-126", "number", "int", 5, 5, "obj-327", "umenu", "int", 0, 6, "obj-311", "number~", "list", 1.0, 0.0, 5, "obj-310", "dial", "float", 9.0, 5, "obj-292", "dial", "float", 12.0, 6, "obj-290", "number~", "list", 0.0, 0.0, 6, "obj-288", "number~", "list", 0.0, 0.0, 5, "obj-287", "dial", "float", 1000.0, 5, "obj-274", "number", "int", 500, 4, "obj-272", "function", "clear", 8, "obj-272", "function", "add_with_curve", 0.0, 1.0, 0, 0.0, 8, "obj-272", "function", "add_with_curve", 250.155128130322765, 0.0, 0, 0.0, 8, "obj-272", "function", "add_with_curve", 500.0, 1.0, 0, 0.0, 5, "obj-272", "function", "domain", 500.0, 6, "obj-272", "function", "range", 0.0, 1.0, 5, "obj-272", "function", "mode", 1, 5, "obj-265", "led", "int", 1, 9, "obj-264", "multislider", "list", 0.0, 0.0, 0.0, 0.0, 0.0, 6, "obj-261", "number~", "list", 1.0, 0.0, 6, "obj-259", "number~", "list", 1.0, 0.0, 6, "obj-258", "number~", "list", 0.0, 0.0, 5, "obj-255", "number", "int", 5, 5, "obj-426", "umenu", "int", 0, 6, "obj-408", "number~", "list", 1.0, 0.0, 5, "obj-407", "dial", "float", 9.0, 5, "obj-406", "dial", "float", 12.0, 6, "obj-405", "number~", "list", 0.0, 0.0, 6, "obj-404", "number~", "list", 0.0, 0.0, 5, "obj-403", "dial", "float", 1000.0, 5, "obj-395", "number", "int", 250, 4, "obj-393", "function", "clear", 8, "obj-393", "function", "add_with_curve", 0.0, 1.0, 0, 0.0, 8, "obj-393", "function", "add_with_curve", 125.536487985624888, 0.0, 0, 0.0, 8, "obj-393", "function", "add_with_curve", 250.0, 1.0, 0, 0.0, 5, "obj-393", "function", "domain", 250.0, 6, "obj-393", "function", "range", 0.0, 1.0, 5, "obj-393", "function", "mode", 1, 5, "obj-387", "led", "int", 1, 9, "obj-386", "multislider", "list", 0.0, 0.0, 0.0, 0.0, 0.0, 6, "obj-383", "number~", "list", 1.0, 0.0, 6, "obj-381", "number~", "list", 1.0, 0.0, 6, "obj-380", "number~", "list", 0.0, 0.0, 5, "obj-376", "number", "int", 5, 5, "obj-498", "number", "int", 500, 4, "obj-496", "function", "clear", 8, "obj-496", "function", "add_with_curve", 0.0, 10.0, 0, 0.0, 8, "obj-496", "function", "add_with_curve", 500.0, 1.0, 0, 0.0, 5, "obj-496", "function", "domain", 500.0, 6, "obj-496", "function", "range", 1.0, 10.0, 5, "obj-496", "function", "mode", 1, 5, "obj-505", "number", "int", 10, 5, "obj-471", "umenu", "int", 0, 6, "obj-468", "number~", "list", 1.0, 0.0, 6, "obj-467", "number~", "list", 1.0, 0.0, 6, "obj-451", "number~", "list", 1.0, 0.0, 6, "obj-450", "number~", "list", 0.0, 0.0, 5, "obj-448", "number", "int", 330, 4, "obj-446", "function", "clear", 8, "obj-446", "function", "add_with_curve", 0.0, 5.0, 0, 0.0, 8, "obj-446", "function", "add_with_curve", 330.0, 1.0, 0, 0.0, 5, "obj-446", "function", "domain", 330.0, 6, "obj-446", "function", "range", 1.0, 5.0, 5, "obj-446", "function", "mode", 1, 5, "obj-242", "number", "int", 5, 5, "obj-78", "dial", "float", 500.0, 5, "obj-92", "dial", "float", 12000.0, 5, "obj-106", "dial", "float", 1000.0, 5, "obj-109", "dial", "float", 4500.0, 5, "obj-110", "dial", "float", 1000.0, 5, "obj-111", "dial", "float", 1000.0, 5, "obj-121", "dial", "float", 1000.0, 5, "obj-122", "dial", "float", 1000.0, 5, "obj-157", "slider", "float", 0.0, 5, "obj-202", "slider", "float", 0.0, 5, "obj-203", "slider", "float", 817.0, 5, "obj-204", "slider", "float", 1000.0, 5, "obj-133", "dial", "float", 1000.0, 5, "obj-139", "dial", "float", 1000.0, 5, "obj-333", "textbutton", "mode", 1, 5, "obj-333", "textbutton", "int", 0, 5, "obj-334", "textbutton", "mode", 1, 5, "obj-334", "textbutton", "int", 1, 5, "obj-522", "textbutton", "mode", 1, 5, "obj-522", "textbutton", "int", 0, 5, "obj-525", "textbutton", "mode", 1, 5, "obj-525", "textbutton", "int", 1, 5, "obj-534", "textbutton", "mode", 1, 5, "obj-534", "textbutton", "int", 1, 5, "obj-535", "textbutton", "mode", 1, 5, "obj-535", "textbutton", "int", 0, 5, "obj-541", "textbutton", "mode", 1, 5, "obj-541", "textbutton", "int", 0, 5, "obj-542", "textbutton", "mode", 1, 5, "obj-542", "textbutton", "int", 1, 5, "obj-554", "textbutton", "mode", 1, 5, "obj-554", "textbutton", "int", 0, 5, "obj-555", "led", "int", 1, 5, "obj-558", "led", "int", 1, 5, "obj-564", "textbutton", "mode", 1, 5, "obj-564", "textbutton", "int", 0, 5, "obj-565", "led", "int", 1, 5, "obj-568", "textbutton", "mode", 1, 5, "obj-568", "textbutton", "int", 0, 5, "obj-581", "textbutton", "mode", 1, 5, "obj-581", "textbutton", "int", 0, 5, "obj-20", "textbutton", "mode", 1, 5, "obj-20", "textbutton", "int", 1, 5, "obj-48", "textbutton", "mode", 1, 5, "obj-48", "textbutton", "int", 1, 5, "obj-74", "textbutton", "mode", 1, 5, "obj-74", "textbutton", "int", 1, 5, "obj-99", "textbutton", "mode", 1, 5, "obj-99", "textbutton", "int", 1, 5, "obj-134", "textbutton", "mode", 1, 5, "obj-134", "textbutton", "int", 1, 5, "obj-189", "textbutton", "mode", 1, 5, "obj-189", "textbutton", "int", 1 ]
-						}
-, 						{
-							"number" : 11,
-							"data" : [ 4, "obj-43", "kslider", "chord", 5, "obj-46", "number", "int", 0, 5, "obj-29", "number", "int", 1, 5, "obj-35", "number", "int", 1, 5, "obj-38", "flonum", "float", 1.0, 5, "obj-41", "number", "int", 1, 5, "obj-13", "umenu", "int", 0, 6, "obj-123", "number~", "list", 0.0, 0.0, 5, "obj-124", "dial", "float", 8.0, 5, "obj-128", "dial", "float", 12.0, 6, "obj-129", "number~", "list", 0.0, 0.0, 6, "obj-130", "number~", "list", 0.0, 0.0, 5, "obj-131", "dial", "float", 1000.0, 5, "obj-316", "number", "int", 1000, 5, "obj-60", "number", "int", 1000, 4, "obj-58", "function", "clear", 8, "obj-58", "function", "add_with_curve", 0.0, 1.0, 0, 0.0, 8, "obj-58", "function", "add_with_curve", 1000.0, 1.0, 0, 0.0, 5, "obj-58", "function", "domain", 1000.0, 6, "obj-58", "function", "range", 0.0, 1.0, 5, "obj-58", "function", "mode", 1, 5, "obj-73", "led", "int", 1, 5, "obj-149", "number", "int", 5, 9, "obj-84", "multislider", "list", 0.0, 0.0, 0.0, 0.0, 0.0, 9, "obj-96", "multislider", "list", 0.0, 0.0, 0.0, 0.0, 0.0, 6, "obj-127", "number~", "list", 1.0, 0.0, 5, "obj-62", "umenu", "int", 0, 6, "obj-16", "number~", "list", 0.5, 0.0, 6, "obj-15", "number~", "list", 1.0, 0.0, 6, "obj-221", "number~", "list", 1.0, 0.0, 6, "obj-222", "number~", "list", 0.0, 0.0, 6, "obj-231", "number~", "list", 0.0, 0.0, 6, "obj-232", "number~", "list", 0.0, 0.0, 5, "obj-331", "umenu", "int", 0, 6, "obj-323", "number~", "list", 0.0, 0.0, 6, "obj-322", "number~", "list", 0.0, 0.0, 6, "obj-337", "number~", "list", 10.0, 0.0, 9, "obj-346", "multislider", "list", 0.0, 0.0, 0.0, 0.0, 0.0, 6, "obj-365", "number~", "list", 1.0, 0.0, 5, "obj-21", "number", "int", 5, 5, "obj-416", "number", "int", 5, 4, "obj-457", "function", "clear", 8, "obj-457", "function", "add_with_curve", 0.0, 1.0, 0, 0.0, 8, "obj-457", "function", "add_with_curve", 1000.0, 1.0, 0, 0.0, 5, "obj-457", "function", "domain", 1000.0, 6, "obj-457", "function", "range", 0.0, 1.0, 5, "obj-457", "function", "mode", 1, 5, "obj-198", "umenu", "int", 0, 6, "obj-188", "number~", "list", 0.0, 0.0, 5, "obj-187", "dial", "float", 8.0, 5, "obj-186", "dial", "float", 12.0, 6, "obj-185", "number~", "list", 0.0, 0.0, 6, "obj-184", "number~", "list", 0.0, 0.0, 5, "obj-182", "dial", "float", 1000.0, 5, "obj-174", "number", "int", 1000, 4, "obj-172", "function", "clear", 8, "obj-172", "function", "add_with_curve", 0.0, 1.0, 0, 0.0, 8, "obj-172", "function", "add_with_curve", 1000.0, 1.0, 0, 0.0, 5, "obj-172", "function", "domain", 1000.0, 6, "obj-172", "function", "range", 0.0, 1.0, 5, "obj-172", "function", "mode", 1, 5, "obj-165", "led", "int", 1, 9, "obj-164", "multislider", "list", 0.0, 0.0, 0.0, 0.0, 0.0, 6, "obj-159", "number~", "list", 1.0, 0.0, 6, "obj-152", "number~", "list", 1.0, 0.0, 6, "obj-151", "number~", "list", 0.0, 0.0, 5, "obj-126", "number", "int", 5, 5, "obj-327", "umenu", "int", 0, 6, "obj-311", "number~", "list", 0.0, 0.0, 5, "obj-310", "dial", "float", 8.0, 5, "obj-292", "dial", "float", 12.0, 6, "obj-290", "number~", "list", 0.0, 0.0, 6, "obj-288", "number~", "list", 0.0, 0.0, 5, "obj-287", "dial", "float", 1000.0, 5, "obj-274", "number", "int", 1000, 4, "obj-272", "function", "clear", 8, "obj-272", "function", "add_with_curve", 0.0, 1.0, 0, 0.0, 8, "obj-272", "function", "add_with_curve", 1000.0, 1.0, 0, 0.0, 5, "obj-272", "function", "domain", 1000.0, 6, "obj-272", "function", "range", 0.0, 1.0, 5, "obj-272", "function", "mode", 1, 5, "obj-265", "led", "int", 0, 9, "obj-264", "multislider", "list", 0.0, 0.0, 0.0, 0.0, 0.0, 6, "obj-261", "number~", "list", 1.0, 0.0, 6, "obj-259", "number~", "list", 0.0, 0.0, 6, "obj-258", "number~", "list", 0.0, 0.0, 5, "obj-255", "number", "int", 5, 5, "obj-426", "umenu", "int", 0, 6, "obj-408", "number~", "list", 0.0, 0.0, 5, "obj-407", "dial", "float", 8.0, 5, "obj-406", "dial", "float", 12.0, 6, "obj-405", "number~", "list", 0.0, 0.0, 6, "obj-404", "number~", "list", 0.0, 0.0, 5, "obj-403", "dial", "float", 1000.0, 5, "obj-395", "number", "int", 1000, 4, "obj-393", "function", "clear", 8, "obj-393", "function", "add_with_curve", 0.0, 1.0, 0, 0.0, 8, "obj-393", "function", "add_with_curve", 1000.0, 1.0, 0, 0.0, 5, "obj-393", "function", "domain", 1000.0, 6, "obj-393", "function", "range", 0.0, 1.0, 5, "obj-393", "function", "mode", 1, 5, "obj-387", "led", "int", 0, 9, "obj-386", "multislider", "list", 0.0, 0.0, 0.0, 0.0, 0.0, 6, "obj-383", "number~", "list", 1.0, 0.0, 6, "obj-381", "number~", "list", 0.0, 0.0, 6, "obj-380", "number~", "list", 0.0, 0.0, 5, "obj-376", "number", "int", 5, 5, "obj-498", "number", "int", 1000, 4, "obj-496", "function", "clear", 8, "obj-496", "function", "add_with_curve", 0.0, 1.0, 0, 0.0, 8, "obj-496", "function", "add_with_curve", 1000.0, 1.0, 0, 0.0, 5, "obj-496", "function", "domain", 1000.0, 6, "obj-496", "function", "range", 1.0, 5.0, 5, "obj-496", "function", "mode", 1, 5, "obj-505", "number", "int", 5, 5, "obj-471", "umenu", "int", 0, 6, "obj-468", "number~", "list", 0.5, 0.0, 6, "obj-467", "number~", "list", 1.0, 0.0, 6, "obj-451", "number~", "list", 0.0, 0.0, 6, "obj-450", "number~", "list", 0.0, 0.0, 5, "obj-448", "number", "int", 1000, 4, "obj-446", "function", "clear", 8, "obj-446", "function", "add_with_curve", 0.0, 1.0, 0, 0.0, 8, "obj-446", "function", "add_with_curve", 1000.0, 1.0, 0, 0.0, 5, "obj-446", "function", "domain", 1000.0, 6, "obj-446", "function", "range", 1.0, 5.0, 5, "obj-446", "function", "mode", 1, 5, "obj-242", "number", "int", 5, 5, "obj-78", "dial", "float", 1000.0, 5, "obj-92", "dial", "float", 10000.0, 5, "obj-106", "dial", "float", 500.0, 5, "obj-109", "dial", "float", 500.0, 5, "obj-110", "dial", "float", 1000.0, 5, "obj-111", "dial", "float", 1000.0, 5, "obj-121", "dial", "float", 1000.0, 5, "obj-122", "dial", "float", 1000.0, 5, "obj-157", "slider", "float", 0.0, 5, "obj-202", "slider", "float", 0.0, 5, "obj-203", "slider", "float", 0.0, 5, "obj-204", "slider", "float", 1000.0, 5, "obj-133", "dial", "float", 1000.0, 5, "obj-139", "dial", "float", 1000.0, 5, "obj-333", "textbutton", "mode", 1, 5, "obj-333", "textbutton", "int", 1, 5, "obj-334", "textbutton", "mode", 1, 5, "obj-334", "textbutton", "int", 1, 5, "obj-522", "textbutton", "mode", 1, 5, "obj-522", "textbutton", "int", 1, 5, "obj-525", "textbutton", "mode", 1, 5, "obj-525", "textbutton", "int", 1, 5, "obj-534", "textbutton", "mode", 1, 5, "obj-534", "textbutton", "int", 1, 5, "obj-535", "textbutton", "mode", 1, 5, "obj-535", "textbutton", "int", 1, 5, "obj-541", "textbutton", "mode", 1, 5, "obj-541", "textbutton", "int", 1, 5, "obj-542", "textbutton", "mode", 1, 5, "obj-542", "textbutton", "int", 1, 5, "obj-554", "textbutton", "mode", 1, 5, "obj-554", "textbutton", "int", 1, 5, "obj-555", "led", "int", 0, 5, "obj-558", "led", "int", 0, 5, "obj-564", "textbutton", "mode", 1, 5, "obj-564", "textbutton", "int", 1, 5, "obj-565", "led", "int", 0, 5, "obj-568", "textbutton", "mode", 1, 5, "obj-568", "textbutton", "int", 1, 5, "obj-581", "textbutton", "mode", 1, 5, "obj-581", "textbutton", "int", 0, 5, "obj-20", "textbutton", "mode", 1, 5, "obj-20", "textbutton", "int", 0, 5, "obj-48", "textbutton", "mode", 1, 5, "obj-48", "textbutton", "int", 0, 5, "obj-74", "textbutton", "mode", 1, 5, "obj-74", "textbutton", "int", 0, 5, "obj-99", "textbutton", "mode", 1, 5, "obj-99", "textbutton", "int", 0, 5, "obj-134", "textbutton", "mode", 1, 5, "obj-134", "textbutton", "int", 0, 5, "obj-189", "textbutton", "mode", 1, 5, "obj-189", "textbutton", "int", 0 ]
-						}
- ],
-					"stored1" : [ 0.807843137254902, 0.898039215686275, 0.909803921568627, 1.0 ],
-					"textcolor" : [ 0.564705882352941, 0.905882352941176, 0.862745098039216, 1.0 ]
 				}
 
 			}
@@ -6471,26 +6477,9 @@
 					"outlettype" : [ "signal", "float" ],
 					"patching_rect" : [ 143.488964903238866, 1234.54828085501731, 56.0, 22.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 86.002771024510594, 171.469260146217948, 56.0, 22.0 ],
+					"presentation_rect" : [ 85.934092049405308, 170.942697038250571, 56.0, 22.0 ],
 					"sig" : 1.0,
 					"textcolor" : [ 0.807843137254902, 0.898039215686275, 0.909803921568627, 1.0 ]
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-104",
-					"maxclass" : "number",
-					"minimum" : 1,
-					"numinlets" : 1,
-					"numoutlets" : 2,
-					"outlettype" : [ "", "bang" ],
-					"parameter_enable" : 0,
-					"patching_rect" : [ 60.154165616710543, 493.188862139520552, 50.0, 22.0 ],
-					"presentation" : 1,
-					"presentation_rect" : [ 640.218394810352265, 914.121206133964279, 50.0, 22.0 ],
-					"textcolor" : [ 0.807843137254902, 0.898039215686275, 0.909803921568627, 1.0 ],
-					"tricolor" : [ 0.564705882352941, 0.905882352941176, 0.862745098039216, 1.0 ]
 				}
 
 			}
@@ -6515,7 +6504,7 @@
 					"outlettype" : [ "float", "float", "float", "float", "list", "" ],
 					"patching_rect" : [ 598.700900688849515, 1185.716481145250782, 182.923081278800964, 120.769231915473938 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 82.981447105214329, 536.719120492535239, 232.602422719200604, 168.681800305843353 ],
+					"presentation_rect" : [ 82.912768130109043, 536.192557384567863, 232.602422719200604, 168.681800305843353 ],
 					"selectioncolor" : [ 0.490196078431373, 0.611764705882353, 0.607843137254902, 1.0 ],
 					"waveformcolor" : [ 0.564705882352941, 0.905882352941176, 0.862745098039216, 1.0 ]
 				}
@@ -6547,7 +6536,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 598.700900688849515, 1029.125820752012714, 182.820503115653992, 120.769231915473938 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 82.981447105214329, 390.238492061691886, 232.602422719200604, 120.769231915473938 ],
+					"presentation_rect" : [ 82.912768130109043, 389.711928953724509, 232.602422719200604, 120.769231915473938 ],
 					"setminmax" : [ 0.0, 1.0 ],
 					"setstyle" : 1,
 					"size" : 5,
@@ -6601,7 +6590,7 @@
 					"outlettype" : [ "float", "float", "float", "float", "list", "" ],
 					"patching_rect" : [ 1304.6103205278323, 631.410783464250244, 182.923081278800964, 120.769231915473938 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 1066.068856897061323, 889.414296375183312, 232.923084139823914, 168.205126523971558 ],
+					"presentation_rect" : [ 1066.000177921956038, 888.887733267215935, 232.923084139823914, 168.205126523971558 ],
 					"selectioncolor" : [ 0.490196078431373, 0.611764705882353, 0.607843137254902, 1.0 ],
 					"waveformcolor" : [ 0.564705882352941, 0.905882352941176, 0.862745098039216, 1.0 ]
 				}
@@ -6633,7 +6622,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 1304.6103205278323, 476.763680810269989, 182.820503115653992, 120.769231915473938 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 1066.068856897061323, 743.627062290313461, 232.949693629108879, 119.933447037270525 ],
+					"presentation_rect" : [ 1066.000177921956038, 743.100499182346084, 232.949693629108879, 119.933447037270525 ],
 					"setminmax" : [ 0.0, 1.0 ],
 					"setstyle" : 1,
 					"size" : 5,
@@ -6654,7 +6643,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 1127.22553003617486, 581.303606743153978, 50.0, 22.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 1249.018550526170202, 719.209169851211755, 50.0, 22.0 ],
+					"presentation_rect" : [ 1248.949871551064916, 718.682606743244378, 50.0, 22.0 ],
 					"textcolor" : [ 0.807843137254902, 0.898039215686275, 0.909803921568627, 1.0 ],
 					"tricolor" : [ 0.564705882352941, 0.905882352941176, 0.862745098039216, 1.0 ]
 				}
@@ -6681,7 +6670,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 23.742279994371984, 884.480808985202657, 24.0, 24.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 82.981447105214329, 24.70002823074401, 55.162197599808579, 55.162197599808565 ]
+					"presentation_rect" : [ 82.912768130109043, 24.173465122776634, 55.162197599808579, 55.162197599808565 ]
 				}
 
 			}
@@ -6710,18 +6699,6 @@
 			}
 , 			{
 				"box" : 				{
-					"id" : "obj-65",
-					"maxclass" : "newobj",
-					"numinlets" : 0,
-					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 238.078898012638092, 1070.019177953857707, 85.0, 22.0 ],
-					"text" : "receive trigger"
-				}
-
-			}
-, 			{
-				"box" : 				{
 					"id" : "obj-57",
 					"maxclass" : "message",
 					"numinlets" : 2,
@@ -6745,7 +6722,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 224.317121280631, 1107.601374026537087, 200.0, 100.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 82.981447105214329, 219.469260146217948, 232.602422719200604, 120.769231915473938 ],
+					"presentation_rect" : [ 82.912768130109043, 218.942697038250571, 232.602422719200604, 120.769231915473938 ],
 					"textcolor" : [ 0.807843137254902, 0.898039215686275, 0.909803921568627, 1.0 ]
 				}
 
@@ -6757,7 +6734,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 240.078898012638092, 1034.659467883901925, 81.0, 22.0 ],
+					"patching_rect" : [ 237.317121280631, 1071.492892440187916, 81.0, 22.0 ],
 					"text" : "setdomain $1"
 				}
 
@@ -6772,9 +6749,9 @@
 					"outlettype" : [ "", "bang" ],
 					"outputonclick" : 1,
 					"parameter_enable" : 0,
-					"patching_rect" : [ 326.180826365947723, 976.14558957029044, 50.0, 22.0 ],
+					"patching_rect" : [ 326.180826365947723, 1029.125820752012714, 50.0, 22.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 265.613281736379349, 195.469260146217948, 49.970588088035583, 22.0 ],
+					"presentation_rect" : [ 265.544602761274064, 194.942697038250571, 49.970588088035583, 22.0 ],
 					"textcolor" : [ 0.807843137254902, 0.898039215686275, 0.909803921568627, 1.0 ],
 					"tricolor" : [ 0.564705882352941, 0.905882352941176, 0.862745098039216, 1.0 ]
 				}
@@ -6803,7 +6780,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 483.956877364761112, 454.600400924682162, 50.0, 22.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 265.613281736379349, 720.736315799094427, 50.0, 22.0 ],
+					"presentation_rect" : [ 265.544602761274064, 720.209752691127051, 50.0, 22.0 ],
 					"textcolor" : [ 0.807843137254902, 0.898039215686275, 0.909803921568627, 1.0 ],
 					"tricolor" : [ 0.564705882352941, 0.905882352941176, 0.862745098039216, 1.0 ]
 				}
@@ -6895,7 +6872,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 145.274727084123924, 1081.740647592144342, 40.0, 40.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 267.583869824414933, 129.469260146217948, 40.0, 40.0 ],
+					"presentation_rect" : [ 267.515190849309647, 128.942697038250571, 40.0, 40.0 ],
 					"size" : 2000.0
 				}
 
@@ -6916,7 +6893,7 @@
 					"outlettype" : [ "signal", "float" ],
 					"patching_rect" : [ 137.274727084123924, 1123.571250700426845, 56.0, 22.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 259.583869824414933, 171.469260146217948, 56.0, 22.0 ],
+					"presentation_rect" : [ 259.515190849309647, 170.942697038250571, 56.0, 22.0 ],
 					"sig" : 0.0,
 					"textcolor" : [ 0.807843137254902, 0.898039215686275, 0.909803921568627, 1.0 ]
 				}
@@ -6938,7 +6915,7 @@
 					"outlettype" : [ "signal", "float" ],
 					"patching_rect" : [ 79.274727084123924, 1123.571250700426845, 56.0, 22.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 201.583869824414933, 171.469260146217948, 56.0, 22.0 ],
+					"presentation_rect" : [ 201.515190849309647, 170.942697038250571, 56.0, 22.0 ],
 					"sig" : 0.0,
 					"textcolor" : [ 0.807843137254902, 0.898039215686275, 0.909803921568627, 1.0 ]
 				}
@@ -6957,7 +6934,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 87.274727084123924, 1081.740647592144342, 40.0, 40.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 209.583869824414933, 129.469260146217948, 40.0, 40.0 ],
+					"presentation_rect" : [ 209.515190849309647, 128.942697038250571, 40.0, 40.0 ],
 					"size" : 25.0
 				}
 
@@ -6975,7 +6952,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 28.732640751087501, 1081.740647592144342, 40.0, 40.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 151.583869824414933, 129.469260146217948, 40.0, 40.0 ],
+					"presentation_rect" : [ 151.515190849309647, 128.942697038250571, 40.0, 40.0 ],
 					"size" : 17.0
 				}
 
@@ -6996,7 +6973,7 @@
 					"outlettype" : [ "signal", "float" ],
 					"patching_rect" : [ 20.732640751087501, 1123.571250700426845, 56.0, 22.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 143.583869824414933, 171.469260146217948, 56.0, 22.0 ],
+					"presentation_rect" : [ 143.515190849309647, 170.942697038250571, 56.0, 22.0 ],
 					"sig" : 0.0,
 					"textcolor" : [ 0.807843137254902, 0.898039215686275, 0.909803921568627, 1.0 ]
 				}
@@ -7035,7 +7012,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 22.482640751087501, 986.413315411436542, 78.0, 22.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 192.625888595586275, 81.862225830552688, 122.95798122882843, 22.0 ],
+					"presentation_rect" : [ 192.55720962048099, 81.335662722585312, 122.95798122882843, 22.0 ],
 					"textcolor" : [ 0.807843137254902, 0.898039215686275, 0.909803921568627, 1.0 ]
 				}
 
@@ -7063,7 +7040,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 338.737100383718371, 750.311592191457521, 50.0, 22.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 264.268460801311221, 1035.90844021883413, 50.0, 22.0 ],
+					"presentation_rect" : [ 264.199781826205935, 1035.381877110866753, 50.0, 22.0 ],
 					"textcolor" : [ 0.807843137254902, 0.898039215686275, 0.909803921568627, 1.0 ],
 					"tricolor" : [ 0.564705882352941, 0.905882352941176, 0.862745098039216, 1.0 ]
 				}
@@ -7094,7 +7071,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 244.942982098539233, 750.311592191457521, 50.0, 22.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 204.848208342596308, 1035.90844021883413, 50.0, 22.0 ],
+					"presentation_rect" : [ 204.779529367491023, 1035.381877110866753, 50.0, 22.0 ],
 					"textcolor" : [ 0.807843137254902, 0.898039215686275, 0.909803921568627, 1.0 ],
 					"tricolor" : [ 0.564705882352941, 0.905882352941176, 0.862745098039216, 1.0 ]
 				}
@@ -7123,7 +7100,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 155.139591863830447, 750.311592191457521, 50.0, 22.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 145.821946911667737, 1035.90844021883413, 50.0, 22.0 ],
+					"presentation_rect" : [ 145.753267936562452, 1035.381877110866753, 50.0, 22.0 ],
 					"textcolor" : [ 0.807843137254902, 0.898039215686275, 0.909803921568627, 1.0 ],
 					"tricolor" : [ 0.564705882352941, 0.905882352941176, 0.862745098039216, 1.0 ]
 				}
@@ -7152,7 +7129,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 59.418871155460238, 750.311592191457521, 50.0, 22.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 85.637704657073527, 1035.90844021883413, 50.0, 22.0 ],
+					"presentation_rect" : [ 85.569025681968242, 1035.381877110866753, 50.0, 22.0 ],
 					"textcolor" : [ 0.807843137254902, 0.898039215686275, 0.909803921568627, 1.0 ],
 					"tricolor" : [ 0.564705882352941, 0.905882352941176, 0.862745098039216, 1.0 ]
 				}
@@ -7167,22 +7144,6 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 317.737100383718371, 124.778835757970228, 55.0, 22.0 ],
 					"text" : "mode $1"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-67",
-					"items" : [ "Monophonic", ",", "Polyphonic" ],
-					"maxclass" : "umenu",
-					"numinlets" : 1,
-					"numoutlets" : 3,
-					"outlettype" : [ "int", "", "" ],
-					"parameter_enable" : 0,
-					"patching_rect" : [ 317.737100383718371, 41.879340857266925, 100.0, 22.0 ],
-					"presentation" : 1,
-					"presentation_rect" : [ 592.419566685352265, 970.361002580787954, 100.0, 22.0 ],
-					"textcolor" : [ 0.807843137254902, 0.898039215686275, 0.909803921568627, 1.0 ]
 				}
 
 			}
@@ -7205,39 +7166,6 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 922.737100383718371, 245.695595473050616, 78.0, 22.0 ],
 					"text" : "send velocity"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"format" : 5,
-					"id" : "obj-61",
-					"maxclass" : "number",
-					"numinlets" : 1,
-					"numoutlets" : 2,
-					"outlettype" : [ "", "bang" ],
-					"parameter_enable" : 0,
-					"patching_rect" : [ 317.737100383718371, 245.695595473050616, 50.0, 22.0 ],
-					"presentation" : 1,
-					"presentation_rect" : [ 694.419566685352265, 970.361002580787954, 50.0, 22.0 ],
-					"textcolor" : [ 0.807843137254902, 0.898039215686275, 0.909803921568627, 1.0 ],
-					"tricolor" : [ 0.564705882352941, 0.905882352941176, 0.862745098039216, 1.0 ]
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-46",
-					"maxclass" : "number",
-					"numinlets" : 1,
-					"numoutlets" : 2,
-					"outlettype" : [ "", "bang" ],
-					"parameter_enable" : 0,
-					"patching_rect" : [ 922.737100383718371, 221.695595473050616, 50.0, 22.0 ],
-					"presentation" : 1,
-					"presentation_rect" : [ 746.419566685352265, 970.361002580787954, 50.0, 22.0 ],
-					"textcolor" : [ 0.807843137254902, 0.898039215686275, 0.909803921568627, 1.0 ],
-					"tricolor" : [ 0.564705882352941, 0.905882352941176, 0.862745098039216, 1.0 ]
 				}
 
 			}
@@ -7266,7 +7194,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 317.737100383718371, 166.695595473050616, 624.0, 53.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 330.419566685352265, 997.90844021883413, 728.0, 60.0 ],
+					"presentation_rect" : [ 326.288596449391434, 998.809226678279174, 728.0, 60.0 ],
 					"range" : 88,
 					"selectioncolor" : [ 0.352941176470588, 0.607843137254902, 0.929411764705882, 1.0 ]
 				}
@@ -7286,18 +7214,20 @@
 			}
 , 			{
 				"box" : 				{
+					"color" : [ 0.807843137254902, 0.898039215686275, 0.909803921568627, 1.0 ],
 					"id" : "obj-5",
 					"maxclass" : "ezdac~",
 					"numinlets" : 2,
 					"numoutlets" : 0,
 					"patching_rect" : [ 1067.879998095714654, 237.393444776535034, 45.0, 45.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 1300.991941036885237, 1012.61942289915487, 45.0, 45.0 ]
+					"presentation_rect" : [ 1300.923262061779951, 1012.092859791187493, 45.0, 45.0 ]
 				}
 
 			}
 , 			{
 				"box" : 				{
+					"focusbordercolor" : [ 0.313725490196078, 0.313725490196078, 0.313725490196078, 0.0 ],
 					"id" : "obj-4",
 					"lastchannelcount" : 0,
 					"maxclass" : "live.gain~",
@@ -7307,7 +7237,7 @@
 					"parameter_enable" : 1,
 					"patching_rect" : [ 1079.892194874965753, 83.695595473050616, 36.0, 136.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 1305.491941036885237, 890.322378008964279, 36.0, 124.0 ],
+					"presentation_rect" : [ 1305.423262061779951, 889.795814900996902, 36.0, 124.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
 							"parameter_longname" : "live.gain~",
@@ -7322,7 +7252,8 @@
 ,
 					"showname" : 0,
 					"textcolor" : [ 0.807843137254902, 0.898039215686275, 0.909803921568627, 1.0 ],
-					"trioncolor" : [ 0.807843137254902, 0.898039215686275, 0.909803921568627, 1.0 ],
+					"tricolor" : [ 0.490196078431373, 0.611764705882353, 0.607843137254902, 1.0 ],
+					"trioncolor" : [ 0.564705882352941, 0.905882352941176, 0.862745098039216, 1.0 ],
 					"varname" : "live.gain~"
 				}
 
@@ -7492,7 +7423,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 79.274727084123924, 204.746443718671344, 128.0, 128.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 317.983068678863219, 709.022583246231079, 746.651198375242984, 181.2997947627332 ],
+					"presentation_rect" : [ 317.914389703757934, 708.496020138263702, 746.651198375242984, 181.2997947627332 ],
 					"proportion" : 0.5
 				}
 
@@ -7509,7 +7440,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 79.274727084123924, 204.746443718671344, 128.0, 128.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 72.670318387056795, 14.925567120313644, 252.632753382126339, 700.918415085939614 ],
+					"presentation_rect" : [ 72.60163941195151, 14.399004012346268, 252.632753382126339, 700.918415085939614 ],
 					"proportion" : 0.5
 				}
 
@@ -7526,7 +7457,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 79.274727084123924, 204.746443718671344, 128.0, 128.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 1056.740597003678431, 364.805071641998893, 253.675167350098945, 350.99179011232718 ],
+					"presentation_rect" : [ 1056.671918028573145, 364.278508534031516, 253.675167350098945, 350.99179011232718 ],
 					"proportion" : 0.5
 				}
 
@@ -7543,7 +7474,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 79.274727084123924, 204.746443718671344, 128.0, 128.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 72.670318387056795, 14.925567120313644, 744.30237952868174, 700.451141940025536 ],
+					"presentation_rect" : [ 72.60163941195151, 14.399004012346268, 744.30237952868174, 700.451141940025536 ],
 					"proportion" : 0.5
 				}
 
@@ -7560,7 +7491,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 79.274727084123924, 204.746443718671344, 128.0, 128.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 72.670318387056795, 14.925567120313644, 498.382227540016174, 700.918415085939614 ],
+					"presentation_rect" : [ 72.60163941195151, 14.399004012346268, 498.382227540016174, 700.918415085939614 ],
 					"proportion" : 0.5
 				}
 
@@ -7577,7 +7508,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 79.274727084123924, 204.746443718671344, 128.0, 128.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 72.670318387056795, 14.925567120313644, 1235.80581533908844, 180.378260509638039 ],
+					"presentation_rect" : [ 72.60163941195151, 14.399004012346268, 1235.80581533908844, 180.378260509638039 ],
 					"proportion" : 0.5
 				}
 
@@ -7594,7 +7525,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 79.274727084123924, 204.746443718671344, 128.0, 128.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 72.670318387056795, 14.925567120313644, 990.061163783073425, 351.272610293297021 ],
+					"presentation_rect" : [ 72.60163941195151, 14.399004012346268, 990.061163783073425, 351.272610293297021 ],
 					"proportion" : 0.5
 				}
 
@@ -7611,7 +7542,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 79.274727084123924, 204.746443718671344, 128.0, 128.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 72.670318387056795, 14.925567120313644, 990.061163783073425, 700.974702165989129 ],
+					"presentation_rect" : [ 72.60163941195151, 14.399004012346268, 990.061163783073425, 700.974702165989129 ],
 					"proportion" : 0.5
 				}
 
@@ -7662,7 +7593,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 79.274727084123924, 204.746443718671344, 128.0, 128.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 73.640133700872866, 14.925567120313644, 1235.80581533908844, 521.043553372221595 ],
+					"presentation_rect" : [ 73.57145472576758, 14.399004012346268, 1235.80581533908844, 521.043553372221595 ],
 					"proportion" : 0.5
 				}
 
@@ -7679,7 +7610,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 79.274727084123924, 204.746443718671344, 128.0, 128.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 72.670318387056795, 14.925567120313644, 1237.745445966720581, 700.871294634012429 ],
+					"presentation_rect" : [ 72.60163941195151, 14.399004012346268, 1237.745445966720581, 700.871294634012429 ],
 					"proportion" : 0.5
 				}
 
@@ -7696,7 +7627,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 79.274727084123924, 204.746443718671344, 128.0, 128.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ -0.104230995371609, -0.495882524582612, 1371.631840472420208, 1059.831672310829163 ],
+					"presentation_rect" : [ -0.172909970476894, -1.022445632549989, 1371.631840472420208, 1059.831672310829163 ],
 					"proportion" : 0.5,
 					"rounded" : 63
 				}
@@ -7714,7 +7645,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 79.274727084123924, 204.746443718671344, 128.0, 128.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ -0.104230995371609, -0.495882524582612, 1371.631840472420208, 394.110563576221466 ],
+					"presentation_rect" : [ -0.172909970476894, -1.022445632549989, 1371.631840472420208, 394.110563576221466 ],
 					"proportion" : 0.5,
 					"rounded" : 0
 				}
@@ -8036,7 +7967,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-60", 0 ],
-					"midpoints" : [ 500.535647645674771, 1067.394469827413559, 451.110656023025513, 1067.394469827413559, 451.110656023025513, 1016.012827217578888, 313.110656023025513, 1016.012827217578888, 313.110656023025513, 971.012827217578888, 335.680826365947723, 971.012827217578888 ],
+					"midpoints" : [ 500.535647645674771, 1065.0, 450.0, 1065.0, 450.0, 1023.0, 335.680826365947723, 1023.0 ],
 					"source" : [ "obj-143", 1 ]
 				}
 
@@ -8310,14 +8241,6 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-172", 0 ],
-					"midpoints" : [ 1046.158387004300039, 1100.379218220710754, 1032.588216661377601, 1100.379218220710754, 1032.588216661377601, 1103.012827217578888, 1032.396610272292946, 1103.012827217578888 ],
-					"source" : [ "obj-170", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-172", 0 ],
 					"midpoints" : [ 1258.954312040455079, 1100.515903550417079, 1032.396610272292946, 1100.515903550417079 ],
 					"order" : 1,
 					"source" : [ "obj-171", 0 ]
@@ -8350,7 +8273,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-172", 0 ],
-					"midpoints" : [ 1048.158387004300039, 1064.191571444272995, 1131.351983933611564, 1064.191571444272995, 1131.351983933611564, 1100.597368210554123, 1032.396610272292946, 1100.597368210554123 ],
+					"midpoints" : [ 1048.927617727681081, 1100.962962865829468, 1032.396610272292946, 1100.962962865829468 ],
 					"source" : [ "obj-173", 0 ]
 				}
 
@@ -8358,7 +8281,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-173", 0 ],
-					"midpoints" : [ 1134.26031535760967, 1001.012827217578888, 1048.158387004300039, 1001.012827217578888 ],
+					"midpoints" : [ 1134.26031535760967, 1060.692307233810425, 1048.927617727681081, 1060.692307233810425 ],
 					"order" : 1,
 					"source" : [ "obj-174", 0 ]
 				}
@@ -8699,7 +8622,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-272", 0 ],
-					"midpoints" : [ 474.035647645674771, 1605.210986153010708, 445.110656023025513, 1605.210986153010708, 445.110656023025513, 1604.960986153010708, 265.215921640396118, 1604.960986153010708, 265.215921640396118, 1605.460986153010708, 233.817121280631, 1605.460986153010708 ],
+					"midpoints" : [ 474.035647645674771, 1605.210986153010708, 445.110656023025513, 1605.210986153010708, 445.110656023025513, 1604.960986153010708, 265.215921640396118, 1604.960986153010708, 265.215921640396118, 1604.149510756854397, 233.817121280631, 1604.149510756854397 ],
 					"source" : [ "obj-223", 0 ]
 				}
 
@@ -8723,7 +8646,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-274", 0 ],
-					"midpoints" : [ 500.535647645674771, 1572.092628762845379, 451.110656023025513, 1572.092628762845379, 451.110656023025513, 1520.710986153010708, 313.110656023025513, 1520.710986153010708, 313.110656023025513, 1475.710986153010708, 335.680826365947723, 1475.710986153010708 ],
+					"midpoints" : [ 500.535647645674771, 1569.0, 450.0, 1569.0, 450.0, 1527.0, 335.680826365947723, 1527.0 ],
 					"source" : [ "obj-224", 1 ]
 				}
 
@@ -9018,14 +8941,6 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-272", 0 ],
-					"midpoints" : [ 247.578898012638092, 1605.077377156142575, 234.008727669715881, 1605.077377156142575, 234.008727669715881, 1607.710986153010708, 233.817121280631, 1607.710986153010708 ],
-					"source" : [ "obj-270", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
 					"destination" : [ "obj-213", 0 ],
 					"order" : 0,
 					"source" : [ "obj-271", 0 ]
@@ -9035,7 +8950,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-272", 0 ],
-					"midpoints" : [ 460.374823048793132, 1605.214062485848672, 233.817121280631, 1605.214062485848672 ],
+					"midpoints" : [ 460.374823048793132, 1604.230455938731438, 233.817121280631, 1604.230455938731438 ],
 					"order" : 1,
 					"source" : [ "obj-271", 0 ]
 				}
@@ -9059,7 +8974,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-272", 0 ],
-					"midpoints" : [ 249.578898012638092, 1568.889730379704815, 332.772494941949844, 1568.889730379704815, 332.772494941949844, 1605.295527145985943, 233.817121280631, 1605.295527145985943 ],
+					"midpoints" : [ 253.660530626773834, 1604.491245627403259, 233.817121280631, 1604.491245627403259 ],
 					"source" : [ "obj-273", 0 ]
 				}
 
@@ -9075,7 +8990,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-273", 0 ],
-					"midpoints" : [ 335.680826365947723, 1505.710986153010708, 249.578898012638092, 1505.710986153010708 ],
+					"midpoints" : [ 335.680826365947723, 1563.885245829820633, 253.660530626773834, 1563.885245829820633 ],
 					"order" : 1,
 					"source" : [ "obj-274", 0 ]
 				}
@@ -9386,7 +9301,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-393", 0 ],
-					"midpoints" : [ 1272.75354875632388, 1605.210986153010708, 1243.828557133674622, 1605.210986153010708, 1243.828557133674622, 1604.960986153010708, 1063.933822751045227, 1604.960986153010708, 1063.933822751045227, 1605.460986153010708, 1032.535022391280108, 1605.460986153010708 ],
+					"midpoints" : [ 1272.75354875632388, 1605.210986153010708, 1243.828557133674622, 1605.210986153010708, 1243.828557133674622, 1605.616723851088864, 1063.933822751045227, 1605.616723851088864, 1063.933822751045227, 1605.460986153010708, 1032.535022391280108, 1605.460986153010708 ],
 					"source" : [ "obj-348", 0 ]
 				}
 
@@ -9409,7 +9324,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-395", 0 ],
-					"midpoints" : [ 1299.25354875632388, 1572.092628762845379, 1249.828557133674622, 1572.092628762845379, 1249.828557133674622, 1520.710986153010708, 1111.828557133674622, 1520.710986153010708, 1111.828557133674622, 1475.710986153010708, 1134.398727476596832, 1475.710986153010708 ],
+					"midpoints" : [ 1299.25354875632388, 1569.0, 1248.0, 1569.0, 1248.0, 1527.0, 1134.398727476596832, 1527.0 ],
 					"source" : [ "obj-349", 1 ]
 				}
 
@@ -9637,14 +9552,6 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-393", 0 ],
-					"midpoints" : [ 1046.296799123287201, 1605.077377156142575, 1032.72662878036499, 1605.077377156142575, 1032.72662878036499, 1607.710986153010708, 1032.535022391280108, 1607.710986153010708 ],
-					"source" : [ "obj-391", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
 					"destination" : [ "obj-343", 0 ],
 					"order" : 0,
 					"source" : [ "obj-392", 0 ]
@@ -9678,7 +9585,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-393", 0 ],
-					"midpoints" : [ 1048.296799123287201, 1568.889730379704815, 1131.490396052598953, 1568.889730379704815, 1131.490396052598953, 1605.295527145985943, 1032.535022391280108, 1605.295527145985943 ],
+					"midpoints" : [ 1048.952536821365356, 1605.557376980781555, 1032.535022391280108, 1605.557376980781555 ],
 					"source" : [ "obj-394", 0 ]
 				}
 
@@ -9694,7 +9601,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-394", 0 ],
-					"midpoints" : [ 1134.398727476596832, 1505.710986153010708, 1048.296799123287201, 1505.710986153010708 ],
+					"midpoints" : [ 1134.398727476596832, 1563.885245829820633, 1048.952536821365356, 1563.885245829820633 ],
 					"order" : 1,
 					"source" : [ "obj-395", 0 ]
 				}
@@ -10011,14 +9918,6 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-446", 0 ],
-					"midpoints" : [ 755.866504430770874, 2133.565800617915556, 742.296334087848663, 2133.565800617915556, 742.296334087848663, 2135.19940961478369, 742.104727698763782, 2135.19940961478369 ],
-					"source" : [ "obj-444", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
 					"destination" : [ "obj-280", 0 ],
 					"order" : 0,
 					"source" : [ "obj-445", 0 ]
@@ -10052,7 +9951,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-446", 0 ],
-					"midpoints" : [ 757.866504430770874, 2091.03056041477339, 841.060101360082626, 2091.03056041477339, 841.060101360082626, 2132.033950607758925, 742.104727698763782, 2132.033950607758925 ],
+					"midpoints" : [ 755.104727698763782, 2132.573770433664322, 744.0, 2132.573770433664322, 744.0, 2133.0, 742.104727698763782, 2133.0 ],
 					"source" : [ "obj-447", 0 ]
 				}
 
@@ -10068,7 +9967,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-447", 0 ],
-					"midpoints" : [ 843.968432784080505, 2033.19940961478369, 757.866504430770874, 2033.19940961478369 ],
+					"midpoints" : [ 843.968432784080505, 2033.19940961478369, 755.104727698763782, 2033.19940961478369 ],
 					"order" : 1,
 					"source" : [ "obj-448", 0 ]
 				}
@@ -10375,14 +10274,6 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-496", 0 ],
-					"midpoints" : [ 196.866504430770874, 2133.565800617915556, 183.296334087848663, 2133.565800617915556, 183.296334087848663, 2135.19940961478369, 183.104727698763782, 2135.19940961478369 ],
-					"source" : [ "obj-494", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
 					"destination" : [ "obj-475", 0 ],
 					"order" : 0,
 					"source" : [ "obj-495", 0 ]
@@ -10416,7 +10307,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-496", 0 ],
-					"midpoints" : [ 198.866504430770874, 2091.03056041477339, 282.060101360082626, 2091.03056041477339, 282.060101360082626, 2132.033950607758925, 183.104727698763782, 2132.033950607758925 ],
+					"midpoints" : [ 196.104727698763782, 2132.573770433664322, 186.0, 2132.573770433664322, 186.0, 2133.0, 183.104727698763782, 2133.0 ],
 					"source" : [ "obj-497", 0 ]
 				}
 
@@ -10432,7 +10323,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-497", 0 ],
-					"midpoints" : [ 284.968432784080505, 2033.19940961478369, 198.866504430770874, 2033.19940961478369 ],
+					"midpoints" : [ 284.968432784080505, 2033.19940961478369, 196.104727698763782, 2033.19940961478369 ],
 					"order" : 1,
 					"source" : [ "obj-498", 0 ]
 				}
@@ -10893,7 +10784,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-58", 0 ],
-					"midpoints" : [ 249.578898012638092, 1064.191571444272995, 332.772494941949844, 1064.191571444272995, 332.772494941949844, 1100.597368210554123, 233.817121280631, 1100.597368210554123 ],
+					"midpoints" : [ 246.817121280631, 1100.304498195648193, 233.817121280631, 1100.304498195648193 ],
 					"source" : [ "obj-59", 0 ]
 				}
 
@@ -10909,7 +10800,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-59", 0 ],
-					"midpoints" : [ 335.680826365947723, 1001.012827217578888, 249.578898012638092, 1001.012827217578888 ],
+					"midpoints" : [ 335.680826365947723, 1053.0, 246.817121280631, 1053.0 ],
 					"order" : 1,
 					"source" : [ "obj-60", 0 ]
 				}
@@ -10941,14 +10832,6 @@
 				"patchline" : 				{
 					"destination" : [ "obj-3", 0 ],
 					"source" : [ "obj-64", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-58", 0 ],
-					"midpoints" : [ 247.578898012638092, 1100.379218220710754, 234.008727669715881, 1100.379218220710754, 234.008727669715881, 1103.012827217578888, 233.817121280631, 1103.012827217578888 ],
-					"source" : [ "obj-65", 0 ]
 				}
 
 			}
@@ -10998,7 +10881,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-174", 0 ],
-					"midpoints" : [ 1299.115136637336491, 1067.394469827413559, 1249.690145014687232, 1067.394469827413559, 1249.690145014687232, 1016.012827217578888, 1111.690145014687232, 1016.012827217578888, 1111.690145014687232, 971.012827217578888, 1134.26031535760967, 971.012827217578888 ],
+					"midpoints" : [ 1299.115136637336491, 1065.0, 1248.0, 1065.0, 1248.0, 1023.0, 1134.26031535760967, 1023.0 ],
 					"source" : [ "obj-71", 1 ]
 				}
 
