@@ -40,6 +40,19 @@
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
 				"box" : 				{
+					"fontface" : 2,
+					"id" : "obj-62",
+					"linecount" : 8,
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 30.429442584514618, 12.967041075229645, 220.0, 117.0 ],
+					"text" : "Filename: engine.maxpat\n\nDescription: This patch implements the sound engine of the synthesizer\n\nAuthor: Alexandros Iliadis\nProject: MS-ProtoSynth\nDate: January 2024"
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"id" : "obj-29",
 					"maxclass" : "newobj",
 					"numinlets" : 2,
@@ -902,8 +915,7 @@
 			}
 , 			{
 				"box" : 				{
-					"addpoints_with_curve" : [ 0.0, 1.0, 0, 0.0, 500.0, 0.0, 0, 0.0 ],
-					"domain" : 500.0,
+					"addpoints_with_curve" : [ 0.0, 1.0, 0, 0.0, 1000.0, 1.0, 0, 0.0 ],
 					"id" : "obj-75",
 					"ignoreclick" : 1,
 					"maxclass" : "function",
@@ -1134,11 +1146,11 @@
 				"box" : 				{
 					"comment" : "",
 					"id" : "obj-48",
-					"index" : 0,
+					"index" : 2,
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
-					"outlettype" : [ "" ],
+					"outlettype" : [ "bang" ],
 					"patching_rect" : [ 876.044457912445068, 34.967041075229645, 30.0, 30.0 ]
 				}
 
@@ -1566,7 +1578,7 @@
 				"box" : 				{
 					"comment" : "",
 					"id" : "obj-2",
-					"index" : 0,
+					"index" : 1,
 					"maxclass" : "outlet",
 					"numinlets" : 1,
 					"numoutlets" : 0,
@@ -1578,11 +1590,11 @@
 				"box" : 				{
 					"comment" : "",
 					"id" : "obj-1",
-					"index" : 0,
+					"index" : 1,
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
-					"outlettype" : [ "" ],
+					"outlettype" : [ "signal" ],
 					"patching_rect" : [ 306.851144552230835, 34.967041075229645, 30.0, 30.0 ]
 				}
 
@@ -1618,7 +1630,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-21", 2 ],
-					"midpoints" : [ 316.351144552230835, 455.730123281478882, 316.299927204847336, 455.730123281478882, 316.299927204847336, 843.436001658439636, 397.866942584514618, 843.436001658439636 ],
+					"midpoints" : [ 316.351144552230835, 455.730123281478882, 315.29742094874382, 455.730123281478882, 315.29742094874382, 843.436001658439636, 397.866942584514618, 843.436001658439636 ],
 					"order" : 6,
 					"source" : [ "obj-1", 0 ]
 				}
@@ -1645,7 +1657,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-32", 4 ],
-					"midpoints" : [ 316.351144552230835, 576.27806881070137, 261.368421077728271, 576.27806881070137, 261.368421077728271, 575.730123281478882, 89.473156213760376, 575.730123281478882, 89.473156213760376, 644.730123281478882, 90.054442584514618, 644.730123281478882 ],
+					"midpoints" : [ 316.351144552230835, 575.776815682649612, 261.368421077728271, 575.776815682649612, 261.368421077728271, 575.730123281478882, 90.475662469863892, 575.730123281478882, 90.475662469863892, 644.730123281478882, 90.054442584514618, 644.730123281478882 ],
 					"order" : 7,
 					"source" : [ "obj-1", 0 ]
 				}
@@ -2774,37 +2786,7 @@
 				}
 
 			}
- ],
-		"dependency_cache" : [ 			{
-				"name" : "carrier.maxpat",
-				"bootpath" : "C:/Users/mogeadis/Projects/GitHub/MS-ProtoSynth/Source",
-				"patcherrelativepath" : ".",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "filter.maxpat",
-				"bootpath" : "C:/Users/mogeadis/Projects/GitHub/MS-ProtoSynth/Source",
-				"patcherrelativepath" : ".",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "modulator.maxpat",
-				"bootpath" : "C:/Users/mogeadis/Projects/GitHub/MS-ProtoSynth/Source",
-				"patcherrelativepath" : ".",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "lfo.maxpat",
-				"bootpath" : "C:/Users/mogeadis/Projects/GitHub/MS-ProtoSynth/Source",
-				"patcherrelativepath" : ".",
-				"type" : "JSON",
-				"implicit" : 1
-			}
- ],
-		"autosave" : 0
+ ]
 	}
 
 }

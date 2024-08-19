@@ -40,25 +40,14 @@
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
 				"box" : 				{
-					"id" : "obj-5",
-					"maxclass" : "number",
+					"fontface" : 2,
+					"id" : "obj-6",
+					"linecount" : 8,
+					"maxclass" : "comment",
 					"numinlets" : 1,
-					"numoutlets" : 2,
-					"outlettype" : [ "", "bang" ],
-					"parameter_enable" : 0,
-					"patching_rect" : [ 585.0, 239.0, 50.0, 22.0 ]
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-4",
-					"maxclass" : "message",
-					"numinlets" : 2,
-					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 542.0, 300.0, 52.0, 22.0 ],
-					"text" : "open $1"
+					"numoutlets" : 0,
+					"patching_rect" : [ 17.207655334472747, 27.393444776535034, 219.0, 117.0 ],
+					"text" : "Filename: synth.maxpat\n\nDescription: This patch implements the backend of the synthesizer\n\nAuthor: Alexandros Iliadis\nProject: MS-ProtoSynth\nDate: January 2024"
 				}
 
 			}
@@ -69,7 +58,7 @@
 					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 186.307655334472656, 62.846147537231445, 91.0, 22.0 ],
+					"patching_rect" : [ 298.307655334472656, 51.393444776535034, 91.0, 22.0 ],
 					"text" : "receive velocity"
 				}
 
@@ -81,7 +70,7 @@
 					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 171.307655334472656, 38.846147537231445, 76.0, 22.0 ],
+					"patching_rect" : [ 283.307655334472656, 27.393444776535034, 76.0, 22.0 ],
 					"text" : "receive pitch"
 				}
 
@@ -93,7 +82,7 @@
 					"numinlets" : 3,
 					"numoutlets" : 1,
 					"outlettype" : [ "signal" ],
-					"patching_rect" : [ 116.511625814917352, 433.846147537231445, 68.0, 22.0 ],
+					"patching_rect" : [ 228.511625814917352, 422.393444776535034, 68.0, 22.0 ],
 					"text" : "selector~ 2"
 				}
 
@@ -105,7 +94,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "signal" ],
-					"patching_rect" : [ 26.207655334472747, 347.974159562526438, 74.0, 22.0 ],
+					"patching_rect" : [ 138.207655334472747, 336.521456801830027, 74.0, 22.0 ],
 					"text" : "monophonic"
 				}
 
@@ -117,7 +106,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 3,
 					"outlettype" : [ "bang", "int", "int" ],
-					"patching_rect" : [ 303.603684854027961, 108.861041212020609, 65.0, 22.0 ],
+					"patching_rect" : [ 415.603684854027961, 97.408338451324198, 65.0, 22.0 ],
 					"text" : "trigger b i i"
 				}
 
@@ -129,7 +118,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "int" ],
-					"patching_rect" : [ 116.715596295362047, 207.685067307918416, 29.5, 22.0 ],
+					"patching_rect" : [ 228.715596295362047, 196.232364547222005, 29.5, 22.0 ],
 					"text" : "+ 1"
 				}
 
@@ -141,7 +130,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "int" ],
-					"patching_rect" : [ 116.511625814917352, 177.685067307918416, 29.5, 22.0 ],
+					"patching_rect" : [ 228.511625814917352, 166.232364547222005, 29.5, 22.0 ],
 					"text" : "!= 1"
 				}
 
@@ -153,7 +142,7 @@
 					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 303.603684854027961, 81.169677495956421, 85.0, 22.0 ],
+					"patching_rect" : [ 415.603684854027961, 69.71697473526001, 85.0, 22.0 ],
 					"text" : "receive voices"
 				}
 
@@ -165,7 +154,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 148.307655334472656, 252.846147537231445, 42.0, 22.0 ],
+					"patching_rect" : [ 260.307655334472656, 241.393444776535034, 42.0, 22.0 ],
 					"text" : "gate 2"
 				}
 
@@ -177,7 +166,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "signal" ],
-					"patching_rect" : [ 216.207655334472747, 347.974159562526438, 98.0, 22.0 ],
+					"patching_rect" : [ 328.207655334472747, 336.521456801830027, 98.0, 22.0 ],
 					"text" : "poly~ polyphonic"
 				}
 
@@ -188,7 +177,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 380.427214097497199, 182.552030563354492, 78.0, 22.0 ],
+					"patching_rect" : [ 492.427214097497199, 171.099327802658081, 78.0, 22.0 ],
 					"text" : "send RESET"
 				}
 
@@ -200,7 +189,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 380.427214097497199, 155.390950334041463, 54.0, 22.0 ],
+					"patching_rect" : [ 492.427214097497199, 143.938247573345052, 54.0, 22.0 ],
 					"text" : "deferlow"
 				}
 
@@ -209,11 +198,11 @@
 				"box" : 				{
 					"comment" : "",
 					"id" : "obj-1",
-					"index" : 1,
+					"index" : 0,
 					"maxclass" : "outlet",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 116.511625814917352, 474.685067307918416, 30.0, 30.0 ]
+					"patching_rect" : [ 228.511625814917352, 463.232364547222005, 30.0, 30.0 ]
 				}
 
 			}
@@ -224,7 +213,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 326.603684854027961, 308.484294497905466, 59.0, 22.0 ],
+					"patching_rect" : [ 438.603684854027961, 297.031591737209055, 59.0, 22.0 ],
 					"text" : "voices $1"
 				}
 
@@ -236,7 +225,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 216.207655334472747, 308.484294497905466, 101.0, 22.0 ],
+					"patching_rect" : [ 328.207655334472747, 297.031591737209055, 101.0, 22.0 ],
 					"text" : "prepend midinote"
 				}
 
@@ -248,7 +237,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 171.307655334472656, 86.846147537231445, 34.0, 22.0 ],
+					"patching_rect" : [ 283.307655334472656, 75.393444776535034, 34.0, 22.0 ],
 					"text" : "pack"
 				}
 
@@ -286,7 +275,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-8", 0 ],
-					"midpoints" : [ 126.215596295362047, 238.846147537231445, 157.807655334472656, 238.846147537231445 ],
+					"midpoints" : [ 238.215596295362047, 227.393444776535034, 269.807655334472656, 227.393444776535034 ],
 					"order" : 0,
 					"source" : [ "obj-15", 0 ]
 				}
@@ -316,7 +305,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-11", 0 ],
-					"midpoints" : [ 313.103684854027961, 144.846148014068604, 389.927214097497199, 144.846148014068604 ],
+					"midpoints" : [ 425.103684854027961, 133.393445253372192, 501.927214097497199, 133.393445253372192 ],
 					"source" : [ "obj-24", 0 ]
 				}
 
@@ -324,7 +313,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-14", 0 ],
-					"midpoints" : [ 359.103684854027961, 167.522618055343628, 126.011625814917352, 167.522618055343628 ],
+					"midpoints" : [ 471.103684854027961, 156.069915294647217, 238.011625814917352, 156.069915294647217 ],
 					"source" : [ "obj-24", 2 ]
 				}
 
@@ -339,7 +328,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-27", 1 ],
-					"midpoints" : [ 35.707655334472747, 419.846147537231445, 150.511625814917352, 419.846147537231445 ],
+					"midpoints" : [ 147.707655334472747, 408.393444776535034, 262.511625814917352, 408.393444776535034 ],
 					"source" : [ "obj-25", 0 ]
 				}
 
@@ -361,21 +350,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-86", 0 ],
-					"source" : [ "obj-4", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-4", 0 ],
-					"source" : [ "obj-5", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-86", 0 ],
-					"midpoints" : [ 336.103684854027961, 341.846147537231445, 225.707655334472747, 341.846147537231445 ],
+					"midpoints" : [ 448.103684854027961, 330.393444776535034, 337.707655334472747, 330.393444776535034 ],
 					"source" : [ "obj-7", 0 ]
 				}
 
@@ -383,7 +358,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-25", 0 ],
-					"midpoints" : [ 157.807655334472656, 292.846147537231445, 35.707655334472747, 292.846147537231445 ],
+					"midpoints" : [ 269.807655334472656, 281.393444776535034, 147.707655334472747, 281.393444776535034 ],
 					"source" : [ "obj-8", 0 ]
 				}
 
@@ -391,7 +366,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-3", 0 ],
-					"midpoints" : [ 180.807655334472656, 292.846147537231445, 225.707655334472747, 292.846147537231445 ],
+					"midpoints" : [ 292.807655334472656, 281.393444776535034, 337.707655334472747, 281.393444776535034 ],
 					"source" : [ "obj-8", 1 ]
 				}
 
@@ -399,12 +374,63 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-27", 2 ],
-					"midpoints" : [ 225.707655334472747, 418.846147537231445, 175.011625814917352, 418.846147537231445 ],
+					"midpoints" : [ 337.707655334472747, 407.393444776535034, 287.011625814917352, 407.393444776535034 ],
 					"source" : [ "obj-86", 0 ]
 				}
 
 			}
- ]
+ ],
+		"dependency_cache" : [ 			{
+				"name" : "polyphonic.maxpat",
+				"bootpath" : "C:/Users/mogeadis/Projects/GitHub/MS-ProtoSynth/Source",
+				"patcherrelativepath" : ".",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "engine.maxpat",
+				"bootpath" : "C:/Users/mogeadis/Projects/GitHub/MS-ProtoSynth/Source",
+				"patcherrelativepath" : ".",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "carrier.maxpat",
+				"bootpath" : "C:/Users/mogeadis/Projects/GitHub/MS-ProtoSynth/Source",
+				"patcherrelativepath" : ".",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "filter.maxpat",
+				"bootpath" : "C:/Users/mogeadis/Projects/GitHub/MS-ProtoSynth/Source",
+				"patcherrelativepath" : ".",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "modulator.maxpat",
+				"bootpath" : "C:/Users/mogeadis/Projects/GitHub/MS-ProtoSynth/Source",
+				"patcherrelativepath" : ".",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "lfo.maxpat",
+				"bootpath" : "C:/Users/mogeadis/Projects/GitHub/MS-ProtoSynth/Source",
+				"patcherrelativepath" : ".",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "monophonic.maxpat",
+				"bootpath" : "C:/Users/mogeadis/Projects/GitHub/MS-ProtoSynth/Source",
+				"patcherrelativepath" : ".",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+ ],
+		"autosave" : 0
 	}
 
 }
