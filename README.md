@@ -32,7 +32,7 @@ This project was developed using `Max 8.1.11` on `Windows 10` and no forward or 
 
 ## License
 
-*MS-ProtoSynth* © *2024* by *Alexandros Iliadis* is licensed under [GNU GPLv3](https://www.gnu.org/licenses/gpl-3.0).
+*MS-ProtoSynth* © *2024* by *Alexandros Iliadis* is licensed under the [GNU General Public License v3.0](https://choosealicense.com/licenses/gpl-3.0/).
 
 Permissions of this strong copyleft license are conditioned on making available complete source code of licensed works and modifications, which include larger works using a licensed work, under the same license. Copyright and license notices must be preserved. Contributors provide an express grant of patent rights.
 

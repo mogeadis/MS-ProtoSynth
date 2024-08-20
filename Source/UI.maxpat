@@ -46,7 +46,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 736.654024479156305, 40.31111391293507, 216.0, 122.0 ],
+					"patching_rect" : [ 736.654024479156305, 40.31111391293507, 219.0, 122.0 ],
 					"text" : "Filename: UI.maxpat\n\nDescription: This patch implements the user interface of the synthesizer\n\nAuthor: Alexandros Iliadis\nProject: MS-ProtoSynth\nDate: January 2024"
 				}
 
@@ -100,7 +100,7 @@
 					"numoutlets" : 3,
 					"outlettype" : [ "", "", "int" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 709.923680640109069, 288.435565590858459, 242.837511539459229, 55.836441397666931 ],
+					"patching_rect" : [ 724.735268709426691, 163.308823008413356, 242.837511539459229, 55.836441397666931 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 584.795944205144224, 896.411856156924387, 202.093200238319923, 34.519899129867554 ],
 					"text" : "MS-ProtoSynth",
