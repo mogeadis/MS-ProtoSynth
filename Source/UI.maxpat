@@ -42,12 +42,12 @@
 				"box" : 				{
 					"fontface" : 2,
 					"id" : "obj-6",
-					"linecount" : 8,
+					"linecount" : 9,
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 736.654024479156305, 40.31111391293507, 219.0, 122.0 ],
-					"text" : "Filename: UI.maxpat\n\nDescription: This patch implements the user interface of the synthesizer\n\nAuthor: Alexandros Iliadis\nProject: MS-ProtoSynth\nDate: January 2024"
+					"patching_rect" : [ 736.654024479156305, 40.31111391293507, 219.0, 137.0 ],
+					"text" : "Filename: UI.maxpat\n\nDescription: This patch implements the user interface of the synthesizer\n\nAuthor: Alexandros Iliadis (https://github.com/mogeadis)\nProject: MS-ProtoSynth\nDate: January 2024"
 				}
 
 			}
@@ -221,7 +221,7 @@
 					"fontname" : "Arial",
 					"fontsize" : 13.0,
 					"id" : "obj-113",
-					"items" : "8- Focusrite USB MIDI",
+					"items" : "9- Focusrite USB MIDI",
 					"maxclass" : "umenu",
 					"numinlets" : 1,
 					"numoutlets" : 3,
@@ -6147,11 +6147,10 @@
 				"box" : 				{
 					"fontsize" : 20.0,
 					"id" : "obj-304",
-					"linecount" : 2,
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 1098.306507361215154, 449.263680810269989, 117.425531625747681, 55.0 ],
+					"patching_rect" : [ 1098.306507361215154, 449.263680810269989, 123.425531625747681, 31.0 ],
 					"text" : "HARMONICS"
 				}
 

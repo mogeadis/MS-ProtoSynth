@@ -47,7 +47,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 7.207655334472747, 27.393444776535034, 220.0, 117.0 ],
-					"text" : "Filename: lfo.maxpat\n\nDescription: This patch implements the LFO of the synthesizer\n\nAuthor: Alexandros Iliadis\nProject: MS-ProtoSynth\nDate: January 2024"
+					"text" : "Filename: lfo.maxpat\n\nDescription: This patch implements the LFO of the synthesizer\n\nAuthor: Alexandros Iliadis (https://github.com/mogeadis)\nProject: MS-ProtoSynth\nDate: January 2024"
 				}
 
 			}

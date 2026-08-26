@@ -47,7 +47,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 17.207655334472747, 15.34433627291105, 215.0, 117.0 ],
-					"text" : "Filename: filter.maxpat\n\nDescription: This patch implements the filters of the synthesizer\n\nAuthor: Alexandros Iliadis\nProject: MS-ProtoSynth\nDate: January 2024"
+					"text" : "Filename: filter.maxpat\n\nDescription: This patch implements the filters of the synthesizer\n\nAuthor: Alexandros Iliadis (https://github.com/mogeadis)\nProject: MS-ProtoSynth\nDate: January 2024"
 				}
 
 			}

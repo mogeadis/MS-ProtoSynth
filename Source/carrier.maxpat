@@ -47,7 +47,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 19.685557806491943, 19.393444776535034, 219.0, 117.0 ],
-					"text" : "Filename: carrier.maxpat\n\nDescription: This patch implements the carrier oscillators of the synthesizer\n\nAuthor: Alexandros Iliadis\nProject: MS-ProtoSynth\nDate: January 2024"
+					"text" : "Filename: carrier.maxpat\n\nDescription: This patch implements the carrier oscillators of the synthesizer\n\nAuthor: Alexandros Iliadis (https://github.com/mogeadis)\nProject: MS-ProtoSynth\nDate: January 2024"
 				}
 
 			}

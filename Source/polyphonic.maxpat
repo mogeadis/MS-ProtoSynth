@@ -47,7 +47,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 17.207655334472747, 27.393444776535034, 222.0, 117.0 ],
-					"text" : "Filename: polyphonic.maxpat\n\nDescription: This patch implements the polyphonic mode of the synthesizer\n\nAuthor: Alexandros Iliadis\nProject: MS-ProtoSynth\nDate: January 2024"
+					"text" : "Filename: polyphonic.maxpat\n\nDescription: This patch implements the polyphonic mode of the synthesizer\n\nAuthor: Alexandros Iliadis (https://github.com/mogeadis)\nProject: MS-ProtoSynth\nDate: January 2024"
 				}
 
 			}

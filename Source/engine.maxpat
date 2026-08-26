@@ -47,7 +47,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 30.429442584514618, 12.967041075229645, 220.0, 117.0 ],
-					"text" : "Filename: engine.maxpat\n\nDescription: This patch implements the sound engine of the synthesizer\n\nAuthor: Alexandros Iliadis\nProject: MS-ProtoSynth\nDate: January 2024"
+					"text" : "Filename: engine.maxpat\n\nDescription: This patch implements the sound engine of the synthesizer\n\nAuthor: Alexandros Iliadis (https://github.com/mogeadis)\nProject: MS-ProtoSynth\nDate: January 2024"
 				}
 
 			}

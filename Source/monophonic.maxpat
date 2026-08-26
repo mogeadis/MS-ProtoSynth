@@ -42,12 +42,12 @@
 				"box" : 				{
 					"fontface" : 2,
 					"id" : "obj-3",
-					"linecount" : 8,
+					"linecount" : 9,
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 13.207655334472747, 28.0, 219.0, 117.0 ],
-					"text" : "Filename: monophonic.maxpat\n\nDescription: This patch implements the monophonic mode of the synthesizer\n\nAuthor: Alexandros Iliadis\nProject: MS-ProtoSynth\nDate: January 2024"
+					"patching_rect" : [ 13.207655334472747, 28.0, 219.0, 131.0 ],
+					"text" : "Filename: monophonic.maxpat\n\nDescription: This patch implements the monophonic mode of the synthesizer\n\nAuthor: Alexandros Iliadis (https://github.com/mogeadis)\nProject: MS-ProtoSynth\nDate: January 2024"
 				}
 
 			}
@@ -81,7 +81,7 @@
 				"box" : 				{
 					"comment" : "",
 					"id" : "obj-2",
-					"index" : 0,
+					"index" : 1,
 					"maxclass" : "outlet",
 					"numinlets" : 1,
 					"numoutlets" : 0,
@@ -93,7 +93,7 @@
 				"box" : 				{
 					"comment" : "",
 					"id" : "obj-1",
-					"index" : 0,
+					"index" : 1,
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
@@ -676,44 +676,7 @@
 				}
 
 			}
- ],
-		"dependency_cache" : [ 			{
-				"name" : "engine.maxpat",
-				"bootpath" : "C:/Users/mogeadis/Projects/GitHub/MS-ProtoSynth/Source",
-				"patcherrelativepath" : ".",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "carrier.maxpat",
-				"bootpath" : "C:/Users/mogeadis/Projects/GitHub/MS-ProtoSynth/Source",
-				"patcherrelativepath" : ".",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "filter.maxpat",
-				"bootpath" : "C:/Users/mogeadis/Projects/GitHub/MS-ProtoSynth/Source",
-				"patcherrelativepath" : ".",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "modulator.maxpat",
-				"bootpath" : "C:/Users/mogeadis/Projects/GitHub/MS-ProtoSynth/Source",
-				"patcherrelativepath" : ".",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "lfo.maxpat",
-				"bootpath" : "C:/Users/mogeadis/Projects/GitHub/MS-ProtoSynth/Source",
-				"patcherrelativepath" : ".",
-				"type" : "JSON",
-				"implicit" : 1
-			}
- ],
-		"autosave" : 0
+ ]
 	}
 
 }

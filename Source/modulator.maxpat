@@ -47,7 +47,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 21.207655334472747, 18.0, 221.0, 117.0 ],
-					"text" : "Filename: modulator.maxpat\n\nDescription: This patch implements the modulator oscillators of the synthesizer\n\nAuthor: Alexandros Iliadis\nProject: MS-ProtoSynth\nDate: January 2024"
+					"text" : "Filename: modulator.maxpat\n\nDescription: This patch implements the modulator oscillators of the synthesizer\n\nAuthor: Alexandros Iliadis (https://github.com/mogeadis)\nProject: MS-ProtoSynth\nDate: January 2024"
 				}
 
 			}
